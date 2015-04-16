@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import QuartzCore
 
 @IBDesignable class CircleImage: UIImageView {
     

@@ -26,6 +26,7 @@
 		20A64F061AE026B600689C77 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F051AE026B600689C77 /* Work.swift */; };
 		20A64F0A1AE026E200689C77 /* TechnicalSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F091AE026E200689C77 /* TechnicalSkill.swift */; };
 		20A64F0C1AE026FC00689C77 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F0B1AE026FC00689C77 /* Interest.swift */; };
+		20A64F0E1AE02BDE00689C77 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F0D1AE02BDE00689C77 /* RoundedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		20A64F051AE026B600689C77 /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 		20A64F091AE026E200689C77 /* TechnicalSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnicalSkill.swift; sourceTree = "<group>"; };
 		20A64F0B1AE026FC00689C77 /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
+		20A64F0D1AE02BDE00689C77 /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				20A64EFD1ADFFDD400689C77 /* RoundedRect.swift */,
+				20A64F0D1AE02BDE00689C77 /* RoundedImage.swift */,
 			);
 			path = Rect;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20A64F001AE00DCB00689C77 /* WWDCCategory.swift in Sources */,
+				20A64F0E1AE02BDE00689C77 /* RoundedImage.swift in Sources */,
 				20A64EF71ADFFA1F00689C77 /* TimelineTableViewCell.swift in Sources */,
 				20A64F061AE026B600689C77 /* Work.swift in Sources */,
 				20A64F041AE0257400689C77 /* Education.swift in Sources */,

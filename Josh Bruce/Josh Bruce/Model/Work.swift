@@ -6,14 +6,14 @@
 //  Copyright (c) 2015 Josh Bruce. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Work : WWDCCategory {
     
     // MARK: Init
     
-    init(title: String, body: String, startDate: NSDate, endDate: NSDate?) {
-        super.init(category: .Work, title: title, body: body, startDate: startDate, endDate: endDate)
+    init(title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate?) {
+        super.init(category: .Work, title: title, body: body, image: image, startDate: startDate, endDate: endDate)
         
         // Set any clas specific properties
     }

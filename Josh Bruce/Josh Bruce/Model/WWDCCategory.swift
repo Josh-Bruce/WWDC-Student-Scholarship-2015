@@ -57,6 +57,9 @@ protocol WWDCCategoryProtocol {
     /// The description of the entry
     var body: String { get set }
     
+    /// The image to be used as the icon instead of a color
+    var image: UIImage? { get set }
+    
     /// The start date of when this entry satrted
     var startDate: NSDate { get set }
     
@@ -91,6 +94,8 @@ class WWDCCategory : NSObject, WWDCCategoryProtocol {
     
     var body: String = ""
     
+    var image: UIImage?
+    
     var startDate: NSDate = NSDate()
     
     var endDate: NSDate?
@@ -99,13 +104,14 @@ class WWDCCategory : NSObject, WWDCCategoryProtocol {
     
     // MARK: Init
     
-    init(category: WWDCCategoryType, title: String, body: String, startDate: NSDate, endDate: NSDate?) {
+    init(category: WWDCCategoryType, title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate?) {
         super.init()
         
         // Init properties
         self.category = category
         self.title = title
         self.body = body
+        self.image = image
         self.startDate = startDate
         self.endDate = endDate
         

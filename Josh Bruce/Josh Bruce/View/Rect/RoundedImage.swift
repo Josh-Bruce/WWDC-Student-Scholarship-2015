@@ -1,5 +1,5 @@
 //
-//  RoundedRect.swift
+//  RoundedImage.swift
 //  Josh Bruce
 //
 //  Created by Josh Bruce on 16/04/2015.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-@IBDesignable class RoundedRect: UIView {
-
+@IBDesignable class RoundedImage: UIImageView {
+   
     // MARK: Properties
     
     @IBInspectable var cornerRadius: Double = 4.0 {
@@ -52,5 +52,5 @@ import UIKit
         layer.masksToBounds = true
         clipsToBounds = true
     }
-
+    
 }

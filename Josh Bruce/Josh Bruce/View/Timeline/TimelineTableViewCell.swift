@@ -14,11 +14,26 @@ class TimelineTableViewCell: UITableViewCell {
     
     @IBOutlet weak var timelineUpper: RoundedRect!
     @IBOutlet weak var iconView: UIView!
-    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var iconImageView: RoundedImage!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var timelineLower: UIView!
+    
+    // MARK: Properties
+    
+    var iconImage: UIImage? {
+        didSet {
+            if iconImage != nil {
+                iconImageView.image = iconImage
+                iconImageView.hidden = false
+                iconView.hidden = true
+            } else {
+                iconImageView.hidden = true
+                iconView.hidden = false
+            }
+        }
+    }
     
     // MARK: Init
 
