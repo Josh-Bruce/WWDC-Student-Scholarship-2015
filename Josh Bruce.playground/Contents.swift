@@ -69,3 +69,33 @@ for x in a {
         println(work)
     }
 }
+
+
+
+protocol Animal {
+    
+    var legs: Int { get set }
+    var domesticated: Bool { get }
+    
+    func hasFur() -> String
+    
+    func countLegs() -> String
+    
+}
+
+class Dog: Animal {
+    var legs = 4
+    let domesticated = true
+    
+    func hasFur() -> String {
+        return "The dog is furry"
+    }
+    
+    func countLegs() -> String {
+        return "The dog has \(legs) legs"
+    }
+    
+}
+
+let dog = Dog()
+dog.legs = 2

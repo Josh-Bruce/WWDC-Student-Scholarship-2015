@@ -20,6 +20,8 @@ class TimelineTableViewController: UITableViewController {
         "Screen Smart Cover until now love screen change milestone instant. Hi-res new A8 chip teraflops Jony bigger Apple Downloads AirPlay. Better Apple Watch Mavericks flat screen. iPhone application iPad Mini $399. Pixels personality 8X faster $699 better A8X screen Air 5mm variety. iCloud translucent App Store love. Hi-def remote lock App Store love camera pixel 6000+ songs in the world. Hi-res translucent one touch flat iCloud iBooks 3X faster impossible. iTunes performance Apple Pay flat iBooks. Upshot Smart Cover iPad Mini thin. iCloud Apple Watch milestone iCal design Tim Air focus. Finder touchscreen 3X faster iPad iCloud Finder Steve. Design translucent milestone thin change 1080p. iCloud 6000+ songs Apple Pay zoom Finder Craig $249."
     ]
     
+    var timeline = [WWDCCategoryProtocol]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +33,12 @@ class TimelineTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        var project = Project(title: "Swiftcasts", body: "Swiftcasts is currently being built and will become an incredible resource for Swift and iOS developers with up-to-date screencasts. Arregating a wealth of knowledge and building a fantastic community.", startDate: NSDate(), endDate: nil)
+        timeline.append(project)
+        var education = Education(title: "Plymouth University", body: "Plymouth University has been an amazing adventure for Josh, giving him the best chance to go far in his career and support him every step of the way. Notably sponsoring his successful Scholarship to WWDC 2014.\n\nJosh is studying Computer Science and is due to graduate in 2016.", startDate: NSDate(), endDate: NSDate())
+        timeline.append(education)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,7 +54,7 @@ class TimelineTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 20
+        return timeline.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -56,8 +64,12 @@ class TimelineTableViewController: UITableViewController {
         let index = Int(arc4random_uniform(UInt32(colors.count)))
         let descIndex = Int(arc4random_uniform(UInt32(texts.count)))
 
-        cell.iconView.backgroundColor = colors[index]
-        cell.descriptionLabel.text = texts[descIndex]
+        let object = timeline[indexPath.row]
+        
+        cell.iconView.backgroundColor = object.category.color
+        cell.titleLabel.text = object.title
+        cell.descriptionLabel.text = object.body
+        cell.dateLabel.text = "\(object.formattedStartDate()) - \(object.formattedEndDate())"
         
         return cell
     }
