@@ -21,6 +21,12 @@ import QuartzCore
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
+        drawCircle()
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        drawCircle()
     }
     
     // MARK: Drawing

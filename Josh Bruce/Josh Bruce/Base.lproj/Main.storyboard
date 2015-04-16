@@ -32,7 +32,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jos-bruce" translatesAutoresizingMaskIntoConstraints="NO" id="yMZ-4b-vNR" customClass="CircleImage" customModule="Josh_Bruce" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="josh-bruce" translatesAutoresizingMaskIntoConstraints="NO" id="yMZ-4b-vNR" customClass="CircleImage" customModule="Josh_Bruce" customModuleProvider="target">
                                 <rect key="frame" x="190" y="150" width="220" height="220"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WWDC Student Scholarship 2015" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjH-0c-dGv">
@@ -89,7 +89,7 @@
     <resources>
         <image name="education-icon" width="40" height="24"/>
         <image name="interests-icon" width="29" height="29"/>
-        <image name="jos-bruce" width="220" height="220"/>
+        <image name="josh-bruce" width="220" height="220"/>
         <image name="projects-icon" width="29" height="28"/>
         <image name="swift-icon" width="34" height="29"/>
         <image name="work-icon" width="32" height="32"/>
