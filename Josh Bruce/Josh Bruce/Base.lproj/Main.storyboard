@@ -194,13 +194,6 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9S-Gw-39b" userLabel="Description">
-                                            <rect key="frame" x="90" y="45" width="502" height="101"/>
-                                            <string key="text">Unlock application iPhone 6+ $299 pixels Pages. Retina personality beautiful iMac iPhone did 5mm. Change Apple Watch 3X faster best retina SSD pixels. Design performance brilliant $249 hi-def SSD iBooks AMD. Upshot Smart Cover HealthKit $399 change. Design personality teraflops most change Finder cellular milestone. Hi-res Apple Store milestone iCal Finder iCloud Apple iPad 1080p. Selfie translucent Downloads $799 Finder Tim SSD.</string>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuD-f7-MPb" userLabel="Timeline Lower">
                                             <rect key="frame" x="44" y="78" width="2" height="76"/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -208,6 +201,12 @@
                                                 <constraint firstAttribute="width" constant="2" id="Qyq-T2-meC"/>
                                             </constraints>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9S-Gw-39b" userLabel="Description">
+                                            <rect key="frame" x="90" y="45" width="502" height="101"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Rw1-vf-PVd" firstAttribute="top" secondItem="Ho1-7n-Yy2" secondAttribute="bottom" constant="8" id="4tN-Pp-R0S"/>
@@ -241,6 +240,7 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dateLabel" destination="4DC-KN-gtx" id="2bS-uD-yol"/>
                                     <outlet property="descriptionLabel" destination="z9S-Gw-39b" id="8tu-Nf-onb"/>

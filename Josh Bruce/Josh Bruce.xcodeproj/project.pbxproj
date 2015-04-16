@@ -20,6 +20,7 @@
 		20A64EF71ADFFA1F00689C77 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EF61ADFFA1F00689C77 /* TimelineTableViewCell.swift */; };
 		20A64EFB1ADFFBD000689C77 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */; };
 		20A64EFE1ADFFDD400689C77 /* RoundedRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EFD1ADFFDD400689C77 /* RoundedRect.swift */; };
+		20A64F001AE00DCB00689C77 /* WWDCCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EFF1AE00DCB00689C77 /* WWDCCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		20A64EF61ADFFA1F00689C77 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		20A64EFD1ADFFDD400689C77 /* RoundedRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedRect.swift; sourceTree = "<group>"; };
+		20A64EFF1AE00DCB00689C77 /* WWDCCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		20A64EE21ADFAC2F00689C77 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				20A64EFF1AE00DCB00689C77 /* WWDCCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20A64F001AE00DCB00689C77 /* WWDCCategory.swift in Sources */,
 				20A64EF71ADFFA1F00689C77 /* TimelineTableViewCell.swift in Sources */,
 				20A64EF01ADFC25D00689C77 /* CircleButton.swift in Sources */,
 				20A64EFE1ADFFDD400689C77 /* RoundedRect.swift in Sources */,
