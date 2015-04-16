@@ -12,7 +12,7 @@ class TimelineTableViewController: UITableViewController {
 
     // MARK: Lifecycle
     
-    let colors = [UIColor.blackColor(), UIColor.redColor(), UIColor.greenColor(), UIColor.orangeColor(), UIColor.purpleColor()]
+    let colors = [Constant.Colors.PinkColor, Constant.Colors.OrangeColor, Constant.Colors.BlueColor, Constant.Colors.GreenColor, Constant.Colors.YellowColor]
     
     override func viewDidLoad() {
         super.viewDidLoad()
