@@ -12,13 +12,14 @@ import UIKit
     ENUM for the categories that are required to be mentioned withing
     the scholarship application
 
+    - None:             The default option for the superclass and should not be used
     - Projects:         The development projects that I have worked
     - Education:        My education background, what I study
     - Work:             My work background, people I have worked for and internships
     - TechnicalSkills:  The technical skills that I have, Swift :)
     - Interests:        Any additional interests that I have
 */
-enum WWDCCategoryType {
+enum WWDCCategoryType : Int {
     case None, Projects, Education, Work, TechnicalSkills, Interests
     
     /// The color to be used for the WWDCCategory
@@ -83,7 +84,10 @@ protocol WWDCCategoryProtocol {
     
 }
 
-/// WWDCCategory is the base class for all categories and will implement most methods
+/**
+    WWDCCategory is the base class for all categories and 
+    will implement most of the methods
+*/
 class WWDCCategory : NSObject, WWDCCategoryProtocol {
     
     // MARK: Properties

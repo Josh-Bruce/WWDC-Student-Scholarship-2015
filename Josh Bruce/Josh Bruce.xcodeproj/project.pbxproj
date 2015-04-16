@@ -27,6 +27,9 @@
 		20A64F0A1AE026E200689C77 /* TechnicalSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F091AE026E200689C77 /* TechnicalSkill.swift */; };
 		20A64F0C1AE026FC00689C77 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F0B1AE026FC00689C77 /* Interest.swift */; };
 		20A64F0E1AE02BDE00689C77 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F0D1AE02BDE00689C77 /* RoundedImage.swift */; };
+		20A64F101AE031E200689C77 /* ScholarshipDataModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20A64F0F1AE031E200689C77 /* ScholarshipDataModel.plist */; };
+		20A64F121AE060FF00689C77 /* WWDCModelImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F111AE060FF00689C77 /* WWDCModelImporter.swift */; };
+		20A64F141AE061F700689C77 /* WWDCModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F131AE061F700689C77 /* WWDCModelFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		20A64F091AE026E200689C77 /* TechnicalSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnicalSkill.swift; sourceTree = "<group>"; };
 		20A64F0B1AE026FC00689C77 /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		20A64F0D1AE02BDE00689C77 /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		20A64F0F1AE031E200689C77 /* ScholarshipDataModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ScholarshipDataModel.plist; sourceTree = "<group>"; };
+		20A64F111AE060FF00689C77 /* WWDCModelImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelImporter.swift; sourceTree = "<group>"; };
+		20A64F131AE061F700689C77 /* WWDCModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,9 @@
 				20A64F051AE026B600689C77 /* Work.swift */,
 				20A64F091AE026E200689C77 /* TechnicalSkill.swift */,
 				20A64F0B1AE026FC00689C77 /* Interest.swift */,
+				20A64F0F1AE031E200689C77 /* ScholarshipDataModel.plist */,
+				20A64F111AE060FF00689C77 /* WWDCModelImporter.swift */,
+				20A64F131AE061F700689C77 /* WWDCModelFactory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,6 +319,7 @@
 				20A64EC81ADFABCB00689C77 /* Main.storyboard in Resources */,
 				20A64ECD1ADFABCB00689C77 /* LaunchScreen.xib in Resources */,
 				20A64ECA1ADFABCB00689C77 /* Images.xcassets in Resources */,
+				20A64F101AE031E200689C77 /* ScholarshipDataModel.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +344,9 @@
 				20A64F041AE0257400689C77 /* Education.swift in Sources */,
 				20A64EF01ADFC25D00689C77 /* CircleButton.swift in Sources */,
 				20A64EFE1ADFFDD400689C77 /* RoundedRect.swift in Sources */,
+				20A64F141AE061F700689C77 /* WWDCModelFactory.swift in Sources */,
 				20A64EC31ADFABCB00689C77 /* AppDelegate.swift in Sources */,
+				20A64F121AE060FF00689C77 /* WWDCModelImporter.swift in Sources */,
 				20A64EE91ADFB30A00689C77 /* Constant.swift in Sources */,
 				20A64EEB1ADFB87400689C77 /* BaseViewController.swift in Sources */,
 				20A64F0C1AE026FC00689C77 /* Interest.swift in Sources */,

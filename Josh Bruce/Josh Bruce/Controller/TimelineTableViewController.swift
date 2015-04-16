@@ -34,11 +34,12 @@ class TimelineTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        var project = Project(title: "Swiftcasts", body: "Swiftcasts is currently being built and will become an incredible resource for Swift and iOS developers with up-to-date screencasts. Arregating a wealth of knowledge and building a fantastic community.", image: UIImage(named: "josh-bruce"), startDate: NSDate(), endDate: nil)
-        timeline.append(project)
-        var education = Education(title: "Plymouth University", body: "Plymouth University has been an amazing adventure for Josh, giving him the best chance to go far in his career and support him every step of the way. Notably sponsoring his successful Scholarship to WWDC 2014.\n\nJosh is studying Computer Science and is due to graduate in 2016.", image: nil, startDate: NSDate(), endDate: NSDate())
-        timeline.append(education)
-        
+        // Import data
+        let importer = WWDCModelImporter(fileName: "ScholarshipDataModel")
+        if let results = importer.parseModel() {
+            WWDCModelFactory.sharedInstance().parseModel(results)
+            timeline = WWDCModelFactory.sharedInstance().modelArray
+        }
     }
 
     override func didReceiveMemoryWarning() {

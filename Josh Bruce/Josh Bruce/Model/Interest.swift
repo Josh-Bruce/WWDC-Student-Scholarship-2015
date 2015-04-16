@@ -15,7 +15,7 @@ class Interest : WWDCCategory {
     init(title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate?) {
         super.init(category: .Interests, title: title, body: body, image: image, startDate: startDate, endDate: endDate)
         
-        // Set any clas specific properties
+        // Set any class specific properties
     }
     
 }
