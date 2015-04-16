@@ -17,6 +17,9 @@
 		20A64EF01ADFC25D00689C77 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EEF1ADFC25D00689C77 /* CircleButton.swift */; };
 		20A64EF21ADFC48A00689C77 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EF11ADFC48A00689C77 /* Color.swift */; };
 		20A64EF41ADFCFCD00689C77 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EF31ADFCFCD00689C77 /* CircleImage.swift */; };
+		20A64EF71ADFFA1F00689C77 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EF61ADFFA1F00689C77 /* TimelineTableViewCell.swift */; };
+		20A64EFB1ADFFBD000689C77 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */; };
+		20A64EFE1ADFFDD400689C77 /* RoundedRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EFD1ADFFDD400689C77 /* RoundedRect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		20A64EEF1ADFC25D00689C77 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		20A64EF11ADFC48A00689C77 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		20A64EF31ADFCFCD00689C77 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		20A64EF61ADFFA1F00689C77 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		20A64EFD1ADFFDD400689C77 /* RoundedRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedRect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				20A64EEC1ADFBB0400689C77 /* Circle */,
+				20A64EFC1ADFFD9C00689C77 /* Rect */,
+				20A64EF51ADFF9F400689C77 /* Timeline */,
 				20A64EC61ADFABCB00689C77 /* Main.storyboard */,
 				20A64EC91ADFABCB00689C77 /* Images.xcassets */,
 				20A64ECB1ADFABCB00689C77 /* LaunchScreen.xib */,
@@ -144,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				20A64EEA1ADFB87400689C77 /* BaseViewController.swift */,
+				20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +187,22 @@
 				20A64EF31ADFCFCD00689C77 /* CircleImage.swift */,
 			);
 			path = Circle;
+			sourceTree = "<group>";
+		};
+		20A64EF51ADFF9F400689C77 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				20A64EF61ADFFA1F00689C77 /* TimelineTableViewCell.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		20A64EFC1ADFFD9C00689C77 /* Rect */ = {
+			isa = PBXGroup;
+			children = (
+				20A64EFD1ADFFDD400689C77 /* RoundedRect.swift */,
+			);
+			path = Rect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,11 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20A64EF71ADFFA1F00689C77 /* TimelineTableViewCell.swift in Sources */,
 				20A64EF01ADFC25D00689C77 /* CircleButton.swift in Sources */,
+				20A64EFE1ADFFDD400689C77 /* RoundedRect.swift in Sources */,
 				20A64EC31ADFABCB00689C77 /* AppDelegate.swift in Sources */,
 				20A64EE91ADFB30A00689C77 /* Constant.swift in Sources */,
 				20A64EEB1ADFB87400689C77 /* BaseViewController.swift in Sources */,
 				20A64EF21ADFC48A00689C77 /* Color.swift in Sources */,
+				20A64EFB1ADFFBD000689C77 /* TimelineTableViewController.swift in Sources */,
 				20A64EF41ADFCFCD00689C77 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +514,7 @@
 				20A64EDE1ADFABCB00689C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20A64EDF1ADFABCB00689C77 /* Build configuration list for PBXNativeTarget "Josh BruceTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +523,7 @@
 				20A64EE11ADFABCB00689C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
