@@ -17,9 +17,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyl-6S-mjZ" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="16" y="516" width="64" height="64"/>
+                                <rect key="frame" x="124" y="269" width="64" height="64"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="countour">
+                                <state key="normal" image="education-icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMZ-ZX-rsI" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="196" y="269" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.74901960784313726" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="swift-icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAW-ax-ox4" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="268" y="267" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.87450980392156863" green="0.24313725490196078" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="work-icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOS-jT-voJ" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="340" y="267" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.43529411764705883" green="0.86274509803921573" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="projects-icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rx-lv-dLy" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="412" y="267" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.24313725490196078" green="0.26666666666666666" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="interests-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -53,6 +81,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="countour" width="34" height="29"/>
+        <image name="education-icon" width="40" height="24"/>
+        <image name="interests-icon" width="29" height="29"/>
+        <image name="projects-icon" width="29" height="28"/>
+        <image name="swift-icon" width="34" height="29"/>
+        <image name="work-icon" width="32" height="32"/>
     </resources>
 </document>
