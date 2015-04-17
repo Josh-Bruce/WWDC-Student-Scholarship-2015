@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207CA5E31AE1239F00399C27 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */; };
 		20A64EC31ADFABCB00689C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EC21ADFABCB00689C77 /* AppDelegate.swift */; };
 		20A64EC81ADFABCB00689C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A64EC61ADFABCB00689C77 /* Main.storyboard */; };
 		20A64ECA1ADFABCB00689C77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A64EC91ADFABCB00689C77 /* Images.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		20A64EBD1ADFABCA00689C77 /* Josh Bruce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Josh Bruce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A64EC11ADFABCB00689C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20A64EC21ADFABCB00689C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				20A64EEA1ADFB87400689C77 /* BaseViewController.swift */,
 				20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */,
+				207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				20A64EFB1ADFFBD000689C77 /* TimelineTableViewController.swift in Sources */,
 				20A64EF41ADFCFCD00689C77 /* CircleImage.swift in Sources */,
 				20A64F0A1AE026E200689C77 /* TechnicalSkill.swift in Sources */,
+				207CA5E31AE1239F00399C27 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
