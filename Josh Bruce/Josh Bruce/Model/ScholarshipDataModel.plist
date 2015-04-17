@@ -11,8 +11,6 @@
 		<string>Swiftcasts</string>
 		<key>body</key>
 		<string>Swiftcasts is currently being built and will hopefully become an incredibly useful resource for Swift and iOS developers. Providing up-to-date screencasts on the latest technologies and updates. Arregating a wealth of knowledge and building a fantastic community.</string>
-		<key>imageName</key>
-		<string>projects-icon</string>
 		<key>startDate</key>
 		<date>2014-09-01T08:00:00Z</date>
 	</dict>

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="x9L-cP-nEp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -61,7 +62,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyl-6S-mjZ" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="124" y="480" width="64" height="64"/>
+                                <rect key="frame" x="16" y="419" width="64" height="64"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="education-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,30 +72,40 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMZ-ZX-rsI" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="196" y="480" width="64" height="64"/>
+                                <rect key="frame" x="88" y="419" width="64" height="64"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.74901960784313726" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="swift-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAW-ax-ox4" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="268" y="478" width="64" height="64"/>
+                                <rect key="frame" x="160" y="419" width="64" height="64"/>
                                 <color key="backgroundColor" red="0.87450980392156863" green="0.24313725490196078" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="work-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOS-jT-voJ" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="340" y="478" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.43529411764705883" green="0.86274509803921573" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="projects-icon">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rx-lv-dLy" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="88" y="491" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.24313725490196078" green="0.26666666666666666" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="interests-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rx-lv-dLy" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="412" y="478" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.24313725490196078" green="0.26666666666666666" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="interests-icon">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1D-Np-7qD" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="160" y="491" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="timeline-icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vlZ-1a-mgr" kind="show" identifier="showTimeline" id="FeT-72-ELX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOS-jT-voJ" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="16" y="491" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.43529411764705883" green="0.86274509803921573" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="projects-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -176,7 +187,7 @@
                         </connections>
                     </collectionView>
                     <connections>
-                        <segue destination="prg-qL-O5q" kind="presentation" identifier="showCategoryDetail" id="oXv-Oi-HeP"/>
+                        <segue destination="prg-qL-O5q" kind="presentation" identifier="showCategoryDetail" modalPresentationStyle="overCurrentContext" id="oXv-Oi-HeP"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CM-Ej-Wiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -375,7 +386,7 @@
         <!--Item View Controller-->
         <scene sceneID="LwD-i3-zIC">
             <objects>
-                <viewController title="Item View Controller" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overCurrentContext" id="zVf-it-Ul3" sceneMemberID="viewController">
+                <viewController title="Item View Controller" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overCurrentContext" id="zVf-it-Ul3" customClass="ItemViewController" customModule="Josh_Bruce" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iAg-Fe-aUp"/>
                         <viewControllerLayoutGuide type="bottom" id="mLD-56-10J"/>
@@ -412,10 +423,21 @@
                                     <constraint firstItem="gkn-g0-C0S" firstAttribute="top" secondItem="kzQ-d3-65s" secondAttribute="top" id="nZ6-Bp-zoJ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyL-QL-asz">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyL-QL-asz" userLabel="Color View">
                                 <rect key="frame" x="0.0" y="0.0" width="520" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="josh-bruce" translatesAutoresizingMaskIntoConstraints="NO" id="EFm-bQ-wEi" userLabel="Logo Image View">
+                                        <rect key="frame" x="200" y="10" width="120" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="cAg-wf-lSw"/>
+                                            <constraint firstAttribute="width" secondItem="EFm-bQ-wEi" secondAttribute="height" multiplier="3:2" id="y07-7B-GhV"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.74901960779999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="EFm-bQ-wEi" secondAttribute="centerY" id="1rT-DV-dkY"/>
+                                    <constraint firstAttribute="centerX" secondItem="EFm-bQ-wEi" secondAttribute="centerX" id="aVa-iu-odg"/>
                                     <constraint firstAttribute="height" constant="100" id="rvJ-2a-IYA"/>
                                 </constraints>
                             </view>
@@ -432,6 +454,10 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="colorView" destination="yyL-QL-asz" id="T8b-li-22q"/>
+                        <outlet property="logoImageView" destination="EFm-bQ-wEi" id="fee-Vu-9Fv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBU-JV-WE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -446,6 +472,7 @@
         <image name="josh-bruce" width="220" height="220"/>
         <image name="projects-icon" width="29" height="28"/>
         <image name="swift-icon" width="34" height="29"/>
+        <image name="timeline-icon" width="26" height="26"/>
         <image name="work-icon" width="32" height="32"/>
     </resources>
 </document>

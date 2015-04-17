@@ -87,12 +87,16 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
     // MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+        // Check segue and destination
+        if segue.identifier == "showCategoryDetail" {
+            if let dvc = segue.destinationViewController as? UIViewController {
+                
+            }
+        }
     }
     
     // MARK: - Status Bar
     
-    // Ensure all view controllers that inherit from base have .LightContent style bar
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
