@@ -31,7 +31,7 @@ class TimelineTableViewController: UITableViewController {
         // Import data
         timeline = WWDCModelFactory.sharedInstance().wwdcCategories
         // Sort by date order (latest ending at the top)
-        timeline.sort({ $0.endDate.compare($1.endDate) == NSComparisonResult.OrderedDescending })
+        timeline.sort { $0.endDate.compare($1.endDate) == NSComparisonResult.OrderedDescending }
     }
 
     override func didReceiveMemoryWarning() {

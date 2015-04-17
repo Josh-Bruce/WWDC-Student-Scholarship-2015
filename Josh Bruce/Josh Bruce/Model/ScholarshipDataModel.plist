@@ -3,20 +3,6 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>endDate</key>
-		<date>2015-01-01T09:00:00Z</date>
-		<key>category</key>
-		<integer>1</integer>
-		<key>title</key>
-		<string>Something</string>
-		<key>body</key>
-		<string>Swiftcasts is currently being built and will become an incredible resource for Swift and iOS developers with up-to-date screencasts. Arregating a wealth of knowledge and building a fantastic community.</string>
-		<key>imageName</key>
-		<string>josh-bruce</string>
-		<key>startDate</key>
-		<date>2014-09-01T08:00:00Z</date>
-	</dict>
-	<dict>
 		<key>skillPercentage</key>
 		<real>80</real>
 		<key>category</key>
