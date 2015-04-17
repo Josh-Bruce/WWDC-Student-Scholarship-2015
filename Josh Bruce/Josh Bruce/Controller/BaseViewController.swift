@@ -10,6 +10,8 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -17,6 +19,8 @@ class BaseViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    // MARK: - Status Bar
     
     // Ensure all view controllers that inherit from base have .LightContent style bar
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

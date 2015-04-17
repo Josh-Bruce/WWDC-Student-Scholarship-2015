@@ -56,4 +56,11 @@ struct Constant {
         
     }
     
+    /**
+        Segue struct to hold all the segue strings used within the storyboard
+    */
+    struct Segues {
+        
+    }
+    
 }

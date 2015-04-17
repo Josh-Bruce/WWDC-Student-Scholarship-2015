@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mrx-Ze-toG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="x9L-cP-nEp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -114,7 +114,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="129-Ye-eZ7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.24313725490196078" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="0.0"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3zi-ul-g1y">
                             <size key="itemSize" width="280" height="100"/>
@@ -195,6 +195,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSc-J7-LbG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QQW-05-hhw">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXP-Dr-JIi">
                                 <rect key="frame" x="40" y="80" width="520" height="440"/>
                                 <connections>
@@ -215,13 +223,17 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8LX-4a-2an" firstAttribute="top" secondItem="rtw-vu-Wuh" secondAttribute="bottom" constant="20" id="0j7-Ja-mCa"/>
                             <constraint firstItem="rtw-vu-Wuh" firstAttribute="top" secondItem="cHR-VG-CXg" secondAttribute="bottom" constant="8" id="6dY-1Y-K9P"/>
+                            <constraint firstItem="sSc-J7-LbG" firstAttribute="top" secondItem="wp4-XQ-MMD" secondAttribute="top" id="7qq-iD-Ce2"/>
                             <constraint firstItem="CXP-Dr-JIi" firstAttribute="leading" secondItem="wp4-XQ-MMD" secondAttribute="leading" constant="40" id="A1X-uf-uMg"/>
+                            <constraint firstItem="8LX-4a-2an" firstAttribute="top" secondItem="sSc-J7-LbG" secondAttribute="bottom" id="TOT-ot-2ux"/>
                             <constraint firstItem="CXP-Dr-JIi" firstAttribute="top" secondItem="wp4-XQ-MMD" secondAttribute="top" constant="80" id="ckr-EG-mJl"/>
                             <constraint firstItem="8LX-4a-2an" firstAttribute="top" secondItem="CXP-Dr-JIi" secondAttribute="bottom" constant="80" id="doD-e3-vpV"/>
+                            <constraint firstAttribute="trailing" secondItem="sSc-J7-LbG" secondAttribute="trailing" id="fxF-ml-pkv"/>
+                            <constraint firstItem="sSc-J7-LbG" firstAttribute="leading" secondItem="wp4-XQ-MMD" secondAttribute="leading" id="hjb-gu-l5L"/>
                             <constraint firstAttribute="trailing" secondItem="CXP-Dr-JIi" secondAttribute="trailing" constant="40" id="l8B-Qb-CcH"/>
                             <constraint firstAttribute="centerX" secondItem="rtw-vu-Wuh" secondAttribute="centerX" id="tJU-ml-P2v"/>
                             <constraint firstAttribute="centerX" secondItem="cHR-VG-CXg" secondAttribute="centerX" id="wc8-PL-2Ox"/>
@@ -239,7 +251,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="154" sectionHeaderHeight="22" sectionFooterHeight="22" id="LFh-57-VzT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="timelineItemCell" rowHeight="154" id="9ed-9e-fLv" customClass="TimelineTableViewCell" customModule="Josh_Bruce" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -338,7 +350,7 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dateLabel" destination="4DC-KN-gtx" id="2bS-uD-yol"/>
                                     <outlet property="descriptionLabel" destination="z9S-Gw-39b" id="8tu-Nf-onb"/>
@@ -376,52 +388,47 @@
                                 <rect key="frame" x="0.0" y="100" width="520" height="340"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SO4-hg-421" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                        <rect key="frame" x="228" y="256" width="64" height="64"/>
+                                        <rect key="frame" x="235" y="274" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.95294117649999999" green="0.74901960779999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="64" id="2i9-mU-fzr"/>
-                                            <constraint firstAttribute="height" constant="64" id="QWY-WA-gQC"/>
+                                            <constraint firstAttribute="width" constant="50" id="2i9-mU-fzr"/>
+                                            <constraint firstAttribute="height" constant="50" id="QWY-WA-gQC"/>
                                         </constraints>
                                         <state key="normal" image="close-icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkn-g0-C0S">
-                                        <rect key="frame" x="0.0" y="0.0" width="520" height="236"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="520" height="258"/>
                                     </scrollView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="gkn-g0-C0S" firstAttribute="leading" secondItem="kzQ-d3-65s" secondAttribute="leading" id="T0S-5V-Lmj"/>
-                                    <constraint firstAttribute="bottom" secondItem="SO4-hg-421" secondAttribute="bottom" constant="20" id="WxL-Cl-Yee"/>
-                                    <constraint firstItem="SO4-hg-421" firstAttribute="top" secondItem="gkn-g0-C0S" secondAttribute="bottom" constant="20" id="ZIE-Qm-Tp9"/>
+                                    <constraint firstAttribute="bottom" secondItem="SO4-hg-421" secondAttribute="bottom" constant="16" id="WxL-Cl-Yee"/>
+                                    <constraint firstItem="SO4-hg-421" firstAttribute="top" secondItem="gkn-g0-C0S" secondAttribute="bottom" constant="16" id="ZIE-Qm-Tp9"/>
                                     <constraint firstAttribute="centerX" secondItem="SO4-hg-421" secondAttribute="centerX" id="eiP-XZ-Sh3"/>
                                     <constraint firstAttribute="trailing" secondItem="gkn-g0-C0S" secondAttribute="trailing" id="hQS-2U-lOH"/>
                                     <constraint firstItem="gkn-g0-C0S" firstAttribute="top" secondItem="kzQ-d3-65s" secondAttribute="top" id="nZ6-Bp-zoJ"/>
                                 </constraints>
                             </view>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSX-Lb-gDr">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyL-QL-asz">
                                 <rect key="frame" x="0.0" y="0.0" width="520" height="100"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Mtx-EB-jD4">
-                                    <rect key="frame" x="0.0" y="0.0" width="520" height="100"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.74901960779999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="bH3-TT-NKD"/>
+                                    <constraint firstAttribute="height" constant="100" id="rvJ-2a-IYA"/>
                                 </constraints>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kzQ-d3-65s" firstAttribute="leading" secondItem="Udl-hT-miz" secondAttribute="leading" id="1df-Iq-Mxf"/>
                             <constraint firstAttribute="trailing" secondItem="kzQ-d3-65s" secondAttribute="trailing" id="9bX-AC-yIh"/>
-                            <constraint firstItem="hSX-Lb-gDr" firstAttribute="leading" secondItem="Udl-hT-miz" secondAttribute="leading" id="H8a-jA-Uo6"/>
+                            <constraint firstItem="kzQ-d3-65s" firstAttribute="top" secondItem="yyL-QL-asz" secondAttribute="bottom" id="EGZ-62-9ND"/>
+                            <constraint firstItem="yyL-QL-asz" firstAttribute="leading" secondItem="Udl-hT-miz" secondAttribute="leading" id="GMd-fL-YVr"/>
+                            <constraint firstAttribute="trailing" secondItem="yyL-QL-asz" secondAttribute="trailing" id="JKi-l5-4pu"/>
                             <constraint firstItem="mLD-56-10J" firstAttribute="top" secondItem="kzQ-d3-65s" secondAttribute="bottom" id="LB2-iS-AeF"/>
-                            <constraint firstItem="hSX-Lb-gDr" firstAttribute="top" secondItem="iAg-Fe-aUp" secondAttribute="bottom" id="SN3-hV-4iP"/>
-                            <constraint firstItem="kzQ-d3-65s" firstAttribute="top" secondItem="hSX-Lb-gDr" secondAttribute="bottom" id="kbW-Ly-KMW"/>
-                            <constraint firstAttribute="trailing" secondItem="hSX-Lb-gDr" secondAttribute="trailing" id="pgV-kQ-M4t"/>
-                            <constraint firstItem="kzQ-d3-65s" firstAttribute="top" secondItem="hSX-Lb-gDr" secondAttribute="bottom" id="tfb-SR-lhy"/>
+                            <constraint firstItem="yyL-QL-asz" firstAttribute="top" secondItem="iAg-Fe-aUp" secondAttribute="bottom" id="TXr-Y4-5oW"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -432,7 +439,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="close-icon" width="30" height="30"/>
+        <image name="close-icon" width="20" height="20"/>
         <image name="down-arrow" width="30" height="16"/>
         <image name="education-icon" width="40" height="24"/>
         <image name="interests-icon" width="29" height="29"/>

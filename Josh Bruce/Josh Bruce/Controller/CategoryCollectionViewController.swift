@@ -26,7 +26,7 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         // Uncomment the following line to preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
 
-        // Do any additional setup after loading the view.
+        // Get data
         collection = WWDCModelFactory.sharedInstance().itemsForCategory(categoryType)
     }
 
@@ -68,13 +68,14 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         // Calculate the width of the device
         let width = collectionView.bounds.width
+        let height = CGFloat(100.0)
         let leftPadding = 10.0
         let rightPadding = 10.0
         // Calculate the width for a two column layout
         let cellWidth = (width / 2) - CGFloat(leftPadding + (rightPadding / 2))
         
         // Return the cell size
-        return CGSizeMake(cellWidth, 100)
+        return CGSizeMake(cellWidth, height)
     }
 
     // MARK: - UICollectionViewDelegate
@@ -83,14 +84,17 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         performSegueWithIdentifier("showCategoryDetail", sender: self)
     }
     
-    /*
     // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+        
     }
-    */
+    
+    // MARK: - Status Bar
+    
+    // Ensure all view controllers that inherit from base have .LightContent style bar
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
 
 }

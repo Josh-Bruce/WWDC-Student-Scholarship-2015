@@ -19,16 +19,14 @@ class TimelineTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Automatic cell dimensions
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 160.0
         
         // Uncomment the following line to preserve selection between presentations
         clearsSelectionOnViewWillAppear = true
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        // Import data
+        // Get data
         timeline = WWDCModelFactory.sharedInstance().wwdcCategories
         // Sort by date order (latest ending at the top)
         timeline.sort { $0.endDate.compare($1.endDate) == NSComparisonResult.OrderedDescending }
@@ -65,14 +63,17 @@ class TimelineTableViewController: UITableViewController {
         return cell
     }
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        
     }
-    */
+    
+    // MARK: - Status Bar
+    
+    // Ensure all view controllers that inherit from base have .LightContent style bar
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
 
 }

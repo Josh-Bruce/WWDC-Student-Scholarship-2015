@@ -42,6 +42,7 @@ enum WWDCCategoryType : Int {
         }
     }
     
+    /// The icon image to be used for the WWDCCategory
     var icon: UIImage? {
         get {
             switch self {
