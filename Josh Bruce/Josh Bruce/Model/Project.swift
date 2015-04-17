@@ -12,7 +12,7 @@ class Project : WWDCCategory {
     
     // MARK: - Init
 
-    init(title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate?) {
+    init(title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate) {
         super.init(category: .Projects, title: title, body: body, image: image, startDate: startDate, endDate: endDate)
         
         // Set any class specific properties
@@ -25,7 +25,7 @@ class Project : WWDCCategory {
         let imageName = dictionary["imageName"] as? String
         let image = imageName != nil ? UIImage(named: imageName!) : nil
         let startDate = dictionary["startDate"] as? NSDate ?? NSDate()
-        let endDate = dictionary["endDate"] as? NSDate
+        let endDate = dictionary["endDate"] as? NSDate ?? NSDate()
 
         // Call super init
         super.init(category: .Projects, title: title, body: body, image: image, startDate: startDate, endDate: endDate)

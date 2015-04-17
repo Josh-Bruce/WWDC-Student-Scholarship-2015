@@ -64,8 +64,8 @@ protocol WWDCCategoryProtocol {
     /// The start date of when this entry satrted
     var startDate: NSDate { get set }
     
-    /// The end date which is optional of when this entry finished
-    var endDate: NSDate? { get set }
+    /// The end date which is 'optional' in a sense but will be set to today if not supplied
+    var endDate: NSDate { get set }
     
     /**
         Will produce a formatted string of the start date
@@ -102,13 +102,13 @@ class WWDCCategory : NSObject, WWDCCategoryProtocol {
     
     var startDate: NSDate = NSDate()
     
-    var endDate: NSDate?
+    var endDate: NSDate = NSDate()
     
     var dateFormatter: NSDateFormatter!
     
     // MARK: - Init
     
-    init(category: WWDCCategoryType, title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate?) {
+    init(category: WWDCCategoryType, title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate) {
         super.init()
         
         // Init properties
@@ -131,11 +131,11 @@ class WWDCCategory : NSObject, WWDCCategoryProtocol {
     }
     
     func formattedEndDate() -> String {
-        if let endDate = self.endDate {
-            return dateFormatter.stringFromDate(endDate)
+        if NSCalendar.currentCalendar().isDateInToday(endDate) {
+            return "Current"
         }
         
-        return "Current"
+        return dateFormatter.stringFromDate(endDate)
     }
     
 }

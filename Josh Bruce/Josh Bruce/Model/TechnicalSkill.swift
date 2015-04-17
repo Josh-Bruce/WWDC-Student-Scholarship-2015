@@ -17,7 +17,7 @@ class TechnicalSkill : WWDCCategory {
     
     // MARK: - Init
     
-    init(title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate?) {
+    init(title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate) {
         super.init(category: .TechnicalSkills, title: title, body: body, image: image, startDate: startDate, endDate: endDate)
         
         // Set any class specific properties
@@ -30,7 +30,7 @@ class TechnicalSkill : WWDCCategory {
         let imageName = dictionary["imageName"] as? String
         let image = imageName != nil ? UIImage(named: imageName!) : nil
         let startDate = dictionary["startDate"] as? NSDate ?? NSDate()
-        let endDate = dictionary["endDate"] as? NSDate
+        let endDate = dictionary["endDate"] as? NSDate ?? NSDate()
         let skillPercentage = dictionary["skillPercentage"] as? Double ?? 0.0
         
         // Call super init
