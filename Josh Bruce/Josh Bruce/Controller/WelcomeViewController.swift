@@ -13,5 +13,9 @@ class WelcomeViewController: BaseViewController {
     // MARK: - Outlets
     
     // MARK: - Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
    
 }
