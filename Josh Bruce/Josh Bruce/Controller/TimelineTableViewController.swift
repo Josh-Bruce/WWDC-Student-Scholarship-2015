@@ -11,15 +11,7 @@ import UIKit
 class TimelineTableViewController: UITableViewController {
 
     // MARK: Lifecycle
-    
-    let colors = [Constant.Colors.PinkColor, Constant.Colors.OrangeColor, Constant.Colors.BlueColor, Constant.Colors.GreenColor, Constant.Colors.YellowColor]
-    let texts = [
-        "Unlock application iPhone 6+ $299 pixels Pages. Retina personality beautiful iMac iPhone did 5mm. Change Apple Watch 3X faster best retina SSD pixels. Design performance brilliant $249 hi-def SSD iBooks AMD. Upshot Smart Cover HealthKit $399 change. Design personality teraflops most change Finder cellular milestone. Hi-res Apple Store milestone iCal Finder iCloud Apple iPad 1080p. Selfie translucent Downloads $799 Finder Tim SSD.",
-        "iPhone translucent one touch love selfie camera. Bigger Smart Cover. Selfie personality Apple Pay $699 iPhone Metal call. Hi-def fingerprint Downloads $399 hi-def bigger. iCloud touchscreen milestone love unlock Apple. Hi-res new A8 chip until now ever upshot hi-res. Finder touchscreen instantly call iTunes A8X AMD Pages iCloud. Hi-def Apple Watch beautiful best camera focus 8X faster. Hi-res fingerprint one touch most design. Unlock translucent milestone iPad iTunes unlock Metal Apple Watch battery life slo-mo.",
-        "Hi-def new A8 chip Cupertino $499 iTunes AMD iBooks updated. Retina translucent HealthKit best selfie Apple teraflops. Change power users Spotlight iMac slo-mo. Screen 6000+ songs iPad Mini $599 camera design. Pixels thunderbolt pinch-out iMac. Design touchscreen dark mode flat screen Metal 3X faster. Retina personality Mavericks iPad Finder Tim SSD flat contrast. Selfie new A8 chip Downloads $599 iBooks. Bigger Smart Cover milestone Siri design touch Apple Watch new features Finder.",
-        "Screen Smart Cover until now love screen change milestone instant. Hi-res new A8 chip teraflops Jony bigger Apple Downloads AirPlay. Better Apple Watch Mavericks flat screen. iPhone application iPad Mini $399. Pixels personality 8X faster $699 better A8X screen Air 5mm variety. iCloud translucent App Store love. Hi-def remote lock App Store love camera pixel 6000+ songs in the world. Hi-res translucent one touch flat iCloud iBooks 3X faster impossible. iTunes performance Apple Pay flat iBooks. Upshot Smart Cover iPad Mini thin. iCloud Apple Watch milestone iCal design Tim Air focus. Finder touchscreen 3X faster iPad iCloud Finder Steve. Design translucent milestone thin change 1080p. iCloud 6000+ songs Apple Pay zoom Finder Craig $249."
-    ]
-    
+
     var timeline = [WWDCCategoryProtocol]()
     
     override func viewDidLoad() {
@@ -35,13 +27,7 @@ class TimelineTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         // Import data
-        let importer = WWDCModelImporter(fileName: "ScholarshipDataModel")
-        if let results = importer.parseModel() {
-            WWDCModelFactory.sharedInstance().parseModel(results)
-            timeline = WWDCModelFactory.sharedInstance().wwdcCategories
-        }
-        
-        println(WWDCModelFactory.sharedInstance().wwdcCategories.first?.body)
+        timeline = WWDCModelFactory.sharedInstance().wwdcCategories
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,9 +50,6 @@ class TimelineTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("timelineItemCell", forIndexPath: indexPath) as! TimelineTableViewCell
 
         // Configure the cell...
-        let index = Int(arc4random_uniform(UInt32(colors.count)))
-        let descIndex = Int(arc4random_uniform(UInt32(texts.count)))
-
         let object = timeline[indexPath.row]
         
         cell.iconView.backgroundColor = object.category.color

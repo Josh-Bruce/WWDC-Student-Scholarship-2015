@@ -3,6 +3,18 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>skillPercentage</key>
+		<real>80</real>
+		<key>category</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>Swift</string>
+		<key>body</key>
+		<string></string>
+		<key>startDate</key>
+		<date>2014-06-02T10:00:00Z</date>
+	</dict>
+	<dict>
 		<key>endDate</key>
 		<date>2016-06-01T08:00:00Z</date>
 		<key>category</key>

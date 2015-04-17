@@ -58,7 +58,7 @@ class WWDCModelFactory {
             // Iterate over items
             for model in arrayOfDictionaries {
                 // Parse the category type
-                if let categoryInt = model.valueForKey("category") as? Int {
+                if let categoryInt = model["category"] as? Int {
                     if let categoryType = WWDCCategoryType(rawValue: categoryInt) {
                         // Create a model item
                         let modelItem = createModelForType(categoryType, model: model)
@@ -81,36 +81,28 @@ class WWDCModelFactory {
         // Model Item
         var wwdcCategory: WWDCCategoryProtocol!
         
-        // Parse properties
-        let title = model.valueForKey("title") as? String ?? "No title specified"
-        let body = model.valueForKey("body") as? String ?? "No body specified"
-        let imageName = model.valueForKey("imageName") as? String
-        let image = imageName != nil ? UIImage(named: imageName!) : nil
-        let startDate = model.valueForKey("startDate") as? NSDate ?? NSDate()
-        let endDate = model.valueForKey("endDate") as? NSDate
-        
         // Switch over the types
         switch type {
         case .None:
             break
         case .Projects:
-            let project = Project(title: title, body: body, image: image, startDate: startDate, endDate: endDate)
+            let project = Project(dictionary: model)
             wwdcCategory = project
             break
         case .Education:
-            let education = Education(title: title, body: body, image: image, startDate: startDate, endDate: endDate)
+            let education = Education(dictionary: model)
             wwdcCategory = education
             break
         case .Work:
-            let work = Work(title: title, body: body, image: image, startDate: startDate, endDate: endDate)
+            let work = Work(dictionary: model)
             wwdcCategory = work
             break
         case .TechnicalSkills:
-            let technicalSkill = TechnicalSkill(title: title, body: body, image: image, startDate: startDate, endDate: endDate)
+            let technicalSkill = TechnicalSkill(dictionary: model)
             wwdcCategory = technicalSkill
             break
         case .Interests:
-            let interest = Interest(title: title, body: body, image: image, startDate: startDate, endDate: endDate)
+            let interest = Interest(dictionary: model)
             wwdcCategory = interest
             break
         }

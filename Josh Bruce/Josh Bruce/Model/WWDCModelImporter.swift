@@ -17,7 +17,7 @@ class WWDCModelImporter {
     // MARK: Properties
     
     /// The filename to load the model data in from
-    var fileName: String!
+    private var fileName: String!
     
     /// The array of items from the plist file
     var arrayOfItems = NSArray()
@@ -27,6 +27,9 @@ class WWDCModelImporter {
     init(fileName: String) {
         // Set class properties
         self.fileName = fileName
+        
+        // Parse the model items
+        self.arrayOfItems = parseModel()
     }
     
     // MARK: Methods
@@ -36,7 +39,7 @@ class WWDCModelImporter {
     
         :returns:   NSArray of the items in the plist file
     */
-    func parseModel() -> NSArray? {
+    private func parseModel() -> NSArray {
         // Parse items from file
         if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "plist") {
             // Get an array from the file
@@ -50,7 +53,7 @@ class WWDCModelImporter {
         }
         
         // Return nil
-        return nil
+        return []
     }
     
 }
