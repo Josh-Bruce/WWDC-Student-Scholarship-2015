@@ -12,6 +12,7 @@ class TechnicalSkill : WWDCCategory {
     
     // MARK: Properties
     
+    /// The skill percentage that I reckon I have for this technical skill
     var skillPercentage: Double = 0.0
     
     // MARK: Init
