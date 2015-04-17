@@ -63,6 +63,34 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         return cell
     }
     
+    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        // View
+        var reusableView: UICollectionReusableView!
+        
+        // Check for header
+        if kind == UICollectionElementKindSectionHeader {
+            // Deque a header
+            let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "categoryHeader", forIndexPath: indexPath) as! CategoryHeaderCollectionReusableView
+            
+            // Set properties
+            headerView.titleLabel.text = categoryType.title
+            
+            // Set back on view
+            reusableView = headerView
+        }
+        
+        if kind  == UICollectionElementKindSectionFooter {
+            // Deque a header
+            let footerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "categoryFooter", forIndexPath: indexPath) as! UICollectionReusableView
+            
+            // Set back on view
+            reusableView = footerView
+        }
+        
+        // Return
+        return reusableView
+    }
+    
     // MARK: - UICollectionViewDelegateFlowLayout
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {

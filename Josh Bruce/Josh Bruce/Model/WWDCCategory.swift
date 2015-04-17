@@ -22,6 +22,26 @@ import UIKit
 enum WWDCCategoryType : Int {
     case None, Projects, Education, Work, TechnicalSkills, Interests
     
+    /// The title to be used for the WWDCCategory
+    var title: String {
+        get {
+            switch self {
+            case .None:
+                return "Shouldn't be used"
+            case .Projects:
+                return "Projects"
+            case .Education:
+                return "Education"
+            case .Work:
+                return "Work"
+            case .TechnicalSkills:
+                return "Technical Skills"
+            case .Interests:
+                return "Interests"
+            }
+        }
+    }
+    
     /// The color to be used for the WWDCCategory
     var color: UIColor {
         get {

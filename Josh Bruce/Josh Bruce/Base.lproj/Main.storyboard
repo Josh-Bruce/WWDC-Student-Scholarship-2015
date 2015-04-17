@@ -52,49 +52,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="josh-bruce" translatesAutoresizingMaskIntoConstraints="NO" id="yMZ-4b-vNR" customClass="CircleImage" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="190" y="150" width="220" height="220"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="josh-bruce" translatesAutoresizingMaskIntoConstraints="NO" id="yMZ-4b-vNR" customClass="CircleImage" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="A77-j7-O7H"/>
+                                    <constraint firstAttribute="width" constant="160" id="DCQ-w8-god"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WWDC Student Scholarship 2015" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjH-0c-dGv">
-                                <rect key="frame" x="155" y="20" width="290" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WWDC Student Scholarship 2015" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjH-0c-dGv">
+                                <rect key="frame" x="200" y="20" width="200" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Q1I-Dg-dyA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyl-6S-mjZ" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="16" y="419" width="64" height="64"/>
-                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="education-icon">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="mrx-Ze-toG" kind="show" id="xoD-vo-LVQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMZ-ZX-rsI" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="88" y="419" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMZ-ZX-rsI" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="97" y="516" width="64" height="64"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.74901960784313726" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="QWI-5m-frf"/>
+                                    <constraint firstAttribute="width" constant="64" id="Wdt-YM-H0V"/>
+                                </constraints>
                                 <state key="normal" image="swift-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAW-ax-ox4" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="160" y="419" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAW-ax-ox4" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="439" y="430" width="64" height="64"/>
                                 <color key="backgroundColor" red="0.87450980392156863" green="0.24313725490196078" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="XM9-Hf-220"/>
+                                    <constraint firstAttribute="width" constant="64" id="zJg-Vc-6xA"/>
+                                </constraints>
                                 <state key="normal" image="work-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rx-lv-dLy" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="88" y="491" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOS-jT-voJ" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="97" y="430" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.43529411764705883" green="0.86274509803921573" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="hsX-HB-Ctl"/>
+                                    <constraint firstAttribute="width" constant="64" id="rKG-Pb-nJq"/>
+                                </constraints>
+                                <state key="normal" image="projects-icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rx-lv-dLy" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="268" y="516" width="64" height="64"/>
                                 <color key="backgroundColor" red="0.24313725490196078" green="0.26666666666666666" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="LcX-xb-DwF"/>
+                                    <constraint firstAttribute="width" constant="64" id="OpM-cc-eib"/>
+                                </constraints>
                                 <state key="normal" image="interests-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1D-Np-7qD" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="160" y="491" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1D-Np-7qD" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="439" y="516" width="64" height="64"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="BiH-Fx-8ti"/>
+                                    <constraint firstAttribute="width" constant="64" id="Yys-i8-wGR"/>
+                                </constraints>
                                 <state key="normal" image="timeline-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -102,15 +126,84 @@
                                     <segue destination="vlZ-1a-mgr" kind="show" identifier="showTimeline" id="FeT-72-ELX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOS-jT-voJ" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
-                                <rect key="frame" x="16" y="491" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.43529411764705883" green="0.86274509803921573" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="projects-icon">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBg-W7-y4J">
+                                <rect key="frame" x="0.0" y="410" width="87" height="190"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="0kd-xk-ODj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ypt-t5-o27">
+                                <rect key="frame" x="171" y="410" width="87" height="190"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="XoU-9c-gL9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbZ-EY-cJk">
+                                <rect key="frame" x="342" y="410" width="87" height="190"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="7eF-L9-KVQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zx9-Cg-kTg">
+                                <rect key="frame" x="513" y="410" width="87" height="190"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="rGO-dN-pXi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyl-6S-mjZ" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="268" y="430" width="64" height="64"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="gik-uq-UO0"/>
+                                    <constraint firstAttribute="width" constant="64" id="yXX-Pg-16j"/>
+                                </constraints>
+                                <state key="normal" image="education-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mrx-Ze-toG" kind="show" id="xoD-vo-LVQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.36862745099999999" green="0.76078431369999999" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FAW-ax-ox4" firstAttribute="leading" secondItem="wbZ-EY-cJk" secondAttribute="trailing" constant="10" id="1fr-5r-475"/>
+                            <constraint firstAttribute="trailing" secondItem="zx9-Cg-kTg" secondAttribute="trailing" id="1pZ-Tv-4qh"/>
+                            <constraint firstItem="Ypt-t5-o27" firstAttribute="width" secondItem="bBg-W7-y4J" secondAttribute="width" id="27r-yu-CRk"/>
+                            <constraint firstItem="gUR-zz-55P" firstAttribute="top" secondItem="wbZ-EY-cJk" secondAttribute="bottom" id="4C7-jm-HSX"/>
+                            <constraint firstItem="Ypt-t5-o27" firstAttribute="leading" secondItem="RMZ-ZX-rsI" secondAttribute="trailing" constant="10" id="4X9-F7-QJm"/>
+                            <constraint firstItem="0Rx-lv-dLy" firstAttribute="top" secondItem="Zyl-6S-mjZ" secondAttribute="bottom" constant="22" id="5nK-M3-U9L"/>
+                            <constraint firstItem="gUR-zz-55P" firstAttribute="top" secondItem="0Rx-lv-dLy" secondAttribute="bottom" constant="20" id="AXo-B1-cit"/>
+                            <constraint firstItem="z1D-Np-7qD" firstAttribute="top" secondItem="FAW-ax-ox4" secondAttribute="bottom" constant="22" id="IfB-Tl-j0z"/>
+                            <constraint firstItem="wbZ-EY-cJk" firstAttribute="leading" secondItem="Zyl-6S-mjZ" secondAttribute="trailing" constant="10" id="K0x-MX-jlt"/>
+                            <constraint firstItem="bBg-W7-y4J" firstAttribute="leading" secondItem="fva-aP-sHG" secondAttribute="leading" id="LrR-uV-b7u"/>
+                            <constraint firstItem="wbZ-EY-cJk" firstAttribute="leading" secondItem="0Rx-lv-dLy" secondAttribute="trailing" constant="10" id="PM0-pf-cvu"/>
+                            <constraint firstAttribute="centerY" secondItem="yMZ-4b-vNR" secondAttribute="centerY" id="Prk-la-kr2"/>
+                            <constraint firstItem="jjH-0c-dGv" firstAttribute="top" secondItem="Ewx-1b-l5l" secondAttribute="bottom" id="RKs-Ef-gnL"/>
+                            <constraint firstItem="xOS-jT-voJ" firstAttribute="leading" secondItem="bBg-W7-y4J" secondAttribute="trailing" constant="10" id="SFk-nJ-hVa"/>
+                            <constraint firstItem="gUR-zz-55P" firstAttribute="top" secondItem="Ypt-t5-o27" secondAttribute="bottom" id="SgY-pc-qmq"/>
+                            <constraint firstItem="gUR-zz-55P" firstAttribute="top" secondItem="z1D-Np-7qD" secondAttribute="bottom" constant="20" id="TRO-dW-W9G"/>
+                            <constraint firstItem="Ypt-t5-o27" firstAttribute="width" secondItem="zx9-Cg-kTg" secondAttribute="width" id="Tji-1H-6cp"/>
+                            <constraint firstItem="z1D-Np-7qD" firstAttribute="leading" secondItem="wbZ-EY-cJk" secondAttribute="trailing" constant="10" id="UV2-sF-MQa"/>
+                            <constraint firstItem="Zyl-6S-mjZ" firstAttribute="leading" secondItem="Ypt-t5-o27" secondAttribute="trailing" constant="10" id="XFM-eu-5aJ"/>
+                            <constraint firstItem="0Rx-lv-dLy" firstAttribute="leading" secondItem="Ypt-t5-o27" secondAttribute="trailing" constant="10" id="akc-Eu-qkk"/>
+                            <constraint firstItem="zx9-Cg-kTg" firstAttribute="leading" secondItem="FAW-ax-ox4" secondAttribute="trailing" constant="10" id="e3x-Rg-2op"/>
+                            <constraint firstAttribute="centerX" secondItem="yMZ-4b-vNR" secondAttribute="centerX" id="lN1-iN-obl"/>
+                            <constraint firstItem="gUR-zz-55P" firstAttribute="top" secondItem="bBg-W7-y4J" secondAttribute="bottom" id="o4y-Yr-dW7"/>
+                            <constraint firstItem="gUR-zz-55P" firstAttribute="top" secondItem="zx9-Cg-kTg" secondAttribute="bottom" id="p7E-2v-Pvi"/>
+                            <constraint firstItem="RMZ-ZX-rsI" firstAttribute="leading" secondItem="bBg-W7-y4J" secondAttribute="trailing" constant="10" id="q7Q-dE-VEt"/>
+                            <constraint firstItem="gUR-zz-55P" firstAttribute="top" secondItem="RMZ-ZX-rsI" secondAttribute="bottom" constant="20" id="svG-Vy-oet"/>
+                            <constraint firstItem="Ypt-t5-o27" firstAttribute="leading" secondItem="xOS-jT-voJ" secondAttribute="trailing" constant="10" id="tDc-oH-U8X"/>
+                            <constraint firstItem="Ypt-t5-o27" firstAttribute="width" secondItem="wbZ-EY-cJk" secondAttribute="width" id="tVz-vY-o0j"/>
+                            <constraint firstAttribute="centerX" secondItem="jjH-0c-dGv" secondAttribute="centerX" id="tq3-v6-mK4"/>
+                            <constraint firstItem="RMZ-ZX-rsI" firstAttribute="top" secondItem="xOS-jT-voJ" secondAttribute="bottom" constant="22" id="ugS-18-5vq"/>
+                            <constraint firstItem="zx9-Cg-kTg" firstAttribute="leading" secondItem="z1D-Np-7qD" secondAttribute="trailing" constant="10" id="w8u-sF-SMF"/>
+                            <constraint firstItem="wbZ-EY-cJk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="yMZ-4b-vNR" secondAttribute="bottom" constant="30" id="zbJ-HQ-rkB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UGo-ix-hst"/>
                 </viewController>
@@ -129,7 +222,7 @@
                         <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="0.0"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3zi-ul-g1y">
                             <size key="itemSize" width="280" height="100"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
@@ -181,6 +274,25 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryHeader" id="M18-oh-ftg" customClass="CategoryHeaderCollectionReusableView" customModule="Josh_Bruce" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhx-iZ-obW">
+                                    <rect key="frame" x="239" y="13" width="123" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="Rhx-iZ-obW" secondAttribute="centerX" id="5hj-ZC-LVU"/>
+                                <constraint firstAttribute="centerY" secondItem="Rhx-iZ-obW" secondAttribute="centerY" id="W9t-L8-0So"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="titleLabel" destination="Rhx-iZ-obW" id="gBD-Cp-aHw"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="mrx-Ze-toG" id="Fvc-ly-ian"/>
                             <outlet property="delegate" destination="mrx-Ze-toG" id="TyS-RJ-aMV"/>
