@@ -14,7 +14,7 @@ import Foundation
 */
 class WWDCModelImporter {
     
-    // MARK: Properties
+    // MARK: - Properties
     
     /// The filename to load the model data in from
     private var fileName: String!
@@ -22,7 +22,7 @@ class WWDCModelImporter {
     /// The array of items from the plist file
     var arrayOfItems = NSArray()
     
-    // MARK: Init
+    // MARK: - Init
     
     init(fileName: String) {
         // Set class properties
@@ -32,7 +32,7 @@ class WWDCModelImporter {
         self.arrayOfItems = parseModel()
     }
     
-    // MARK: Methods
+    // MARK: - Private Methods
     
     /**
         Parse the model data from the plist file

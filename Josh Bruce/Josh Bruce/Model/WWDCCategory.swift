@@ -90,7 +90,7 @@ protocol WWDCCategoryProtocol {
 */
 class WWDCCategory : NSObject, WWDCCategoryProtocol {
     
-    // MARK: Properties
+    // MARK: - Properties
     
     var category: WWDCCategoryType = .None
     
@@ -106,7 +106,7 @@ class WWDCCategory : NSObject, WWDCCategoryProtocol {
     
     var dateFormatter: NSDateFormatter!
     
-    // MARK: Init
+    // MARK: - Init
     
     init(category: WWDCCategoryType, title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate?) {
         super.init()
@@ -124,7 +124,7 @@ class WWDCCategory : NSObject, WWDCCategoryProtocol {
         self.dateFormatter.dateFormat = "YYYY"
     }
     
-    // MARK: WWDCCategoryProtocol
+    // MARK: - WWDCCategoryProtocol
     
     func formattedStartDate() -> String {
         return dateFormatter.stringFromDate(startDate)

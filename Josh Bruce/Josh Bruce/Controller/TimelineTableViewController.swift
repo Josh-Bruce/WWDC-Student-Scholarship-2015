@@ -10,10 +10,12 @@ import UIKit
 
 class TimelineTableViewController: UITableViewController {
 
-    // MARK: Lifecycle
-
-    var timeline = [WWDCCategoryProtocol]()
+    // MARK: - Properties
     
+    var timeline = [WWDCCategoryProtocol]()
+
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

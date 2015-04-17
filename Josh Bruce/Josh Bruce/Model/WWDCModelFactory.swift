@@ -14,7 +14,7 @@ import UIKit
 */
 class WWDCModelFactory {
     
-    // MARK: Properties
+    // MARK: - Properties
     
     /// Private array of items that were passed into the parse method
     private var arrayOfItems: NSArray!
@@ -22,7 +22,7 @@ class WWDCModelFactory {
     /// The model items that were parsed from the array of items
     var wwdcCategories: [WWDCCategoryProtocol]!
     
-    // MARK: Singleton
+    // MARK: - Singleton
     
     class func sharedInstance() -> WWDCModelFactory {
         struct Static {
@@ -35,14 +35,14 @@ class WWDCModelFactory {
         return Static.instance!
     }
     
-    // MARK: Init
+    // MARK: - Init
 
     private init() {
         // Init model array
         wwdcCategories = [WWDCCategoryProtocol]()
     }
     
-    // MARK: Methods
+    // MARK: - Methods
     
     /**
         Parse the model data from the NSArray of items
@@ -70,6 +70,8 @@ class WWDCModelFactory {
             }
         }
     }
+    
+    // MARK: - Private Methods
     
     /**
         Private method for creating the model classes from the NSDictionary of data

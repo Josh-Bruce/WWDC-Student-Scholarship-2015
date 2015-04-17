@@ -10,12 +10,12 @@ import UIKit
 
 class TechnicalSkill : WWDCCategory {
     
-    // MARK: Properties
+    // MARK: - Properties
     
     /// The skill percentage that I reckon I have for this technical skill
     var skillPercentage: Double = 0.0
     
-    // MARK: Init
+    // MARK: - Init
     
     init(title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate?) {
         super.init(category: .TechnicalSkills, title: title, body: body, image: image, startDate: startDate, endDate: endDate)

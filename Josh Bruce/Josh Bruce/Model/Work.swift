@@ -10,7 +10,7 @@ import UIKit
 
 class Work : WWDCCategory {
     
-    // MARK: Init
+    // MARK: - Init
     
     init(title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate?) {
         super.init(category: .Work, title: title, body: body, image: image, startDate: startDate, endDate: endDate)

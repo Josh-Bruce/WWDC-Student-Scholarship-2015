@@ -10,7 +10,7 @@ import UIKit
 
 class TimelineTableViewCell: UITableViewCell {
     
-    // MARK: Outlets
+    // MARK: - Outlets
     
     @IBOutlet weak var timelineUpper: RoundedRect!
     @IBOutlet weak var iconView: UIView!
@@ -20,7 +20,7 @@ class TimelineTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var timelineLower: UIView!
     
-    // MARK: Properties
+    // MARK: - Properties
     
     var iconImage: UIImage? {
         didSet {
@@ -35,7 +35,7 @@ class TimelineTableViewCell: UITableViewCell {
         }
     }
     
-    // MARK: Init
+    // MARK: - Init
 
     override func awakeFromNib() {
         super.awakeFromNib()
