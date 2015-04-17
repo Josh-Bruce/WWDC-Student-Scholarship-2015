@@ -38,8 +38,10 @@ class TimelineTableViewController: UITableViewController {
         let importer = WWDCModelImporter(fileName: "ScholarshipDataModel")
         if let results = importer.parseModel() {
             WWDCModelFactory.sharedInstance().parseModel(results)
-            timeline = WWDCModelFactory.sharedInstance().modelArray
+            timeline = WWDCModelFactory.sharedInstance().wwdcCategories
         }
+        
+        println(WWDCModelFactory.sharedInstance().wwdcCategories.first?.body)
     }
 
     override func didReceiveMemoryWarning() {

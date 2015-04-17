@@ -20,7 +20,7 @@ class WWDCModelFactory {
     private var arrayOfItems: NSArray!
     
     /// The model items that were parsed from the array of items
-    var modelArray: [WWDCCategoryProtocol]!
+    var wwdcCategories: [WWDCCategoryProtocol]!
     
     // MARK: Singleton
     
@@ -39,7 +39,7 @@ class WWDCModelFactory {
 
     private init() {
         // Init model array
-        modelArray = [WWDCCategoryProtocol]()
+        wwdcCategories = [WWDCCategoryProtocol]()
     }
     
     // MARK: Methods
@@ -64,7 +64,7 @@ class WWDCModelFactory {
                         let modelItem = createModelForType(categoryType, model: model)
                         
                         // Add to model array
-                        modelArray.append(modelItem)
+                        wwdcCategories.append(modelItem)
                     }
                 }
             }
@@ -79,7 +79,7 @@ class WWDCModelFactory {
     */
     private func createModelForType(type: WWDCCategoryType, model: NSDictionary) -> WWDCCategoryProtocol {
         // Model Item
-        var modelItem: WWDCCategoryProtocol!
+        var wwdcCategory: WWDCCategoryProtocol!
         
         // Parse properties
         let title = model.valueForKey("title") as? String ?? "No title specified"
@@ -95,28 +95,28 @@ class WWDCModelFactory {
             break
         case .Projects:
             let project = Project(title: title, body: body, image: image, startDate: startDate, endDate: endDate)
-            modelItem = project
+            wwdcCategory = project
             break
         case .Education:
             let education = Education(title: title, body: body, image: image, startDate: startDate, endDate: endDate)
-            modelItem = education
+            wwdcCategory = education
             break
         case .Work:
             let work = Work(title: title, body: body, image: image, startDate: startDate, endDate: endDate)
-            modelItem = work
+            wwdcCategory = work
             break
         case .TechnicalSkills:
             let technicalSkill = TechnicalSkill(title: title, body: body, image: image, startDate: startDate, endDate: endDate)
-            modelItem = technicalSkill
+            wwdcCategory = technicalSkill
             break
         case .Interests:
             let interest = Interest(title: title, body: body, image: image, startDate: startDate, endDate: endDate)
-            modelItem = interest
+            wwdcCategory = interest
             break
         }
         
         // Return item
-        return modelItem
+        return wwdcCategory
     }
     
 }
