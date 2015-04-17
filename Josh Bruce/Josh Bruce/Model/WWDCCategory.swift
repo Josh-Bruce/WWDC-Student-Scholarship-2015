@@ -41,6 +41,25 @@ enum WWDCCategoryType : Int {
             }
         }
     }
+    
+    var icon: UIImage? {
+        get {
+            switch self {
+            case .None:
+                return nil
+            case .Projects:
+                return UIImage(named: "projects-icon")
+            case .Education:
+                return UIImage(named: "education-icon")
+            case .Work:
+                return UIImage(named: "work-icon")
+            case .TechnicalSkills:
+                return UIImage(named: "swift-icon")
+            case .Interests:
+                return UIImage(named: "interests-icon")
+            }
+        }
+    }
 }
 
 /**

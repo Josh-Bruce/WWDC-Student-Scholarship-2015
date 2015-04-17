@@ -10,6 +10,11 @@ import UIKit
 
 class Project : WWDCCategory {
     
+    // MARK: - Properties
+    
+    /// Optional URL to a resource to highlight more information
+    var url: NSURL?
+    
     // MARK: - Init
 
     init(title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate) {
@@ -29,6 +34,13 @@ class Project : WWDCCategory {
 
         // Call super init
         super.init(category: .Projects, title: title, body: body, image: image, startDate: startDate, endDate: endDate)
+        
+        // Set class specific properties
+        if let urlString = dictionary["urlString"] as? String {
+            if let url = NSURL(string: urlString) {
+                self.url = url
+            }
+        }
     }
     
 }

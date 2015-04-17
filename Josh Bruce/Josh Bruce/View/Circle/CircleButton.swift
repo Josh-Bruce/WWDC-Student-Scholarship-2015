@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable class CircleButton: UIButton {
     
-    // MARK: Init
+    // MARK: - Init
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,7 +22,7 @@ import UIKit
         super.init(coder: aDecoder)
     }
     
-    // MARK: Drawing
+    // MARK: - Drawing
 
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
@@ -30,7 +30,7 @@ import UIKit
         drawCircle()
     }
     
-    // MARK: Methods
+    // MARK: - Methods
     
     func drawCircle() {
         // Draw a circle based upon width / 2

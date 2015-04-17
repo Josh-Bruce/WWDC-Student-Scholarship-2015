@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable class RoundedRect: UIView {
 
-    // MARK: Properties
+    // MARK: - Properties
     
     @IBInspectable var cornerRadius: Double = 4.0 {
         didSet {
@@ -18,7 +18,7 @@ import UIKit
         }
     }
     
-    // MARK: Init
+    // MARK: - Init
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,7 +36,7 @@ import UIKit
         drawRoundedRect()
     }
     
-    // MARK: Drawing
+    // MARK: - Drawing
     
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
@@ -44,7 +44,7 @@ import UIKit
         drawRoundedRect()
     }
     
-    // MARK: Methods
+    // MARK: - Methods
     
     func drawRoundedRect() {
         // Draw a rounded rect from the corner radius

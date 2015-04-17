@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="x9L-cP-nEp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mrx-Ze-toG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="nvb-Af-6LF" kind="relationship" relationship="rootViewController" id="mvQ-u5-QRW"/>
+                        <segue destination="Dxx-In-oQx" kind="relationship" relationship="rootViewController" id="32R-PS-5Jg"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXO-j1-pDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -66,6 +66,9 @@
                                 <state key="normal" image="education-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mrx-Ze-toG" kind="show" id="xoD-vo-LVQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMZ-ZX-rsI" customClass="CircleButton" customModule="Josh_Bruce" customModuleProvider="target">
                                 <rect key="frame" x="196" y="480" width="64" height="64"/>
@@ -104,10 +107,86 @@
             </objects>
             <point key="canvasLocation" x="1886" y="408"/>
         </scene>
+        <!--Category Collection View Controller-->
+        <scene sceneID="dKa-ig-Q7Q">
+            <objects>
+                <collectionViewController id="mrx-Ze-toG" customClass="CategoryCollectionViewController" customModule="Josh_Bruce" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="129-Ye-eZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="0.0"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3zi-ul-g1y">
+                            <size key="itemSize" width="280" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="gLx-RC-dVU" customClass="CategoryCollectionViewCell" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="280" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="josh-bruce" translatesAutoresizingMaskIntoConstraints="NO" id="yUA-LL-m8K" customClass="RoundedImage" customModule="Josh_Bruce" customModuleProvider="target">
+                                            <rect key="frame" x="113" y="12" width="55" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="55" id="iOY-7o-u4i"/>
+                                                <constraint firstAttribute="height" constant="55" id="m0W-Vn-95U"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ5-y1-LoL">
+                                            <rect key="frame" x="8" y="75" width="264" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.76078431369999999" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="yUA-LL-m8K" firstAttribute="top" secondItem="gLx-RC-dVU" secondAttribute="top" constant="12" id="KS0-UH-EQ4"/>
+                                    <constraint firstAttribute="bottom" secondItem="vQ5-y1-LoL" secondAttribute="bottom" constant="8" id="XWE-dM-Bb4"/>
+                                    <constraint firstAttribute="centerX" secondItem="yUA-LL-m8K" secondAttribute="centerX" id="YqC-FI-7mq"/>
+                                    <constraint firstAttribute="trailing" secondItem="vQ5-y1-LoL" secondAttribute="trailing" constant="8" id="dbc-eD-3ge"/>
+                                    <constraint firstItem="vQ5-y1-LoL" firstAttribute="leading" secondItem="gLx-RC-dVU" secondAttribute="leading" constant="8" id="xuw-zx-kIj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="iconImageView" destination="yUA-LL-m8K" id="JSC-rb-xIm"/>
+                                    <outlet property="titleLabel" destination="vQ5-y1-LoL" id="rKf-iN-u8X"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="mrx-Ze-toG" id="Fvc-ly-ian"/>
+                            <outlet property="delegate" destination="mrx-Ze-toG" id="TyS-RJ-aMV"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <segue destination="prg-qL-O5q" kind="presentation" identifier="showCategoryDetail" id="oXv-Oi-HeP"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7CM-Ej-Wiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="1079"/>
+        </scene>
         <!--Collection View Controller-->
         <scene sceneID="TRm-vV-Aw4">
             <objects>
-                <viewController title="Collection View Controller" id="prg-qL-O5q" sceneMemberID="viewController">
+                <viewController title="Collection View Controller" modalPresentationStyle="overCurrentContext" id="prg-qL-O5q" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cC8-8G-c4H"/>
                         <viewControllerLayoutGuide type="bottom" id="8LX-4a-2an"/>
@@ -136,7 +215,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.95294117649999999" green="0.74901960779999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="8LX-4a-2an" firstAttribute="top" secondItem="rtw-vu-Wuh" secondAttribute="bottom" constant="20" id="0j7-Ja-mCa"/>
                             <constraint firstItem="rtw-vu-Wuh" firstAttribute="top" secondItem="cHR-VG-CXg" secondAttribute="bottom" constant="8" id="6dY-1Y-K9P"/>

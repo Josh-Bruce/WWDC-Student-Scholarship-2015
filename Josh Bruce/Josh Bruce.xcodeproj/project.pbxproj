@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		207CA5E31AE1239F00399C27 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */; };
+		207CA6231AE12FBB00399C27 /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */; };
+		207CA6261AE1351A00399C27 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6251AE1351A00399C27 /* CategoryCollectionViewCell.swift */; };
 		20A64EC31ADFABCB00689C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EC21ADFABCB00689C77 /* AppDelegate.swift */; };
 		20A64EC81ADFABCB00689C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A64EC61ADFABCB00689C77 /* Main.storyboard */; };
 		20A64ECA1ADFABCB00689C77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A64EC91ADFABCB00689C77 /* Images.xcassets */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
+		207CA6251AE1351A00399C27 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		20A64EBD1ADFABCA00689C77 /* Josh Bruce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Josh Bruce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A64EC11ADFABCB00689C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20A64EC21ADFABCB00689C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		207CA6241AE1340B00399C27 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				207CA6251AE1351A00399C27 /* CategoryCollectionViewCell.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
 		20A64EB41ADFABCA00689C77 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				20A64EEC1ADFBB0400689C77 /* Circle */,
+				207CA6241AE1340B00399C27 /* Collection */,
 				20A64EFC1ADFFD9C00689C77 /* Rect */,
 				20A64EF51ADFF9F400689C77 /* Timeline */,
 				20A64EC61ADFABCB00689C77 /* Main.storyboard */,
@@ -183,8 +196,9 @@
 			isa = PBXGroup;
 			children = (
 				20A64EEA1ADFB87400689C77 /* BaseViewController.swift */,
-				20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */,
 				207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */,
+				207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */,
+				20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -350,6 +364,7 @@
 				20A64F141AE061F700689C77 /* WWDCModelFactory.swift in Sources */,
 				20A64EC31ADFABCB00689C77 /* AppDelegate.swift in Sources */,
 				20A64F121AE060FF00689C77 /* WWDCModelImporter.swift in Sources */,
+				207CA6231AE12FBB00399C27 /* CategoryCollectionViewController.swift in Sources */,
 				20A64EE91ADFB30A00689C77 /* Constant.swift in Sources */,
 				20A64EEB1ADFB87400689C77 /* BaseViewController.swift in Sources */,
 				20A64F0C1AE026FC00689C77 /* Interest.swift in Sources */,
@@ -358,6 +373,7 @@
 				20A64EFB1ADFFBD000689C77 /* TimelineTableViewController.swift in Sources */,
 				20A64EF41ADFCFCD00689C77 /* CircleImage.swift in Sources */,
 				20A64F0A1AE026E200689C77 /* TechnicalSkill.swift in Sources */,
+				207CA6261AE1351A00399C27 /* CategoryCollectionViewCell.swift in Sources */,
 				207CA5E31AE1239F00399C27 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

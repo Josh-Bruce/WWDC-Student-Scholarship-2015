@@ -29,12 +29,14 @@ Josh is studying Computer Science and is due to graduate in 2016.</string>
 		<date>2012-09-01T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>urlString</key>
+		<string>https://swiftcasts.com</string>
 		<key>category</key>
 		<integer>1</integer>
 		<key>title</key>
 		<string>Swiftcasts</string>
 		<key>body</key>
-		<string>Swiftcasts is currently being built and will become an incredible resource for Swift and iOS developers with up-to-date screencasts. Arregating a wealth of knowledge and building a fantastic community.</string>
+		<string>Swiftcasts is currently being built and will hopefully become an incredibly useful resource for Swift and iOS developers. Providing up-to-date screencasts on the latest technologies and updates. Arregating a wealth of knowledge and building a fantastic community.</string>
 		<key>imageName</key>
 		<string>josh-bruce</string>
 		<key>startDate</key>
