@@ -71,6 +71,61 @@ class WWDCModelFactory {
         }
     }
     
+    /**
+        Get the items within a specific category type and return an array of them 
+        that confirms to the WWDCCategoryProtocol to make this generic
+    
+        :param: type    The WWDCCategoryType you can the array to contain
+    
+        :returns:       An array of of WWDCCategoryProtocol items for the type given
+    */
+    func itemsForCategory(type: WWDCCategoryType) -> [WWDCCategoryProtocol] {
+        // Local array holder
+        var itemsInCategory = [WWDCCategoryProtocol]()
+        
+        // Iterate over WWDC Categories Array
+        for category in wwdcCategories {
+            // Switch over types
+            switch type {
+            case .None:
+                break
+            case .Projects:
+                // Check type
+                if let wwdcCategory = category as? Project {
+                    itemsInCategory.append(wwdcCategory)
+                }
+                break
+            case .Education:
+                // Check type
+                if let wwdcCategory = category as? Education {
+                    itemsInCategory.append(wwdcCategory)
+                }
+                break
+            case .Work:
+                // Check type
+                if let wwdcCategory = category as? Work {
+                    itemsInCategory.append(wwdcCategory)
+                }
+                break
+            case .TechnicalSkills:
+                // Check type
+                if let wwdcCategory = category as? TechnicalSkill {
+                    itemsInCategory.append(wwdcCategory)
+                }
+                break
+            case .Interests:
+                // Check type
+                if let wwdcCategory = category as? Interest {
+                    itemsInCategory.append(wwdcCategory)
+                }
+                break
+            }
+        }
+        
+        // Return
+        return itemsInCategory
+    }
+    
     // MARK: - Private Methods
     
     /**
