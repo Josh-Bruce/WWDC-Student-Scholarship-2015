@@ -115,7 +115,7 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
     // MARK: - UICollectionViewDelegate
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("showCategoryDetail", sender: self)
+        performSegueWithIdentifier(Constant.Segues.ShowCategoryItemDetail, sender: self)
     }
     
     // MARK: - Navigation
@@ -127,7 +127,7 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
             let object = collection[indexPath.row]
             
             // Check segue and destination
-            if segue.identifier == "showCategoryDetail" {
+            if segue.identifier == Constant.Segues.ShowCategoryItemDetail {
                 if let dvc = segue.destinationViewController as? ItemViewController {
                     dvc.item = object
                 }

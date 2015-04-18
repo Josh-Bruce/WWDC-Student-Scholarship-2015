@@ -341,7 +341,7 @@
                         </connections>
                     </collectionView>
                     <connections>
-                        <segue destination="prg-qL-O5q" kind="presentation" identifier="showCategoryDetail" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="oXv-Oi-HeP"/>
+                        <segue destination="prg-qL-O5q" kind="presentation" identifier="showCategoryItemDetail" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="oXv-Oi-HeP"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CM-Ej-Wiz" userLabel="First Responder" sceneMemberID="firstResponder"/>

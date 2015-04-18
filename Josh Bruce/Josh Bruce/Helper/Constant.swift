@@ -62,9 +62,19 @@ struct Constant {
     struct Segues {
         
         /**
+            Segue to show the timeline
+        */
+        static let ShowTimeline = "showTimeline"
+        
+        /**
             Segue to show the category type
         */
         static let ShowCategoryType = "showCategoryType"
+        
+        /**
+            Segue to show the category item details
+        */
+        static let ShowCategoryItemDetail = "showCategoryItemDetail"
         
     }
     
