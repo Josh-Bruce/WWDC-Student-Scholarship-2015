@@ -55,8 +55,16 @@ Josh is studying Computer Science and is due to graduate in 2016.</string>
 		<date>2012-09-01T08:00:00Z</date>
 	</dict>
 	<dict>
-		<key>urlString</key>
-		<string>https://swiftcasts.com</string>
+		<key>languages</key>
+		<array>
+			<string>Bootstrap</string>
+			<string>JavaScript</string>
+			<string>CSS</string>
+			<string>HTML</string>
+			<string>Laravel</string>
+			<string>MySQL</string>
+			<string>PHP</string>
+		</array>
 		<key>category</key>
 		<integer>1</integer>
 		<key>title</key>
@@ -64,7 +72,7 @@ Josh is studying Computer Science and is due to graduate in 2016.</string>
 		<key>body</key>
 		<string>Swiftcasts is currently being built and will hopefully become an incredibly useful resource for Swift and iOS developers. Providing up-to-date screencasts on the latest technologies and updates. Arregating a wealth of knowledge and building a fantastic community.</string>
 		<key>imageName</key>
-		<string>josh-bruce</string>
+		<string>swiftcasts-logo</string>
 		<key>startDate</key>
 		<date>2014-09-01T08:00:00Z</date>
 	</dict>

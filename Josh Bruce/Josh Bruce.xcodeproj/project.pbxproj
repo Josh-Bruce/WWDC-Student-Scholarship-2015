@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205C16D31AE2788100DF5F9A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C16D21AE2788100DF5F9A /* NavigationController.swift */; };
 		207CA5E31AE1239F00399C27 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */; };
 		207CA6231AE12FBB00399C27 /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */; };
 		207CA6261AE1351A00399C27 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6251AE1351A00399C27 /* CategoryCollectionViewCell.swift */; };
@@ -35,6 +36,7 @@
 		20A64F101AE031E200689C77 /* ScholarshipDataModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20A64F0F1AE031E200689C77 /* ScholarshipDataModel.plist */; };
 		20A64F121AE060FF00689C77 /* WWDCModelImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F111AE060FF00689C77 /* WWDCModelImporter.swift */; };
 		20A64F141AE061F700689C77 /* WWDCModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F131AE061F700689C77 /* WWDCModelFactory.swift */; };
+		20E762F51AE280C9001A5A1C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E762F41AE280C9001A5A1C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		205C16D21AE2788100DF5F9A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
 		207CA6251AE1351A00399C27 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		20A64F0F1AE031E200689C77 /* ScholarshipDataModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ScholarshipDataModel.plist; sourceTree = "<group>"; };
 		20A64F111AE060FF00689C77 /* WWDCModelImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelImporter.swift; sourceTree = "<group>"; };
 		20A64F131AE061F700689C77 /* WWDCModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelFactory.swift; sourceTree = "<group>"; };
+		20E762F41AE280C9001A5A1C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,8 +204,10 @@
 		20A64EE41ADFAC4700689C77 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				205C16D21AE2788100DF5F9A /* NavigationController.swift */,
 				20A64EEA1ADFB87400689C77 /* BaseViewController.swift */,
 				207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */,
+				20E762F41AE280C9001A5A1C /* HomeViewController.swift */,
 				207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */,
 				20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */,
 				207CA6271AE156D300399C27 /* ItemViewController.swift */,
@@ -360,7 +366,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E762F51AE280C9001A5A1C /* HomeViewController.swift in Sources */,
 				20A64F001AE00DCB00689C77 /* WWDCCategory.swift in Sources */,
+				205C16D31AE2788100DF5F9A /* NavigationController.swift in Sources */,
 				20A64F0E1AE02BDE00689C77 /* RoundedImage.swift in Sources */,
 				20A64EF71ADFFA1F00689C77 /* TimelineTableViewCell.swift in Sources */,
 				20A64F061AE026B600689C77 /* Work.swift in Sources */,

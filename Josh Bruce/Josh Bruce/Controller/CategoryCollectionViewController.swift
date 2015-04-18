@@ -20,6 +20,12 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
     
     // MARK: - Lifecycle
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

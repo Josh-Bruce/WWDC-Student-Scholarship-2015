@@ -15,6 +15,9 @@ class Project : WWDCCategory {
     /// Optional URL to a resource to highlight more information
     var url: NSURL?
     
+    /// Optional [String] of programming languages used within the project
+    var languages: [String]?
+    
     // MARK: - Init
 
     init(title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate) {
@@ -40,6 +43,10 @@ class Project : WWDCCategory {
             if let url = NSURL(string: urlString) {
                 self.url = url
             }
+        }
+        
+        if let languages = dictionary["languages"] as? [String] {
+            self.languages = languages
         }
     }
     

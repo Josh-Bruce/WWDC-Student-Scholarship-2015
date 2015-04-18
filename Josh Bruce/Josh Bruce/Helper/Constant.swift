@@ -61,6 +61,11 @@ struct Constant {
     */
     struct Segues {
         
+        /**
+            Segue to show the category type
+        */
+        static let ShowCategoryType = "showCategoryType"
+        
     }
     
 }

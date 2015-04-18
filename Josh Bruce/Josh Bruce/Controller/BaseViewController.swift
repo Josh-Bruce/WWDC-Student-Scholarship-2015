@@ -12,6 +12,13 @@ class BaseViewController: UIViewController {
 
     // MARK: - Lifecycle
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Hide navigation bar by default
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

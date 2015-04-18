@@ -49,11 +49,11 @@ enum WWDCCategoryType : Int {
             case .None:
                 return Constant.Colors.LightBlueColor
             case .Projects:
-                return Constant.Colors.PinkColor
+                return Constant.Colors.GreenColor
             case .Education:
                 return Constant.Colors.OrangeColor
             case .Work:
-                return Constant.Colors.GreenColor
+                return Constant.Colors.PinkColor
             case .TechnicalSkills:
                 return Constant.Colors.YellowColor
             case .Interests:

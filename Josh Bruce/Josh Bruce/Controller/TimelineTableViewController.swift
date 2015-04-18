@@ -16,6 +16,13 @@ class TimelineTableViewController: UITableViewController {
 
     // MARK: - Lifecycle
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        // Show the navigation bar
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -72,7 +79,7 @@ class TimelineTableViewController: UITableViewController {
     // MARK: - Status Bar
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .Default
+        return .LightContent
     }
 
 }
