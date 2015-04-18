@@ -55,6 +55,8 @@ If I were to do another internship with NeuroCoRe I would help / like to encoura
 		<date>2014-11-10T09:00:00Z</date>
 	</dict>
 	<dict>
+		<key>imageName</key>
+		<string>swift-logo-icon</string>
 		<key>skillPercentage</key>
 		<real>80</real>
 		<key>category</key>
@@ -62,7 +64,9 @@ If I were to do another internship with NeuroCoRe I would help / like to encoura
 		<key>title</key>
 		<string>Swift</string>
 		<key>body</key>
-		<string></string>
+		<string>Josh started learning Swift from the minute it was announced on 2nd June 2014. Josh was lucky enough to be at the 2014 WWDC and was able to learn quickly alongisde many great developers and ask the engineers lots of questions about the new and exciting programming language Swift.
+
+Swift is a fantastic new language with all the modern features, giving new developers to iOS a great starting point.</string>
 		<key>startDate</key>
 		<date>2014-06-02T10:00:00Z</date>
 	</dict>
