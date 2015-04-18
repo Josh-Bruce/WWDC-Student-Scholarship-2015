@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Dxx-In-oQx" kind="relationship" relationship="rootViewController" id="32R-PS-5Jg"/>
+                        <segue destination="nvb-Af-6LF" kind="relationship" relationship="rootViewController" id="4aG-jL-cAw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXO-j1-pDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oun-gf-nf6">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oun-gf-nf6">
                                 <rect key="frame" x="235" y="281" width="130" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,6 +47,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8yi-zN-Xbm"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="Oun-gf-nf6" id="MRl-Nz-Cem"/>
+                        <outlet property="welcomeLabelCenterYConstraint" destination="Mv9-p2-YZ4" id="adU-nK-Iev"/>
+                        <segue destination="Dxx-In-oQx" kind="show" id="dkh-f9-pwo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9s-4U-wWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
