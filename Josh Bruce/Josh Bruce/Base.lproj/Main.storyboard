@@ -532,6 +532,7 @@
                             <outlet property="delegate" destination="vlZ-1a-mgr" id="JEw-Pa-ANs"/>
                         </connections>
                     </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4K-to-ITq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

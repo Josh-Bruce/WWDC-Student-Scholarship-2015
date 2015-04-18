@@ -3,30 +3,56 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>urlString</key>
-		<string>https://swiftcasts.com</string>
+		<key>endDate</key>
+		<date>2014-04-14T19:00:00Z</date>
+		<key>languages</key>
+		<array>
+			<string>Objective-C</string>
+		</array>
 		<key>category</key>
 		<integer>1</integer>
 		<key>title</key>
-		<string>Swiftcasts</string>
+		<string>WWDC 2014</string>
 		<key>body</key>
-		<string>Swiftcasts is currently being built and will hopefully become an incredibly useful resource for Swift and iOS developers. Providing up-to-date screencasts on the latest technologies and updates. Arregating a wealth of knowledge and building a fantastic community.</string>
+		<string>Josh took part in the Student Scholarship for WWDC last year (2014) and was fortunate enough to have been awarded a ticket. This was an incredible moment in his life and was the most amazing feeling after putting in hours of effort in his application.
+
+Josh learnt a great deal while at WWDC, getting hands on experience with the best engineers in the world, meeting some of the worlds greatest developers behind some of the App Stores greatest hits and having a fantastic time.
+
+This was one of Joshs&apos; dream to visit San Francisco and Apple, this came true in June 2014 and I would love to attend the conference again. It was a fantastic learning experience.</string>
+		<key>imageName</key>
+		<string>wwdc-scholarship-2014-icon</string>
 		<key>startDate</key>
-		<date>2014-09-01T08:00:00Z</date>
+		<date>2014-04-04T08:00:00Z</date>
 	</dict>
 	<dict>
-		<key>urlString</key>
-		<string>https://swiftcasts.com</string>
-		<key>category</key>
-		<integer>1</integer>
-		<key>title</key>
-		<string>Swiftcasts</string>
 		<key>body</key>
-		<string>Swiftcasts is currently being built and will hopefully become an incredibly useful resource for Swift and iOS developers. Providing up-to-date screencasts on the latest technologies and updates. Arregating a wealth of knowledge and building a fantastic community.</string>
-		<key>imageName</key>
-		<string>work-icon</string>
+		<string>Josh took a summer internship at NeuroCoRe, a leading app development company within the medical field. Josh was working on ACEmobile while working here over the summer, a tool used to help diagnose patients with Alzimers earlier. ACEmobile is also attemping to replace the ACE-III paper test and becoem universally known as the tool to use when testing for Alzimers.
+
+Josh also worked on a number of other minor tools which were in development, one of which was for Parkinsons. This was a tapping test to see if the patient could tap to a rythm with an audio cue as well as how fast they could tap. 
+
+If I were to do another internship with NeuroCoRe I would help / like to encourage them to use ResearchKit to get their applications out to the masses to get great feedback and revolutionise the medical industry with technology.</string>
+		<key>endDate</key>
+		<date>2014-10-31T17:00:00Z</date>
+		<key>urlString</key>
+		<string>http://www.neurocore.org.uk</string>
+		<key>category</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>NeuroCoRe</string>
 		<key>startDate</key>
-		<date>2014-09-01T08:00:00Z</date>
+		<date>2014-07-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>endDate</key>
+		<date>2015-08-31T17:00:00Z</date>
+		<key>urlString</key>
+		<string>http://www.justpark.com</string>
+		<key>category</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>JustPark</string>
+		<key>startDate</key>
+		<date>2014-11-10T09:00:00Z</date>
 	</dict>
 	<dict>
 		<key>skillPercentage</key>
@@ -55,6 +81,8 @@ Josh is studying Computer Science and is due to graduate in 2016.</string>
 		<date>2012-09-01T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>urlString</key>
+		<string>https://swiftcasts.com</string>
 		<key>languages</key>
 		<array>
 			<string>Bootstrap</string>
@@ -70,7 +98,9 @@ Josh is studying Computer Science and is due to graduate in 2016.</string>
 		<key>title</key>
 		<string>Swiftcasts</string>
 		<key>body</key>
-		<string>Swiftcasts is currently being built and will hopefully become an incredibly useful resource for Swift and iOS developers. Providing up-to-date screencasts on the latest technologies and updates. Arregating a wealth of knowledge and building a fantastic community.</string>
+		<string>Swiftcasts is currently being built and will hopefully become an incredibly useful resource for Swift and iOS developers. Providing up-to-date screencasts on the latest technologies and updates. Arregating a wealth of knowledge and building a fantastic community.
+
+Swiftcasts will be aimed at all skill levels, ranging from new Swift/iOS developers to the veterans who have been developing on iOS for a long time.</string>
 		<key>imageName</key>
 		<string>swiftcasts-logo</string>
 		<key>startDate</key>
