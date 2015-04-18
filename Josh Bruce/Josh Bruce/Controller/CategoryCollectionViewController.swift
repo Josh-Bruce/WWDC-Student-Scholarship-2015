@@ -121,10 +121,16 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
     // MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Check segue and destination
-        if segue.identifier == "showCategoryDetail" {
-            if let dvc = segue.destinationViewController as? UIViewController {
-                
+        // Get the indexPath
+        if let indexPath = collectionView?.indexPathsForSelectedItems().first as? NSIndexPath {
+            // Get the object
+            let object = collection[indexPath.row]
+            
+            // Check segue and destination
+            if segue.identifier == "showCategoryDetail" {
+                if let dvc = segue.destinationViewController as? ItemViewController {
+                    dvc.item = object
+                }
             }
         }
     }
