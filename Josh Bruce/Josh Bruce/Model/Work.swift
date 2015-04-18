@@ -15,6 +15,9 @@ class Work : WWDCCategory {
     /// Optional URL to a resource to highlight more information
     var url: NSURL?
     
+    /// Optional logo image for a professinal company
+    var logoImage: UIImage?
+    
     // MARK: - Init
     
     init(title: String, body: String, image: UIImage?, startDate: NSDate, endDate: NSDate) {
@@ -39,6 +42,12 @@ class Work : WWDCCategory {
         if let urlString = dictionary["urlString"] as? String {
             if let url = NSURL(string: urlString) {
                 self.url = url
+            }
+        }
+        
+        if let logoImageName = dictionary["logoImageName"] as? String {
+            if let logoImage = UIImage(named: logoImageName) {
+                self.logoImage = logoImage
             }
         }
     }
