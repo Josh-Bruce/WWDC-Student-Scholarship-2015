@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemViewController: BaseViewController {
+class ItemViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - Outlets
     
@@ -18,12 +18,19 @@ class ItemViewController: BaseViewController {
     
     // MARK: - Properties
     
-    var item: WWDCCategoryProtocol!
+    var titles: [String]!
+    var item: WWDCCategoryProtocol! {
+        didSet {
+            createDataSource()
+        }
+    }
     
     var animator: UIDynamicAnimator!
     var attachmentBehavior: UIAttachmentBehavior!
     var gravityBehaviour: UIGravityBehavior!
     var snapBehavior: UISnapBehavior!
+    
+    let dateFormatter = NSDateFormatter()
     
     // MARK: - Lifecycle
     
@@ -31,9 +38,27 @@ class ItemViewController: BaseViewController {
         updateInterfaceForItem()
         
         animator = UIDynamicAnimator(referenceView: view)
+        dateFormatter.dateFormat = "MM YYYY"
     }
     
     // MARK: - Methods
+    
+    func createDataSource() {
+        // Init arrays
+        titles = [String]()
+        
+        // Extract required information
+        titles.append("Title")
+        titles.append("Date")
+        titles.append("Description")
+        
+        // Optional extra row for Projects
+        if let item = item as? Project {
+            if let languages = item.languages {
+                titles.append("Skills")
+            }
+        }
+    }
     
     func updateInterfaceForItem() {
         // Udate the UI given the item
@@ -95,4 +120,53 @@ class ItemViewController: BaseViewController {
             }
         }
     }
+    
+    // MARK: - UITableViewDataSource
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return titles.count
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let item = item as? Project {
+            return item.languages?.count ?? 0
+        }
+        
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return titles[section]
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell: UITableViewCell! //tableView.dequeueReusableCellWithIdentifier("timelineItemCell", forIndexPath: indexPath) as! TimelineTableViewCell
+        
+        // Switch over section
+        switch indexPath.section {
+        case 0:
+            // Dequeue
+            cell = tableView.dequeueReusableCellWithIdentifier("itemTitleCell", forIndexPath: indexPath) as! UITableViewCell
+            
+            // Set title
+            cell.textLabel?.text = item.title
+        case 1:
+            // Dequeue
+            cell = tableView.dequeueReusableCellWithIdentifier("itemDateCell", forIndexPath: indexPath) as! UITableViewCell
+
+            // Set date range
+            let dateRange = "\(dateFormatter.stringFromDate(item.startDate))"
+        case 2:
+             cell = UITableViewCell()
+        case 3:
+             cell = UITableViewCell()
+        default:
+            cell = UITableViewCell()
+        }
+        
+        return cell
+    }
+    
+    // MARK: - UITableViewDelegate
+    
 }

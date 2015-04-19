@@ -192,6 +192,7 @@
 			children = (
 				20A64EEC1ADFBB0400689C77 /* Circle */,
 				207CA6241AE1340B00399C27 /* Collection */,
+				20D9886F1AE3BA7800953DDE /* Item */,
 				20A64EFC1ADFFD9C00689C77 /* Rect */,
 				20A64EF51ADFF9F400689C77 /* Timeline */,
 				20A64EC61ADFABCB00689C77 /* Main.storyboard */,
@@ -262,6 +263,13 @@
 				20A64F0D1AE02BDE00689C77 /* RoundedImage.swift */,
 			);
 			path = Rect;
+			sourceTree = "<group>";
+		};
+		20D9886F1AE3BA7800953DDE /* Item */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Item;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
