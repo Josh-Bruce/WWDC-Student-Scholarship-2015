@@ -16,6 +16,11 @@ class ItemViewController: BaseViewController {
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var logoImageView: UIImageView!
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var skillsLabel: UILabel!
+    
     // MARK: - Properties
     
     var item: WWDCCategoryProtocol!
@@ -28,8 +33,10 @@ class ItemViewController: BaseViewController {
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
+        // Update our UI to reflect the item selected
         updateInterfaceForItem()
         
+        // Initiate the Dynamic Animator
         animator = UIDynamicAnimator(referenceView: view)
     }
     
@@ -40,9 +47,23 @@ class ItemViewController: BaseViewController {
         colorView.backgroundColor = item.category.color
         logoImageView.image = item.image
         
+        // Item details
+        titleLabel.text = item.title
+        descriptionTextView.text = item.body
+        
+        let startDate = item.formattedStartDate("MMMM YYYY")
+        let endDate = item.formattedEndDate("MMMM YYYY")
+        dateLabel.text = "\(startDate) - \(endDate)"
+        
         // Check type
         if let work = item as? Work {
             logoImageView.image = work.logoImage
+        }
+        
+        if let project = item as? Project {
+            if let skills = project.languages {
+                skillsLabel.text = ", ".join(skills)
+            }
         }
     }
     

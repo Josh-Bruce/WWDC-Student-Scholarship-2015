@@ -112,7 +112,7 @@ protocol WWDCCategoryProtocol {
     
         :returns: The formatted start date as a string
     */
-    func formattedStartDate() -> String
+    func formattedStartDate(format: String) -> String
     
     /**
         Will produce a formatted string of the end date
@@ -120,7 +120,7 @@ protocol WWDCCategoryProtocol {
         :returns: The formatted end date as a string if it exists or 
         it will return the string 'current'
     */
-    func formattedEndDate() -> String
+    func formattedEndDate(format: String) -> String
     
 }
 
@@ -166,15 +166,23 @@ class WWDCCategory : NSObject, WWDCCategoryProtocol {
     
     // MARK: - WWDCCategoryProtocol
     
-    func formattedStartDate() -> String {
+    func formattedStartDate(_ format: String = "YYYY") -> String {
+        // Set format
+        dateFormatter.dateFormat = format
+        
+        // Return formatted string
         return dateFormatter.stringFromDate(startDate)
     }
     
-    func formattedEndDate() -> String {
+    func formattedEndDate(_ format: String = "YYYY") -> String {
         if NSCalendar.currentCalendar().isDateInToday(endDate) {
             return "Current"
         }
         
+        // Set format
+        dateFormatter.dateFormat = format
+
+        // Return formatted string
         return dateFormatter.stringFromDate(endDate)
     }
     

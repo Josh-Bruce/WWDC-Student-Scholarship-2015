@@ -135,6 +135,12 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         }
     }
     
+    // MARK: - Actions
+
+    @IBAction func back(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
     // MARK: - Status Bar
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

@@ -65,7 +65,10 @@ class TimelineTableViewController: UITableViewController {
         cell.titleLabel.text = object.title
         cell.descriptionLabel.text = object.body
         cell.iconImage = object.image
-        cell.dateLabel.text = "\(object.formattedStartDate()) - \(object.formattedEndDate())"
+        
+        let startDate = object.formattedStartDate("YYYY")
+        let endDate = object.formattedEndDate("YYYY")
+        cell.dateLabel.text = "\(startDate) - \(endDate)"
         
         return cell
     }
