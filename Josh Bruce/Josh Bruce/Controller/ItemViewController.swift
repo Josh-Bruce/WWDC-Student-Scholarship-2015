@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemViewController: BaseViewController {
+class ItemViewController: BaseViewController, UIGestureRecognizerDelegate {
     
     // MARK: - Outlets
     
@@ -18,8 +18,12 @@ class ItemViewController: BaseViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var bottomContainer: UIView!
     @IBOutlet weak var skillsLabel: UILabel!
+    
+    @IBOutlet weak var descriptionLabelBottomConstraint: NSLayoutConstraint!
     
     // MARK: - Properties
     
@@ -49,7 +53,7 @@ class ItemViewController: BaseViewController {
         
         // Item details
         titleLabel.text = item.title
-        descriptionTextView.text = item.body
+        descriptionLabel.text = item.body
         
         let startDate = item.formattedStartDate("MMMM YYYY")
         let endDate = item.formattedEndDate("MMMM YYYY")
@@ -64,6 +68,10 @@ class ItemViewController: BaseViewController {
             if let skills = project.languages {
                 skillsLabel.text = ", ".join(skills)
             }
+        } else {
+            // Expand view
+            bottomContainer.removeConstraints(bottomContainer.constraints())
+            descriptionLabelBottomConstraint.constant = 8
         }
     }
     
@@ -116,4 +124,11 @@ class ItemViewController: BaseViewController {
             }
         }
     }
+    
+    // MARK: - UIGestureRecognizerDelegate
+    
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+    
 }
