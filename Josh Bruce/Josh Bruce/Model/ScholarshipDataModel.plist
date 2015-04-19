@@ -4,6 +4,40 @@
 <array>
 	<dict>
 		<key>imageName</key>
+		<string>apple-icon</string>
+		<key>body</key>
+		<string></string>
+		<key>category</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Apple</string>
+		<key>startDate</key>
+		<date>2007-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>saxophone-icon</string>
+		<key>body</key>
+		<string></string>
+		<key>category</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Saxophone</string>
+		<key>startDate</key>
+		<date>2001-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>body</key>
+		<string></string>
+		<key>category</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Tennis</string>
+		<key>startDate</key>
+		<date>2005-05-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
 		<string>salesx-icon</string>
 		<key>logoImageName</key>
 		<string></string>

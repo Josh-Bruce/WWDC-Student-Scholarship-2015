@@ -76,6 +76,11 @@ struct Constant {
         */
         static let ShowCategoryItemDetail = "showCategoryItemDetail"
         
+        /**
+            Segue to show the quick category selection
+        */
+        static let ShowCategoryQuickSelection = "showQuickCategorySelection"
+        
     }
     
 }
