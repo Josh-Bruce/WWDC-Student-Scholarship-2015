@@ -141,6 +141,12 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         navigationController?.popViewControllerAnimated(true)
     }
     
+    @IBAction func handlerLongPressGesture(sender: UILongPressGestureRecognizer) {
+        if sender.state == .Began {
+            performSegueWithIdentifier(Constant.Segues.ShowCategoryQuickSelection, sender: self)
+        }
+    }
+    
     // MARK: - Status Bar
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

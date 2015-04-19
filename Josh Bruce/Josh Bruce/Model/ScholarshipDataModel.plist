@@ -4,6 +4,18 @@
 <array>
 	<dict>
 		<key>imageName</key>
+		<string>laravel-logo</string>
+		<key>skillPercentage</key>
+		<integer>75</integer>
+		<key>category</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>Laravel</string>
+		<key>startDate</key>
+		<date>2013-03-01T09:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
 		<string>apple-icon</string>
 		<key>body</key>
 		<string></string>
@@ -72,7 +84,7 @@
 
 Tossr required realtime communication between the players using Pusher and data persistance using Parse this allowed for a very quick MVP to be created without having to build all the infrasture from scratch. </string>
 		<key>imageName</key>
-		<string></string>
+		<string>tossr-icon</string>
 		<key>startDate</key>
 		<date>2015-03-16T09:00:00Z</date>
 	</dict>
@@ -99,6 +111,8 @@ This was one of Joshs&apos; dream to visit San Francisco and Apple, this came tr
 		<date>2014-04-04T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>imageName</key>
+		<string>justpark-app-icon</string>
 		<key>body</key>
 		<string>Josh is on a year long industrial placement with JustPark as an iOS Engineer helping build a brand new app written entirly in Swift. This is a complete re-write from their previos app. While Josh is here he has assisted with building this entirely new application in Swift which is available on the App Store and also about to release a WatchKit app to accompany it.
 
@@ -135,6 +149,8 @@ Swift is a fantastic new language with all the modern features, giving new devel
 		<date>2014-06-02T10:00:00Z</date>
 	</dict>
 	<dict>
+		<key>imageName</key>
+		<string>plymouth-university-logo</string>
 		<key>endDate</key>
 		<date>2016-06-01T08:00:00Z</date>
 		<key>category</key>
@@ -175,8 +191,8 @@ Swiftcasts will be aimed at all skill levels, ranging from new Swift/iOS develop
 		<date>2014-09-01T08:00:00Z</date>
 	</dict>
 	<dict>
-		<key>logoImageName</key>
-		<string>neurocore-logo</string>
+		<key>imageName</key>
+		<string>acemobile-icon</string>
 		<key>body</key>
 		<string>Josh took a summer internship at NeuroCoRe, a leading app development company within the medical field. Josh was working on ACEmobile while working here over the summer, a tool used to help diagnose patients with Alzimers earlier. ACEmobile is also attemping to replace the ACE-III paper test and becoem universally known as the tool to use when testing for Alzimers.
 

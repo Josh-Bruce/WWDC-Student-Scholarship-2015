@@ -55,14 +55,14 @@ class ItemViewController: BaseViewController {
         titleLabel.text = item.title
         descriptionLabel.text = item.body
         
-        let dateFormat = "MMMM YYYY"
+        let dateFormat = "MMM YYYY"
         let startDate = item.formattedStartDate(dateFormat)
         let endDate = item.formattedEndDate(dateFormat)
         dateLabel.text = "\(startDate) - \(endDate)"
         
         // Check type
         if let work = item as? Work {
-            logoImageView.image = work.logoImage
+            logoImageView.image = work.logoImage ?? work.image
         }
         
         if let project = item as? Project {

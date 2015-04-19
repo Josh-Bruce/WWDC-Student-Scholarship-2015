@@ -350,21 +350,28 @@
                         <connections>
                             <outlet property="dataSource" destination="mrx-Ze-toG" id="Fvc-ly-ian"/>
                             <outlet property="delegate" destination="mrx-Ze-toG" id="TyS-RJ-aMV"/>
+                            <outletCollection property="gestureRecognizers" destination="n1Z-To-cDt" appends="YES" id="Cw0-57-fNc"/>
                         </connections>
                     </collectionView>
                     <connections>
                         <segue destination="prg-qL-O5q" kind="presentation" identifier="showCategoryItemDetail" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="oXv-Oi-HeP"/>
-                        <segue destination="Hy7-Ph-n4H" kind="presentation" identifier="showQuickCategorySelection" modalPresentationStyle="overCurrentContext" id="R40-ZQ-wWP"/>
+                        <segue destination="Hy7-Ph-n4H" kind="presentation" identifier="showQuickCategorySelection" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="R40-ZQ-wWP"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CM-Ej-Wiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" numberOfTouchesRequired="2" id="n1Z-To-cDt">
+                    <connections>
+                        <action selector="handlerLongPressGesture:" destination="mrx-Ze-toG" id="t7O-AY-1Kr"/>
+                        <outlet property="delegate" destination="mrx-Ze-toG" id="dvg-CN-NA7"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1886" y="1163"/>
         </scene>
-        <!--View Controller-->
+        <!--Quick Category Change View Controller-->
         <scene sceneID="aCf-yJ-gCe">
             <objects>
-                <viewController id="Hy7-Ph-n4H" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="Hy7-Ph-n4H" customClass="QuickCategoryChangeViewController" customModule="Josh_Bruce" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kxL-O6-dut"/>
                         <viewControllerLayoutGuide type="bottom" id="SPo-mM-OUH"/>
@@ -382,7 +389,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="14u-eZ-lgS" secondAttribute="trailing" id="2zv-Mr-nUE"/>
                             <constraint firstItem="14u-eZ-lgS" firstAttribute="leading" secondItem="IDV-e1-hAd" secondAttribute="leading" id="LAI-hK-je0"/>
@@ -607,7 +614,7 @@
                                                 <constraint firstAttribute="height" constant="12" id="aYd-iZ-LrK"/>
                                             </constraints>
                                         </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rw1-vf-PVd" userLabel="Icon Image View" customClass="RoundedImage" customModule="Josh_Bruce" customModuleProvider="target">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rw1-vf-PVd" userLabel="Icon Image View" customClass="RoundedImage" customModule="Josh_Bruce" customModuleProvider="target">
                                             <rect key="frame" x="20" y="20" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="A3d-RF-QtY"/>
