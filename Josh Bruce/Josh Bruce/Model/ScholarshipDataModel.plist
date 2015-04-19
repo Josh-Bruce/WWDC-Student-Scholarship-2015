@@ -51,8 +51,6 @@
 	<dict>
 		<key>imageName</key>
 		<string>salesx-icon</string>
-		<key>logoImageName</key>
-		<string></string>
 		<key>body</key>
 		<string></string>
 		<key>endDate</key>

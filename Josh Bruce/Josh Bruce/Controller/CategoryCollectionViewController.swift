@@ -10,7 +10,7 @@ import UIKit
 
 let reuseIdentifier = "categoryCell"
 
-class CategoryCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class CategoryCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, QuickCategoryChangeViewControllerDelegate {
 
     // MARK: - Properties
     
@@ -118,21 +118,44 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         performSegueWithIdentifier(Constant.Segues.ShowCategoryItemDetail, sender: self)
     }
     
+    // MARK: - QuickCategoryChangeViewControllerDelegate
+    
+    func didSelectCategory(category: WWDCCategoryType) {
+        // Change the category on the fly
+        categoryType = category
+        
+        // Get data
+        collection = WWDCModelFactory.sharedInstance().itemsForCategory(categoryType)
+        
+        // Reload the collection view with animation
+        collectionView?.performBatchUpdates({ () -> Void in
+            self.collectionView?.reloadSections(NSIndexSet(index: 0))
+        }, completion: nil)
+    }
+    
     // MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Hold the object
+        var object: WWDCCategoryProtocol!
+        
         // Get the indexPath
         if let indexPath = collectionView?.indexPathsForSelectedItems().first as? NSIndexPath {
             // Get the object
-            let object = collection[indexPath.row]
-            
-            // Check segue and destination
-            if segue.identifier == Constant.Segues.ShowCategoryItemDetail {
-                if let dvc = segue.destinationViewController as? ItemViewController {
-                    dvc.item = object
-                }
+            object = collection[indexPath.row]
+        }
+        
+        // Check segue and destination
+        if segue.identifier == Constant.Segues.ShowCategoryItemDetail {
+            if let dvc = segue.destinationViewController as? ItemViewController {
+                dvc.item = object
+            }
+        } else if segue.identifier == Constant.Segues.ShowCategoryQuickSelection {
+            if let dvc = segue.destinationViewController as? QuickCategoryChangeViewController {
+                dvc.delegate = self
             }
         }
+
     }
     
     // MARK: - Actions

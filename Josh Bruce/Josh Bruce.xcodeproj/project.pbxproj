@@ -37,6 +37,7 @@
 		20A64F121AE060FF00689C77 /* WWDCModelImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F111AE060FF00689C77 /* WWDCModelImporter.swift */; };
 		20A64F141AE061F700689C77 /* WWDCModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F131AE061F700689C77 /* WWDCModelFactory.swift */; };
 		20D988711AE4217B00953DDE /* QuickCategoryChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */; };
+		20D988741AE4289E00953DDE /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D988731AE4289E00953DDE /* TransitionManager.swift */; };
 		20E762F51AE280C9001A5A1C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E762F41AE280C9001A5A1C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		20A64F111AE060FF00689C77 /* WWDCModelImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelImporter.swift; sourceTree = "<group>"; };
 		20A64F131AE061F700689C77 /* WWDCModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelFactory.swift; sourceTree = "<group>"; };
 		20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickCategoryChangeViewController.swift; sourceTree = "<group>"; };
+		20D988731AE4289E00953DDE /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		20E762F41AE280C9001A5A1C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -237,6 +239,7 @@
 		20A64EE71ADFAC6400689C77 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				20D988721AE4288200953DDE /* Transitions */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -265,6 +268,14 @@
 				20A64F0D1AE02BDE00689C77 /* RoundedImage.swift */,
 			);
 			path = Rect;
+			sourceTree = "<group>";
+		};
+		20D988721AE4288200953DDE /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				20D988731AE4289E00953DDE /* TransitionManager.swift */,
+			);
+			path = Transitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +404,7 @@
 				20A64EF41ADFCFCD00689C77 /* CircleImage.swift in Sources */,
 				207CA62A1AE1A56000399C27 /* CategoryHeaderCollectionReusableView.swift in Sources */,
 				20A64F0A1AE026E200689C77 /* TechnicalSkill.swift in Sources */,
+				20D988741AE4289E00953DDE /* TransitionManager.swift in Sources */,
 				207CA6261AE1351A00399C27 /* CategoryCollectionViewCell.swift in Sources */,
 				207CA5E31AE1239F00399C27 /* WelcomeViewController.swift in Sources */,
 			);
