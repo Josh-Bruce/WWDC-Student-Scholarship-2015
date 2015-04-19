@@ -3,6 +3,46 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>imageName</key>
+		<string>salesx-icon</string>
+		<key>logoImageName</key>
+		<string></string>
+		<key>body</key>
+		<string></string>
+		<key>endDate</key>
+		<date>2014-09-01T16:00:00Z</date>
+		<key>urlString</key>
+		<string>https://salesx.com</string>
+		<key>category</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>SalesX</string>
+		<key>startDate</key>
+		<date>2012-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>endDate</key>
+		<date>2015-04-26T16:00:00Z</date>
+		<key>languages</key>
+		<array>
+			<string>Swift</string>
+			<string>Parse</string>
+			<string>JavaScript</string>
+		</array>
+		<key>category</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>Tossr</string>
+		<key>body</key>
+		<string>Tossr is a small MVP for betting on a game of luck, 50-50 chance or winning with heads or tails. Josh worked on this application as freelance with a friend and it took approximatly one month to complete.
+
+Tossr required realtime communication between the players using Pusher and data persistance using Parse this allowed for a very quick MVP to be created without having to build all the infrasture from scratch. </string>
+		<key>imageName</key>
+		<string></string>
+		<key>startDate</key>
+		<date>2015-03-16T09:00:00Z</date>
+	</dict>
+	<dict>
 		<key>endDate</key>
 		<date>2014-04-14T19:00:00Z</date>
 		<key>languages</key>
@@ -26,23 +66,13 @@ This was one of Joshs&apos; dream to visit San Francisco and Apple, this came tr
 	</dict>
 	<dict>
 		<key>body</key>
-		<string>Josh took a summer internship at NeuroCoRe, a leading app development company within the medical field. Josh was working on ACEmobile while working here over the summer, a tool used to help diagnose patients with Alzimers earlier. ACEmobile is also attemping to replace the ACE-III paper test and becoem universally known as the tool to use when testing for Alzimers.
+		<string>Josh is on a year long industrial placement with JustPark as an iOS Engineer helping build a brand new app written entirly in Swift. This is a complete re-write from their previos app. While Josh is here he has assisted with building this entirely new application in Swift which is available on the App Store and also about to release a WatchKit app to accompany it.
 
-Josh also worked on a number of other minor tools which were in development, one of which was for Parkinsons. This was a tapping test to see if the patient could tap to a rythm with an audio cue as well as how fast they could tap. 
+JustPark is the sharing economy of parking, allowing customers to rent out their driveways to people to park in, this has also expanded into hotels and airports. JustPark is an Index Venture and BMWi backed company who has also just recently secured a record breaking crowdfunding round raising £3.7 million from members of the public.
 
-If I were to do another internship with NeuroCoRe I would help / like to encourage them to use ResearchKit to get their applications out to the masses to get great feedback and revolutionise the medical industry with technology.</string>
-		<key>endDate</key>
-		<date>2014-10-31T17:00:00Z</date>
-		<key>urlString</key>
-		<string>http://www.neurocore.org.uk</string>
-		<key>category</key>
-		<integer>3</integer>
-		<key>title</key>
-		<string>NeuroCoRe</string>
-		<key>startDate</key>
-		<date>2014-07-01T08:00:00Z</date>
-	</dict>
-	<dict>
+This has been an incredibly exiting year and Josh has learnt an incredibly amount while being in a buzzing startup. Everyone is motivated to the cause while also being interested by what all members of the team are doing.</string>
+		<key>logoImageName</key>
+		<string>justpark-logo</string>
 		<key>endDate</key>
 		<date>2015-08-31T17:00:00Z</date>
 		<key>urlString</key>
@@ -80,7 +110,7 @@ Swift is a fantastic new language with all the modern features, giving new devel
 		<key>body</key>
 		<string>Plymouth University has been an amazing adventure for Josh, giving him the best chance to go far in his career and support him every step of the way. Notably sponsoring his successful Scholarship to WWDC 2014. 
 
-Josh is studying Computer Science and is due to graduate in 2016.</string>
+Josh is studying Computer Science and is due to graduate in 2016. With many great lecturers teaching fantastic subjects such as Database Design and Object Oriented Programming with Design Patterns, being two of Joshs&apos; favourites.</string>
 		<key>startDate</key>
 		<date>2012-09-01T08:00:00Z</date>
 	</dict>
@@ -109,6 +139,26 @@ Swiftcasts will be aimed at all skill levels, ranging from new Swift/iOS develop
 		<string>swiftcasts-logo</string>
 		<key>startDate</key>
 		<date>2014-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>logoImageName</key>
+		<string>neurocore-logo</string>
+		<key>body</key>
+		<string>Josh took a summer internship at NeuroCoRe, a leading app development company within the medical field. Josh was working on ACEmobile while working here over the summer, a tool used to help diagnose patients with Alzimers earlier. ACEmobile is also attemping to replace the ACE-III paper test and becoem universally known as the tool to use when testing for Alzimers.
+
+Josh also worked on a number of other minor tools which were in development, one of which was for Parkinsons. This was a tapping test to see if the patient could tap to a rythm with an audio cue as well as how fast they could tap. 
+
+If I were to do another internship with NeuroCoRe I would help / like to encourage them to use ResearchKit to get their applications out to the masses to get great feedback and revolutionise the medical industry with technology.</string>
+		<key>endDate</key>
+		<date>2014-10-31T17:00:00Z</date>
+		<key>urlString</key>
+		<string>http://www.neurocore.org.uk</string>
+		<key>category</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>NeuroCoRe</string>
+		<key>startDate</key>
+		<date>2014-07-01T08:00:00Z</date>
 	</dict>
 </array>
 </plist>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemViewController: BaseViewController, UIGestureRecognizerDelegate {
+class ItemViewController: BaseViewController {
     
     // MARK: - Outlets
     
@@ -55,8 +55,9 @@ class ItemViewController: BaseViewController, UIGestureRecognizerDelegate {
         titleLabel.text = item.title
         descriptionLabel.text = item.body
         
-        let startDate = item.formattedStartDate("MMMM YYYY")
-        let endDate = item.formattedEndDate("MMMM YYYY")
+        let dateFormat = "MMMM YYYY"
+        let startDate = item.formattedStartDate(dateFormat)
+        let endDate = item.formattedEndDate(dateFormat)
         dateLabel.text = "\(startDate) - \(endDate)"
         
         // Check type
@@ -123,12 +124,6 @@ class ItemViewController: BaseViewController, UIGestureRecognizerDelegate {
                 dismissViewControllerAnimated(true, completion: nil)
             }
         }
-    }
-    
-    // MARK: - UIGestureRecognizerDelegate
-    
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
     }
     
 }
