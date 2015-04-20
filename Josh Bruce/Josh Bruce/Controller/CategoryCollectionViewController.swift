@@ -14,7 +14,11 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
 
     // MARK: - Properties
     
-    var categoryType: WWDCCategoryType! = .Projects
+    var categoryType: WWDCCategoryType! = .Projects {
+        didSet {
+            title = categoryType.title
+        }
+    }
     
     var collection = [WWDCCategoryProtocol]()
     
@@ -23,14 +27,11 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
-        navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Set title
-        //title = categoryType.title
         
         // Get data
         collection = WWDCModelFactory.sharedInstance().itemsForCategory(categoryType)
@@ -67,34 +68,6 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         cell.titleLabel.text = object.title
     
         return cell
-    }
-    
-    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        // View
-        var reusableView: UICollectionReusableView!
-        
-        // Check for header
-        if kind == UICollectionElementKindSectionHeader {
-            // Deque a header
-            let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "categoryHeader", forIndexPath: indexPath) as! CategoryHeaderCollectionReusableView
-            
-            // Set properties
-            headerView.titleLabel.text = categoryType.title
-            
-            // Set back on view
-            reusableView = headerView
-        }
-        
-        if kind  == UICollectionElementKindSectionFooter {
-            // Deque a header
-            let footerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "categoryFooter", forIndexPath: indexPath) as! UICollectionReusableView
-            
-            // Set back on view
-            reusableView = footerView
-        }
-        
-        // Return
-        return reusableView
     }
     
     // MARK: - UICollectionViewDelegateFlowLayout

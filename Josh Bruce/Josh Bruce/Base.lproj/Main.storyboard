@@ -357,7 +357,7 @@
                         <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="0.0"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3zi-ul-g1y">
                             <size key="itemSize" width="280" height="100"/>
-                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
@@ -409,37 +409,6 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryHeader" id="M18-oh-ftg" customClass="CategoryHeaderCollectionReusableView" customModule="Josh_Bruce" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhx-iZ-obW">
-                                    <rect key="frame" x="239" y="13" width="123" height="24"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZv-9o-CY2">
-                                    <rect key="frame" x="16" y="10" width="35" height="30"/>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <state key="normal" title="Back">
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="back:" destination="mrx-Ze-toG" eventType="touchUpInside" id="cSh-9w-WNi"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="centerY" secondItem="lZv-9o-CY2" secondAttribute="centerY" id="2uu-wV-QJw"/>
-                                <constraint firstAttribute="centerX" secondItem="Rhx-iZ-obW" secondAttribute="centerX" id="5hj-ZC-LVU"/>
-                                <constraint firstAttribute="centerY" secondItem="Rhx-iZ-obW" secondAttribute="centerY" id="W9t-L8-0So"/>
-                                <constraint firstItem="lZv-9o-CY2" firstAttribute="leading" secondItem="M18-oh-ftg" secondAttribute="leading" constant="16" id="e8Q-WS-gbL"/>
-                            </constraints>
-                            <connections>
-                                <outlet property="titleLabel" destination="Rhx-iZ-obW" id="gBD-Cp-aHw"/>
-                            </connections>
-                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="mrx-Ze-toG" id="Fvc-ly-ian"/>
                             <outlet property="delegate" destination="mrx-Ze-toG" id="TyS-RJ-aMV"/>
