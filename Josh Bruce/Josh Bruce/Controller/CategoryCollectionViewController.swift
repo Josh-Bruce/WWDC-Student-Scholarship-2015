@@ -14,13 +14,17 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
 
     // MARK: - Properties
     
+    var collection = [WWDCCategoryProtocol]()
+
     var categoryType: WWDCCategoryType! = .Projects {
         didSet {
+            // Set title
             title = categoryType.title
+            
+            // Get data
+            collection = WWDCModelFactory.sharedInstance().itemsForCategory(categoryType)
         }
     }
-    
-    var collection = [WWDCCategoryProtocol]()
     
     // MARK: - Lifecycle
     
@@ -34,7 +38,6 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         super.viewDidLoad()
         
         // Get data
-        collection = WWDCModelFactory.sharedInstance().itemsForCategory(categoryType)
     }
 
     override func didReceiveMemoryWarning() {
@@ -95,9 +98,6 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         // Change the category on the fly
         categoryType = category
         
-        // Get data
-        collection = WWDCModelFactory.sharedInstance().itemsForCategory(categoryType)
-        
         // Reload the collection view with animation
         collectionView?.performBatchUpdates({ () -> Void in
             self.collectionView?.reloadSections(NSIndexSet(index: 0))
@@ -130,10 +130,6 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
     }
     
     // MARK: - Actions
-
-    @IBAction func back(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
-    }
     
     @IBAction func handlerLongPressGesture(sender: UILongPressGestureRecognizer) {
         if sender.state == .Began {
