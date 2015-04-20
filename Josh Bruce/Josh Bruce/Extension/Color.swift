@@ -16,7 +16,7 @@ extension UIColor {
         :param:     lighting percent percentage
         :returns:   lighter UIColor
     */
-    func lighterColor(percent : Double) -> UIColor {
+    func lighterColor(percent: Double) -> UIColor {
         return colorWithBrightnessFactor(CGFloat(1 + percent));
     }
     
@@ -26,7 +26,7 @@ extension UIColor {
         :param:     darking percent percentage
         :returns:   darker UIColor
     */
-    func darkerColor(percent : Double) -> UIColor {
+    func darkerColor(percent: Double) -> UIColor {
         return colorWithBrightnessFactor(CGFloat(1 - percent));
     }
     

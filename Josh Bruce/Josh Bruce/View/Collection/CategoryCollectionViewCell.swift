@@ -25,6 +25,22 @@ import UIKit
         }
     }
     
+    var categoryColor: UIColor! {
+        didSet {
+            backgroundColor = categoryColor
+        }
+    }
+    
+    override var highlighted: Bool {
+        didSet {
+            if highlighted {
+                backgroundColor = categoryColor.darkerColor(0.1)
+            } else {
+                backgroundColor = categoryColor
+            }
+        }
+    }
+    
     @IBInspectable var cornerRadius: Double = 4.0
     
     // MARK: - Drawing

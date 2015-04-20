@@ -71,7 +71,7 @@ class MenuTableViewController: UITableViewController {
             if indexPath.row == categories.count {
                 // Configure the cell...
                 categoryCell.categoryTitleLabel.text = "Timeline"
-                categoryCell.backgroundColor = Constant.Colors.DarkBlueColor
+                categoryCell.categoryColor = Constant.Colors.DarkBlueColor
                 categoryCell.iconImageView.image = UIImage(named: "timeline-icon")
             } else {
                 // Get the type
@@ -79,8 +79,13 @@ class MenuTableViewController: UITableViewController {
                 
                 // Configure the cell...
                 categoryCell.categoryTitleLabel.text = type.title
-                categoryCell.backgroundColor = type.color
+                categoryCell.categoryColor = type.color
                 categoryCell.iconImageView.image = type.icon
+            }
+            
+            // Set custom disclosure icon
+            if let image = UIImage(named: "disclosure-icon") {
+                categoryCell.accessoryView = UIImageView(image: image)
             }
             
             // Asign back the cell

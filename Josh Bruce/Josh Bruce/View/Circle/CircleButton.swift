@@ -10,6 +10,24 @@ import UIKit
 
 @IBDesignable class CircleButton: UIButton {
     
+    // MARK: - Properties
+    
+    @IBInspectable var categoryColor: UIColor! {
+        didSet {
+            backgroundColor = categoryColor
+        }
+    }
+    
+    override var highlighted: Bool {
+        didSet {
+            if highlighted {
+                backgroundColor = categoryColor.darkerColor(0.1)
+            } else {
+                backgroundColor = categoryColor
+            }
+        }
+    }
+    
     // MARK: - Init
     
     override init(frame: CGRect) {
@@ -37,5 +55,5 @@ import UIKit
         layer.cornerRadius = frame.size.width / 2
         layer.masksToBounds = true
     }
-   
+    
 }

@@ -102,7 +102,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="100" id="Pz5-xw-qyH" customClass="CategoryTableViewCell" customModule="Josh_Bruce" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="100" id="Pz5-xw-qyH" customClass="CategoryTableViewCell" customModule="Josh_Bruce" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pz5-xw-qyH" id="X7a-VS-Efe">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -474,6 +474,11 @@
                                             <state key="normal" image="projects-icon">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="categoryColor">
+                                                    <color key="value" red="0.43529411764705883" green="0.86274509803921573" blue="0.67450980392156867" alpha="1" colorSpace="deviceRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="showCategoryForSender:" destination="Hy7-Ph-n4H" eventType="touchUpInside" id="vS9-xA-u9e"/>
                                             </connections>
@@ -497,6 +502,11 @@
                                             <state key="normal" image="education-icon">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="categoryColor">
+                                                    <color key="value" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="showCategoryForSender:" destination="Hy7-Ph-n4H" eventType="touchUpInside" id="lBb-yc-c6G"/>
                                             </connections>
@@ -520,6 +530,11 @@
                                             <state key="normal" image="work-icon">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="categoryColor">
+                                                    <color key="value" red="0.87450980389999999" green="0.24313725489999999" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="showCategoryForSender:" destination="Hy7-Ph-n4H" eventType="touchUpInside" id="CHG-9N-Rx3"/>
                                             </connections>
@@ -543,6 +558,11 @@
                                             <state key="normal" image="swift-icon">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="categoryColor">
+                                                    <color key="value" red="0.95294117649999999" green="0.74901960779999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="showCategoryForSender:" destination="Hy7-Ph-n4H" eventType="touchUpInside" id="ilu-sV-zoI"/>
                                             </connections>
@@ -566,6 +586,11 @@
                                             <state key="normal" image="interests-icon">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="categoryColor">
+                                                    <color key="value" red="0.24313725489999999" green="0.2666666667" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="showCategoryForSender:" destination="Hy7-Ph-n4H" eventType="touchUpInside" id="Yt1-Az-5tx"/>
                                             </connections>
@@ -589,6 +614,11 @@
                                             <state key="normal" image="timeline-icon">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="categoryColor">
+                                                    <color key="value" red="0.20000000000000001" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="showTimeline:" destination="Hy7-Ph-n4H" eventType="touchUpInside" id="I6t-39-KZV"/>
                                             </connections>
@@ -1059,7 +1089,7 @@
         <image name="work-icon" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="t2D-Zx-suk"/>
         <segue reference="2ER-G2-HOx"/>
+        <segue reference="wp4-iB-Vmm"/>
     </inferredMetricsTieBreakers>
 </document>

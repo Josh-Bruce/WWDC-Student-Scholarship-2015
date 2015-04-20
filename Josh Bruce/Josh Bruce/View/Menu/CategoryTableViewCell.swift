@@ -15,6 +15,14 @@ class CategoryTableViewCell: UITableViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var categoryTitleLabel: UILabel!
     
+    // MARK: - Properties
+    
+    var categoryColor: UIColor! {
+        didSet {
+            backgroundColor = categoryColor
+        }
+    }
+    
     // MARK: - Init
     
     override func awakeFromNib() {
@@ -26,6 +34,16 @@ class CategoryTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func setHighlighted(highlighted: Bool, animated: Bool) {
+        super.setHighlighted(highlighted, animated: animated)
+        
+        if highlighted {
+            backgroundColor = categoryColor.darkerColor(0.1)
+        } else {
+            backgroundColor = categoryColor
+        }
     }
 
 }

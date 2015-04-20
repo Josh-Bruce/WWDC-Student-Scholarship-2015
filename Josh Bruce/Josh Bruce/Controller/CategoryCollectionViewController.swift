@@ -57,13 +57,11 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         // Configure the cell class
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CategoryCollectionViewCell
         
-        // Configure the cell
-        cell.backgroundColor = categoryType.color
-        
         // Get the object
         let object = collection[indexPath.row]
         
         // Set properties on the cell
+        cell.categoryColor = categoryType.color
         cell.iconImage = object.image ?? categoryType.icon
         cell.titleLabel.text = object.title
     
