@@ -16,59 +16,42 @@ class WelcomeViewController: BaseViewController {
     @IBOutlet weak var welcomeLabelCenterYConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var letsBegin: UIButton!
-
-    // MARK: - Properties
-    
-    var welcomeLabelEndConstraints: [AnyObject]?
-    
-    var holder: [AnyObject]?
     
     // MARK: - Lifecycle
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        welcomeLabelCenterYConstraint.constant = view.frame.height
+        view.layoutIfNeeded()
+    }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        welcomeLabelCenterYConstraint.constant = view.frame.height
-        view.layoutIfNeeded()
-        
-//        UIView.animateWithDuration(1.0, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 2.0, options: UIViewAnimationOptions.BeginFromCurrentState, animations: { () -> Void in
-//            self.welcomeLabelCenterYConstraint.constant = 0
-//            self.welcomeLabel.alpha = 1
-//            self.view.layoutIfNeeded()
-//        }) { (success) -> Void in
-//            self.letsBegin.alpha = 1.0
-//        }
-//        
-        spring(1.0, delay: 0.0, { () -> () in
-            self.welcomeLabelCenterYConstraint.constant = 0
-            self.welcomeLabel.alpha = 1
-            self.view.layoutIfNeeded()
-        }) { (finished) -> () in
-            self.letsBegin.alpha = 1.0
+        showWelcome { (finished) -> () in
+            self.showLetsBegin()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Get end constraints for views
-//        getEndConstraintsForViews()
-//        
-//        UIView.animateWithDuration(2.0, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 10, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-//            self.view.addConstraints(self.holder!)
-//            println("")
-//        }) { (success) -> Void in
-//            
-//        }
     }
     
-    // MARK: - Methods
+    // MARK: - Animation Methods
     
-    func getEndConstraintsForViews() {
-        // Extract the ending constraints
-        welcomeLabelEndConstraints = welcomeLabel.constraints()
-        holder = view.constraints()
-        view.removeConstraints(holder!)
+    func showWelcome(completion: ((finished: Bool) -> ())? = nil) {
+        spring(1.0, delay: 0.0, { () -> () in
+            self.welcomeLabelCenterYConstraint.constant = 0
+            self.welcomeLabel.alpha = 1
+            self.view.layoutIfNeeded()
+        }, completion)
+    }
+    
+    func showLetsBegin(completion: ((finished: Bool) -> ())? = nil) {
+        spring(1.0, delay: 0, { () -> () in
+            self.letsBegin.alpha = 1.0
+        }, completion)
     }
     
     // MARK: - Actions
