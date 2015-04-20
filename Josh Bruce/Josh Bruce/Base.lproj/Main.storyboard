@@ -56,17 +56,28 @@
                                     <action selector="letsBegin:" destination="nvb-Af-6LF" eventType="touchUpInside" id="ERE-8p-z8c"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="josh-bruce" translatesAutoresizingMaskIntoConstraints="NO" id="vJB-GB-iOd" customClass="CircleImage" customModule="Josh_Bruce" customModuleProvider="target">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Hpz-ZO-zfh"/>
+                                    <constraint firstAttribute="width" constant="160" id="sb2-af-PiR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="bzL-zl-biz" secondAttribute="centerX" id="60I-pz-MXP"/>
                             <constraint firstItem="MQc-Ph-s3h" firstAttribute="top" secondItem="bzL-zl-biz" secondAttribute="bottom" constant="20" id="IeH-oy-alH"/>
+                            <constraint firstAttribute="centerY" secondItem="vJB-GB-iOd" secondAttribute="centerY" id="KRz-6m-S5F"/>
                             <constraint firstAttribute="centerY" secondItem="Oun-gf-nf6" secondAttribute="centerY" id="Mv9-p2-YZ4"/>
+                            <constraint firstAttribute="centerX" secondItem="vJB-GB-iOd" secondAttribute="centerX" id="MwV-Fz-6M1"/>
                             <constraint firstAttribute="centerX" secondItem="Oun-gf-nf6" secondAttribute="centerX" id="TjD-bb-4Qc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8yi-zN-Xbm"/>
                     <connections>
+                        <outlet property="joshBruceImageView" destination="vJB-GB-iOd" id="dBP-a0-zt2"/>
+                        <outlet property="joshBruceImaveViewCenterYConstraint" destination="KRz-6m-S5F" id="N78-2r-IER"/>
                         <outlet property="letsBegin" destination="bzL-zl-biz" id="oLc-S3-j1Z"/>
                         <outlet property="welcomeLabel" destination="Oun-gf-nf6" id="MRl-Nz-Cem"/>
                         <outlet property="welcomeLabelCenterYConstraint" destination="Mv9-p2-YZ4" id="adU-nK-Iev"/>

@@ -15,10 +15,10 @@ import UIKit
     :param: animations      The animation block to be run
     :param: completion      The completion handler to be called once finished
 */
-public func spring(duration: NSTimeInterval, animations: (() -> ())!, completion: ((finished: Bool) -> ())?) {
+public func spring(duration: NSTimeInterval, delay: NSTimeInterval = 0.0, animations: (() -> ())!, completion: ((finished: Bool) -> ())?) {
     UIView.animateWithDuration(
 		duration,
-		delay: 0.0,
+		delay: delay,
 		usingSpringWithDamping: 0.7,
 		initialSpringVelocity: 0.7,
 		options: nil,
