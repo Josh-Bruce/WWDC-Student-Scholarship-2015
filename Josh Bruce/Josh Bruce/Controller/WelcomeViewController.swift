@@ -14,6 +14,8 @@ class WelcomeViewController: BaseViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var welcomeLabelCenterYConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var letsBegin: UIButton!
 
     // MARK: - Properties
     
@@ -29,12 +31,20 @@ class WelcomeViewController: BaseViewController {
         welcomeLabelCenterYConstraint.constant = view.frame.height
         view.layoutIfNeeded()
         
-        UIView.animateWithDuration(1.0, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 2.0, options: UIViewAnimationOptions.BeginFromCurrentState, animations: { () -> Void in
+//        UIView.animateWithDuration(1.0, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 2.0, options: UIViewAnimationOptions.BeginFromCurrentState, animations: { () -> Void in
+//            self.welcomeLabelCenterYConstraint.constant = 0
+//            self.welcomeLabel.alpha = 1
+//            self.view.layoutIfNeeded()
+//        }) { (success) -> Void in
+//            self.letsBegin.alpha = 1.0
+//        }
+//        
+        spring(1.0, delay: 0.0, { () -> () in
             self.welcomeLabelCenterYConstraint.constant = 0
             self.welcomeLabel.alpha = 1
             self.view.layoutIfNeeded()
-        }) { (success) -> Void in
-
+        }) { (finished) -> () in
+            self.letsBegin.alpha = 1.0
         }
     }
     
@@ -59,6 +69,13 @@ class WelcomeViewController: BaseViewController {
         welcomeLabelEndConstraints = welcomeLabel.constraints()
         holder = view.constraints()
         view.removeConstraints(holder!)
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func letsBegin(sender: UIButton) {
+        // Segue to menu
+        performSegueWithIdentifier(Constant.Segues.showMenu, sender: self)
     }
    
 }

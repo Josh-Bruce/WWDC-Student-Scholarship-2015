@@ -23,6 +23,8 @@ class MenuTableViewController: UITableViewController {
         
         // Show the navigation bar
         navigationController?.setNavigationBarHidden(false, animated: true)
+        // Hide the back button
+        navigationItem.setHidesBackButton(false, animated: false)
     }
     
     override func viewDidLoad() {

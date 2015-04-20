@@ -20,12 +20,12 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="0dE-GE-BYx" kind="relationship" relationship="rootViewController" id="adT-cI-yVt"/>
+                        <segue destination="nvb-Af-6LF" kind="relationship" relationship="rootViewController" id="un9-aL-lgC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXO-j1-pDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1170" y="408"/>
+            <point key="canvasLocation" x="458" y="408"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="VcU-eh-yPZ">
@@ -45,22 +45,38 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzL-zl-biz">
+                                <rect key="frame" x="261" y="548" width="78" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Lets Begin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letsBegin:" destination="nvb-Af-6LF" eventType="touchUpInside" id="ERE-8p-z8c"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.36862745099999999" green="0.76078431369999999" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="bzL-zl-biz" secondAttribute="centerX" id="60I-pz-MXP"/>
+                            <constraint firstItem="MQc-Ph-s3h" firstAttribute="top" secondItem="bzL-zl-biz" secondAttribute="bottom" constant="20" id="IeH-oy-alH"/>
                             <constraint firstAttribute="centerY" secondItem="Oun-gf-nf6" secondAttribute="centerY" id="Mv9-p2-YZ4"/>
                             <constraint firstAttribute="centerX" secondItem="Oun-gf-nf6" secondAttribute="centerX" id="TjD-bb-4Qc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8yi-zN-Xbm"/>
                     <connections>
+                        <outlet property="letsBegin" destination="bzL-zl-biz" id="oLc-S3-j1Z"/>
                         <outlet property="welcomeLabel" destination="Oun-gf-nf6" id="MRl-Nz-Cem"/>
                         <outlet property="welcomeLabelCenterYConstraint" destination="Mv9-p2-YZ4" id="adU-nK-Iev"/>
+                        <segue destination="0dE-GE-BYx" kind="show" identifier="showMenu" id="01d-61-VcR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9s-4U-wWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1170" y="1163"/>
+            <point key="canvasLocation" x="1168" y="408"/>
         </scene>
         <!--Josh Bruce-->
         <scene sceneID="sVo-LE-0G3">
@@ -563,7 +579,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTB-hs-C2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886" y="1902"/>
+            <point key="canvasLocation" x="1168" y="1163"/>
         </scene>
         <!--Item View Controller-->
         <scene sceneID="TRm-vV-Aw4">
