@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -122,34 +121,36 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pz5-xw-qyH" id="X7a-VS-Efe">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oM2-JQ-NSz">
-                                            <rect key="frame" x="16" y="32" width="36" height="36"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="36" id="c19-fO-7ve"/>
-                                                <constraint firstAttribute="height" constant="36" id="k46-Az-YTL"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Technical Skills" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UW9-Kx-nG6">
-                                            <rect key="frame" x="68" y="35" width="491" height="29"/>
+                                            <rect key="frame" x="68" y="8" width="499" height="84"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="84" id="RLn-SE-WXB"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cOf-go-I20">
+                                            <rect key="frame" x="16" y="32" width="36" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="36" id="8jC-vQ-82G"/>
+                                                <constraint firstAttribute="height" constant="36" id="Q9y-aI-cOV"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="oM2-JQ-NSz" secondAttribute="bottom" constant="32" id="1qG-nM-kov"/>
-                                        <constraint firstItem="oM2-JQ-NSz" firstAttribute="leading" secondItem="X7a-VS-Efe" secondAttribute="leading" constant="16" id="C7r-9q-g1W"/>
-                                        <constraint firstItem="UW9-Kx-nG6" firstAttribute="leading" secondItem="oM2-JQ-NSz" secondAttribute="trailing" constant="16" id="PlT-lm-cmX"/>
-                                        <constraint firstAttribute="centerY" secondItem="UW9-Kx-nG6" secondAttribute="centerY" id="bnV-yM-nFV"/>
-                                        <constraint firstItem="UW9-Kx-nG6" firstAttribute="trailing" secondItem="X7a-VS-Efe" secondAttribute="trailingMargin" id="c0S-Fo-YG2"/>
-                                        <constraint firstItem="oM2-JQ-NSz" firstAttribute="top" secondItem="X7a-VS-Efe" secondAttribute="top" constant="32" id="lxA-Wo-Ad6"/>
-                                        <constraint firstAttribute="centerY" secondItem="oM2-JQ-NSz" secondAttribute="centerY" id="xgB-hc-QXu"/>
+                                        <constraint firstItem="UW9-Kx-nG6" firstAttribute="top" secondItem="X7a-VS-Efe" secondAttribute="top" constant="8" id="Qz5-Ig-GBv"/>
+                                        <constraint firstItem="UW9-Kx-nG6" firstAttribute="leading" secondItem="cOf-go-I20" secondAttribute="trailing" constant="16" id="Rrq-Kr-ZNd"/>
+                                        <constraint firstAttribute="bottom" secondItem="UW9-Kx-nG6" secondAttribute="bottom" constant="8" id="VSF-qZ-z5c"/>
+                                        <constraint firstItem="cOf-go-I20" firstAttribute="leading" secondItem="X7a-VS-Efe" secondAttribute="leading" constant="16" id="hfR-CD-ACa"/>
+                                        <constraint firstAttribute="centerY" secondItem="cOf-go-I20" secondAttribute="centerY" id="vsy-nS-I5f"/>
+                                        <constraint firstAttribute="trailing" secondItem="UW9-Kx-nG6" secondAttribute="trailing" id="wU8-zf-iw1"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="categoryTitleLabel" destination="UW9-Kx-nG6" id="E55-PK-WoR"/>
-                                    <outlet property="iconImageView" destination="oM2-JQ-NSz" id="3tp-kN-5dL"/>
+                                    <outlet property="iconImageView" destination="cOf-go-I20" id="el8-ne-47b"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

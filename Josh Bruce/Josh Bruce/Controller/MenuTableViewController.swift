@@ -30,9 +30,6 @@ class MenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Automatic cell dimensions
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 100.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -117,6 +114,16 @@ class MenuTableViewController: UITableViewController {
         default:
             break
         }
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        // Return height for the row and section
+        if indexPath.section == 0 {
+            return 120.0
+        }
+        
+        // Default cell height
+        return 100.0
     }
     
     // MARK: - Navigation
