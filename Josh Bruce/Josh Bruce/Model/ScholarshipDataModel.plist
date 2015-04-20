@@ -4,6 +4,20 @@
 <array>
 	<dict>
 		<key>imageName</key>
+		<string></string>
+		<key>body</key>
+		<string></string>
+		<key>urlString</key>
+		<string>http://www.surftrack.co.uk</string>
+		<key>category</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>SurfTrack</string>
+		<key>startDate</key>
+		<date>2011-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
 		<string>laravel-logo</string>
 		<key>skillPercentage</key>
 		<integer>75</integer>

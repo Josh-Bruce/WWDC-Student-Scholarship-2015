@@ -14,6 +14,15 @@ protocol QuickCategoryChangeViewControllerDelegate {
 
 class QuickCategoryChangeViewController: BaseViewController {
 
+    // MARK: - Outlets 
+    
+    @IBOutlet var projectsButton: CircleButton!
+    @IBOutlet var educationButton: CircleButton!
+    @IBOutlet var workButton: CircleButton!
+    @IBOutlet var technicalSkillsButton: CircleButton!
+    @IBOutlet var interestsButton: CircleButton!
+    @IBOutlet var timelineButton: CircleButton!
+    
     // MARK: - Properties
     
     var delegate: QuickCategoryChangeViewControllerDelegate?
@@ -22,12 +31,6 @@ class QuickCategoryChangeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("test"), userInfo: nil, repeats: false)
-    }
-    
-    func test() {
-        selectCategoryType(.Projects)
     }
     
     // MARK: - Methods
@@ -41,5 +44,33 @@ class QuickCategoryChangeViewController: BaseViewController {
     }
    
     // MARK: - Actions
+    
+    @IBAction func showCategoryForSender(sender: CircleButton) {
+        // Hold category type
+        var categoryType: WWDCCategoryType = .None
+        
+        // Switch the button type
+        switch sender {
+        case projectsButton:
+            categoryType = .Projects
+        case educationButton:
+            categoryType = .Education
+        case workButton:
+            categoryType = .Work
+        case technicalSkillsButton:
+            categoryType = .TechnicalSkills
+        case interestsButton:
+            categoryType = .Interests
+        default:
+            categoryType = .None
+        }
+        
+        // Call the delegate method
+        selectCategoryType(categoryType)
+    }
+    
+    @IBAction func showTimeline(sender: CircleButton) {
+        
+    }
     
 }
