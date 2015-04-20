@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201BA6711AE4FEFF00E26236 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BA6701AE4FEFF00E26236 /* MenuTableViewController.swift */; };
+		201BA6741AE4FF3800E26236 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BA6731AE4FF3800E26236 /* CategoryTableViewCell.swift */; };
+		201BA6761AE502AD00E26236 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BA6751AE502AD00E26236 /* AboutTableViewCell.swift */; };
 		205C16D31AE2788100DF5F9A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C16D21AE2788100DF5F9A /* NavigationController.swift */; };
 		207CA5E31AE1239F00399C27 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */; };
 		207CA6231AE12FBB00399C27 /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */; };
@@ -52,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		201BA6701AE4FEFF00E26236 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		201BA6731AE4FF3800E26236 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		201BA6751AE502AD00E26236 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
 		205C16D21AE2788100DF5F9A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201BA6721AE4FF0E00E26236 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				201BA6731AE4FF3800E26236 /* CategoryTableViewCell.swift */,
+				201BA6751AE502AD00E26236 /* AboutTableViewCell.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		207CA6241AE1340B00399C27 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +209,7 @@
 		20A64EE31ADFAC3D00689C77 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				201BA6721AE4FF0E00E26236 /* Menu */,
 				20A64EEC1ADFBB0400689C77 /* Circle */,
 				207CA6241AE1340B00399C27 /* Collection */,
 				20A64EFC1ADFFD9C00689C77 /* Rect */,
@@ -214,6 +230,7 @@
 				20E762F41AE280C9001A5A1C /* HomeViewController.swift */,
 				207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */,
 				20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */,
+				201BA6701AE4FEFF00E26236 /* MenuTableViewController.swift */,
 				207CA6271AE156D300399C27 /* ItemViewController.swift */,
 				20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */,
 			);
@@ -388,6 +405,7 @@
 				20A64F061AE026B600689C77 /* Work.swift in Sources */,
 				20D988711AE4217B00953DDE /* QuickCategoryChangeViewController.swift in Sources */,
 				20A64F041AE0257400689C77 /* Education.swift in Sources */,
+				201BA6711AE4FEFF00E26236 /* MenuTableViewController.swift in Sources */,
 				20A64EF01ADFC25D00689C77 /* CircleButton.swift in Sources */,
 				20A64EFE1ADFFDD400689C77 /* RoundedRect.swift in Sources */,
 				20A64F141AE061F700689C77 /* WWDCModelFactory.swift in Sources */,
@@ -396,9 +414,11 @@
 				207CA6231AE12FBB00399C27 /* CategoryCollectionViewController.swift in Sources */,
 				207CA6281AE156D300399C27 /* ItemViewController.swift in Sources */,
 				20A64EE91ADFB30A00689C77 /* Constant.swift in Sources */,
+				201BA6741AE4FF3800E26236 /* CategoryTableViewCell.swift in Sources */,
 				20A64EEB1ADFB87400689C77 /* BaseViewController.swift in Sources */,
 				20A64F0C1AE026FC00689C77 /* Interest.swift in Sources */,
 				20A64F021AE010A100689C77 /* Project.swift in Sources */,
+				201BA6761AE502AD00E26236 /* AboutTableViewCell.swift in Sources */,
 				20A64EF21ADFC48A00689C77 /* Color.swift in Sources */,
 				20A64EFB1ADFFBD000689C77 /* TimelineTableViewController.swift in Sources */,
 				20A64EF41ADFCFCD00689C77 /* CircleImage.swift in Sources */,
