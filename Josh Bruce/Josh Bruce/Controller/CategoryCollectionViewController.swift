@@ -29,6 +29,9 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Set title
+        //title = categoryType.title
+        
         // Get data
         collection = WWDCModelFactory.sharedInstance().itemsForCategory(categoryType)
     }

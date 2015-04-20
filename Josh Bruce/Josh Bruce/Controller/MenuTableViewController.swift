@@ -22,7 +22,7 @@ class MenuTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         // Show the navigation bar
-        navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewDidLoad() {
