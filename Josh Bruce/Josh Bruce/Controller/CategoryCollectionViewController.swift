@@ -36,8 +36,6 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Get data
     }
 
     override func didReceiveMemoryWarning() {

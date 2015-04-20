@@ -41,7 +41,7 @@ class WelcomeViewController: BaseViewController {
     // MARK: - Animation Methods
     
     func showWelcome(completion: ((finished: Bool) -> ())? = nil) {
-        spring(1.0, delay: 0.0, { () -> () in
+		spring(1.0, { () -> () in
             self.welcomeLabelCenterYConstraint.constant = 0
             self.welcomeLabel.alpha = 1
             self.view.layoutIfNeeded()
@@ -49,7 +49,7 @@ class WelcomeViewController: BaseViewController {
     }
     
     func showLetsBegin(completion: ((finished: Bool) -> ())? = nil) {
-        spring(1.0, delay: 0, { () -> () in
+        spring(1.0, { () -> () in
             self.letsBegin.alpha = 1.0
         }, completion)
     }

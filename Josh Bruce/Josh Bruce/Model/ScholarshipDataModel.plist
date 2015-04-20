@@ -3,12 +3,31 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>skillPercentage</key>
+		<integer>75</integer>
+		<key>category</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>Objective-C</string>
+		<key>startDate</key>
+		<date>2011-10-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>skillPercentage</key>
+		<integer>75</integer>
+		<key>category</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>MySQL</string>
+		<key>startDate</key>
+		<date>2010-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
 		<key>logoImageName</key>
 		<string>surftrack-logo</string>
-		<key>imageName</key>
-		<string></string>
 		<key>body</key>
-		<string></string>
+		<string>Josh setup a web development company in co-partnership with a friend in 2011 which has helped fund his studies at university. Gaining a lot of knowledge and experience a long the way. Web development has been a vital part of Joshs&apos; life in becoming an iOS developer.
+</string>
 		<key>urlString</key>
 		<string>http://www.surftrack.co.uk</string>
 		<key>category</key>
@@ -16,7 +35,7 @@
 		<key>title</key>
 		<string>SurfTrack</string>
 		<key>startDate</key>
-		<date>2011-09-01T08:00:00Z</date>
+		<date>2011-03-01T09:00:00Z</date>
 	</dict>
 	<dict>
 		<key>imageName</key>
