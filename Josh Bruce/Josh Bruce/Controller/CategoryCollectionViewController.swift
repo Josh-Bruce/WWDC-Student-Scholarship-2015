@@ -29,9 +29,6 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        self.clearsSelectionOnViewWillAppear = false
-
         // Get data
         collection = WWDCModelFactory.sharedInstance().itemsForCategory(categoryType)
     }

@@ -30,9 +30,6 @@ class TimelineTableViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 160.0
         
-        // Uncomment the following line to preserve selection between presentations
-        clearsSelectionOnViewWillAppear = true
-        
         // Get data
         timeline = WWDCModelFactory.sharedInstance().wwdcCategories
         // Sort by date order (latest ending at the top)

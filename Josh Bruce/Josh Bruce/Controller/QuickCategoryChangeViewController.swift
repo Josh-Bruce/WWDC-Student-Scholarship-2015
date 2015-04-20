@@ -45,6 +45,11 @@ class QuickCategoryChangeViewController: BaseViewController {
    
     // MARK: - Actions
     
+    @IBAction func cancel(sender: UIButton) {
+        // Dismiss without changing
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBAction func showCategoryForSender(sender: CircleButton) {
         // Hold category type
         var categoryType: WWDCCategoryType = .None

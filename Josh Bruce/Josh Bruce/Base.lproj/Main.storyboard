@@ -77,7 +77,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rnp-cW-SYa" id="hr0-6e-Q1a">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="josh-bruce" translatesAutoresizingMaskIntoConstraints="NO" id="DWq-w2-SSA">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="josh-bruce-cell-background" translatesAutoresizingMaskIntoConstraints="NO" id="DWq-w2-SSA">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="120" id="8Pw-6S-csy"/>
@@ -579,6 +579,18 @@
                                             <rect key="frame" x="484" y="0.0" width="116" height="600"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofl-1B-xqz">
+                                            <rect key="frame" x="275" y="552" width="51" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <state key="normal" title="Cancel">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="cancel:" destination="Hy7-Ph-n4H" eventType="touchUpInside" id="BcI-lS-gAo"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="06M-bi-jfb" firstAttribute="top" secondItem="Ufv-IY-8Ck" secondAttribute="bottom" constant="10" id="2gj-Eb-NNS"/>
@@ -598,9 +610,11 @@
                                         <constraint firstAttribute="trailing" secondItem="unQ-CO-vFh" secondAttribute="trailing" id="M8W-bK-j48"/>
                                         <constraint firstItem="tmB-wZ-WkT" firstAttribute="leading" secondItem="rGR-Ic-sQw" secondAttribute="leading" id="MlP-bh-bIw"/>
                                         <constraint firstItem="Ufv-IY-8Ck" firstAttribute="leading" secondItem="BNi-GF-X6h" secondAttribute="trailing" constant="31" id="OCy-zr-ycL"/>
+                                        <constraint firstAttribute="centerX" secondItem="Ofl-1B-xqz" secondAttribute="centerX" id="QE6-gm-0Tu"/>
                                         <constraint firstItem="Kol-jl-5Up" firstAttribute="width" secondItem="unQ-CO-vFh" secondAttribute="width" id="QqJ-CX-1VI"/>
                                         <constraint firstItem="BNi-GF-X6h" firstAttribute="leading" secondItem="Br3-o9-uAL" secondAttribute="trailing" constant="31" id="S1N-mY-Qb1"/>
                                         <constraint firstAttribute="bottom" secondItem="BNi-GF-X6h" secondAttribute="bottom" id="SCT-sQ-TNV"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ofl-1B-xqz" secondAttribute="bottom" constant="16" id="Tle-QB-pjL"/>
                                         <constraint firstItem="Br3-o9-uAL" firstAttribute="leading" secondItem="Kol-jl-5Up" secondAttribute="trailing" constant="31" id="UNM-RU-Gfo"/>
                                         <constraint firstItem="tmB-wZ-WkT" firstAttribute="top" secondItem="c3A-Gn-tAT" secondAttribute="bottom" constant="10" id="UnK-ix-uvM"/>
                                         <constraint firstItem="BNi-GF-X6h" firstAttribute="leading" secondItem="5ly-kt-TaI" secondAttribute="trailing" constant="31" id="XWz-Yu-AW3"/>
@@ -979,6 +993,7 @@
         <image name="education-icon" width="40" height="24"/>
         <image name="interests-icon" width="29" height="29"/>
         <image name="josh-bruce" width="220" height="220"/>
+        <image name="josh-bruce-cell-background" width="375" height="120"/>
         <image name="projects-icon" width="29" height="28"/>
         <image name="swift-icon" width="34" height="29"/>
         <image name="timeline-icon" width="26" height="26"/>
