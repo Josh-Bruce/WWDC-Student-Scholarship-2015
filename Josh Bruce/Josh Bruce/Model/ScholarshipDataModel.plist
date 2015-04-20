@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>logoImageName</key>
+		<string>surftrack-logo</string>
 		<key>imageName</key>
 		<string></string>
 		<key>body</key>
