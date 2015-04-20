@@ -69,12 +69,6 @@ class TimelineTableViewController: UITableViewController {
         
         return cell
     }
-
-    // MARK: - Navigation
-
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-    }
     
     // MARK: - Status Bar
     

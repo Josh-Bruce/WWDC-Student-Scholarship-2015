@@ -56,7 +56,7 @@
                     <connections>
                         <outlet property="welcomeLabel" destination="Oun-gf-nf6" id="MRl-Nz-Cem"/>
                         <outlet property="welcomeLabelCenterYConstraint" destination="Mv9-p2-YZ4" id="adU-nK-Iev"/>
-                        <segue destination="Dxx-In-oQx" kind="show" id="dkh-f9-pwo"/>
+                        <segue destination="Dxx-In-oQx" kind="show" identifier="showMenu" id="dkh-f9-pwo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9s-4U-wWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1059,7 +1059,7 @@
         <image name="work-icon" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wp4-iB-Vmm"/>
+        <segue reference="t2D-Zx-suk"/>
         <segue reference="2ER-G2-HOx"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -67,6 +67,11 @@ struct Constant {
     struct Segues {
         
         /**
+            Segue to show the main menu
+        */
+        static let showMenu = "showMenu"
+        
+        /**
             Segue to show the timeline
         */
         static let ShowTimeline = "showTimeline"
