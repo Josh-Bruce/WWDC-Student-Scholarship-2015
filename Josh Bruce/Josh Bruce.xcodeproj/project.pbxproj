@@ -41,7 +41,6 @@
 		20A64F141AE061F700689C77 /* WWDCModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F131AE061F700689C77 /* WWDCModelFactory.swift */; };
 		20D988711AE4217B00953DDE /* QuickCategoryChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */; };
 		20D988741AE4289E00953DDE /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D988731AE4289E00953DDE /* TransitionManager.swift */; };
-		20E762F51AE280C9001A5A1C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E762F41AE280C9001A5A1C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +92,6 @@
 		20A64F131AE061F700689C77 /* WWDCModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelFactory.swift; sourceTree = "<group>"; };
 		20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickCategoryChangeViewController.swift; sourceTree = "<group>"; };
 		20D988731AE4289E00953DDE /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
-		20E762F41AE280C9001A5A1C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +225,6 @@
 				205C16D21AE2788100DF5F9A /* NavigationController.swift */,
 				20A64EEA1ADFB87400689C77 /* BaseViewController.swift */,
 				207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */,
-				20E762F41AE280C9001A5A1C /* HomeViewController.swift */,
 				207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */,
 				20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */,
 				201BA6701AE4FEFF00E26236 /* MenuTableViewController.swift */,
@@ -397,7 +394,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20E762F51AE280C9001A5A1C /* HomeViewController.swift in Sources */,
 				20A64F001AE00DCB00689C77 /* WWDCCategory.swift in Sources */,
 				205C16D31AE2788100DF5F9A /* NavigationController.swift in Sources */,
 				20A64F0E1AE02BDE00689C77 /* RoundedImage.swift in Sources */,
