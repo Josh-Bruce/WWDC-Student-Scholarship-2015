@@ -77,7 +77,7 @@ class WWDCModelFactory {
     
         :param: type    The WWDCCategoryType you can the array to contain
     
-        :returns:       An array of of WWDCCategoryProtocol items for the type given
+        :returns: An array of of WWDCCategoryProtocol items for the type given
     */
     func itemsForCategory(type: WWDCCategoryType) -> [WWDCCategoryProtocol] {
         // Local array holder
