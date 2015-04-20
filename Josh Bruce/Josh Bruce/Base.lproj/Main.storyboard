@@ -440,7 +440,7 @@
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CM-Ej-Wiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" numberOfTouchesRequired="2" id="n1Z-To-cDt">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="n1Z-To-cDt">
                     <connections>
                         <action selector="handlerLongPressGesture:" destination="mrx-Ze-toG" id="t7O-AY-1Kr"/>
                         <outlet property="delegate" destination="mrx-Ze-toG" id="dvg-CN-NA7"/>
