@@ -229,11 +229,11 @@
 				209CFE311AE64F85006A6993 /* BaseNavigationController.swift */,
 				20A64EEA1ADFB87400689C77 /* BaseViewController.swift */,
 				207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */,
-				207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */,
-				20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */,
 				201BA6701AE4FEFF00E26236 /* MenuTableViewController.swift */,
+				207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */,
 				207CA6271AE156D300399C27 /* ItemViewController.swift */,
 				20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */,
+				20A64EFA1ADFFBD000689C77 /* TimelineTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

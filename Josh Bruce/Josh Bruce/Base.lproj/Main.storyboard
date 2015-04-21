@@ -145,8 +145,15 @@
                                         <constraint firstAttribute="trailing" secondItem="DWq-w2-SSA" secondAttribute="trailing" id="9Lb-wv-7Wa"/>
                                         <constraint firstItem="DWq-w2-SSA" firstAttribute="top" secondItem="hr0-6e-Q1a" secondAttribute="top" id="Dmh-J5-cTq"/>
                                         <constraint firstItem="Xq3-8k-UYc" firstAttribute="top" secondItem="hr0-6e-Q1a" secondAttribute="top" constant="20" id="YcE-w9-2fR"/>
+                                        <constraint firstAttribute="centerY" secondItem="Xq3-8k-UYc" secondAttribute="centerY" id="g6O-4c-zyL"/>
                                         <constraint firstAttribute="bottom" secondItem="DWq-w2-SSA" secondAttribute="bottom" id="xDu-bo-pmk"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="8IZ-F2-bmC"/>
+                                            <exclude reference="YcE-w9-2fR"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="100" id="Pz5-xw-qyH" customClass="CategoryTableViewCell" customModule="Josh_Bruce" customModuleProvider="target">
