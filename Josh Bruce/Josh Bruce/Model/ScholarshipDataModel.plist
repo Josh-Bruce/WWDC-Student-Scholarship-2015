@@ -3,6 +3,26 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>category</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>Stanford Swift Course</string>
+		<key>body</key>
+		<string></string>
+		<key>startDate</key>
+		<date>2012-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>category</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>Plymouth Swift Course</string>
+		<key>body</key>
+		<string></string>
+		<key>startDate</key>
+		<date>2012-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
 		<key>urlString</key>
 		<string>http://247fitness.co</string>
 		<key>endDate</key>
