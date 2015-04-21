@@ -3,6 +3,30 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>urlString</key>
+		<string>http://247fitness.co</string>
+		<key>endDate</key>
+		<date>2014-10-01T16:00:00Z</date>
+		<key>category</key>
+		<integer>1</integer>
+		<key>languages</key>
+		<array>
+			<string>Laravel PHP</string>
+			<string>Bootstrap</string>
+			<string>JavaScript</string>
+			<string>CSS</string>
+			<string>HTML</string>
+		</array>
+		<key>title</key>
+		<string>24/7 Fitness</string>
+		<key>body</key>
+		<string></string>
+		<key>imageName</key>
+		<string>247fitness-icon</string>
+		<key>startDate</key>
+		<date>2014-08-01T08:00:00Z</date>
+	</dict>
+	<dict>
 		<key>skillPercentage</key>
 		<integer>75</integer>
 		<key>category</key>
@@ -204,13 +228,12 @@ Josh is studying Computer Science and is due to graduate in 2016. With many grea
 		<string>https://swiftcasts.com</string>
 		<key>languages</key>
 		<array>
+			<string>Laravel PHP</string>
+			<string>MySQL</string>
 			<string>Bootstrap</string>
 			<string>JavaScript</string>
 			<string>CSS</string>
 			<string>HTML</string>
-			<string>Laravel</string>
-			<string>MySQL</string>
-			<string>PHP</string>
 		</array>
 		<key>category</key>
 		<integer>1</integer>
