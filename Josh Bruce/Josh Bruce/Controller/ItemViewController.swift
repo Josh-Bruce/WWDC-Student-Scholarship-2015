@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ItemViewController: BaseViewController {
+class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
     
     // MARK: - Outlets
     
@@ -42,6 +43,8 @@ class ItemViewController: BaseViewController {
     var snapBehavior: UISnapBehavior!
     
     var willAnimateBar = false
+	
+	var speechSynthesizer: AVSpeechSynthesizer?
     
     // MARK: - Lifecycle
     
@@ -60,7 +63,20 @@ class ItemViewController: BaseViewController {
         
         // Initiate the Dynamic Animator
         animator = UIDynamicAnimator(referenceView: view)
+		
+		// Init AVSpeechSynthesizer
+		speechSynthesizer = AVSpeechSynthesizer()
+		speechSynthesizer?.delegate = self
     }
+	
+	override func viewWillDisappear(animated: Bool) {
+		super.viewWillDisappear(animated)
+		
+		// Stop speaking if we are at the next word
+		if speechSynthesizer != nil && speechSynthesizer!.speaking {
+			speechSynthesizer!.stopSpeakingAtBoundary(.Word)
+		}
+	}
     
     // MARK: - Methods
     
@@ -216,5 +232,39 @@ class ItemViewController: BaseViewController {
             NotificationController.sharedInstance().displayAlert(self, title: "Open in Safari", message: "Do you want to open this url \(urlString) in Safari?", actions: [okayAction, cancelAction])
         }
     }
+	
+	// MARK: - AVSpeechSynthesizer Setup
+	
+	/**
+		Convenience method to create an AVSpeechUtterance from
+		a uttereance string that needs to be spoken
+	
+		:param: utteranceString	The utterance string to be spoken by the AVSpeechSynthesizer
+	
+		:returns: AVSpeechUtterance which can be spoken by the AVSpeechSynthesizer
+	*/
+	func utteranceForString(utteranceString: String) -> AVSpeechUtterance {
+		// Init speech text
+		let utterance = AVSpeechUtterance(string: utteranceString)
+		utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+		utterance.rate = AVSpeechUtteranceDefaultSpeechRate / 2.0
+		
+		// Return
+		return utterance
+	}
+	
+	// MARK: - AVSpeechSynthesizerDelegate
+	
+	func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance!) {
+		
+	}
+	
+	func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didStartSpeechUtterance utterance: AVSpeechUtterance!) {
+		
+	}
+	
+	func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didFinishSpeechUtterance utterance: AVSpeechUtterance!) {
+		
+	}
     
 }
