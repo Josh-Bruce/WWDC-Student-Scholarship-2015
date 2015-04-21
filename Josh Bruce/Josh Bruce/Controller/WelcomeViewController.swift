@@ -75,7 +75,7 @@ class WelcomeViewController: BaseViewController {
         
 		joshBruceImageView.alpha = 0.0
 		joshBruceImaveViewCenterYConstraint.constant = 0.0
-        joshBruceImageView.transform = CGAffineTransformMakeScale(1.0, 1.0)
+        joshBruceImageView.transform = CGAffineTransformMakeScale(0.0, 0.0)
         
         joshBruceLabel.alpha = 0.0
         joshBruceLabelVerticalSpaceConstraint.constant = 8.0
@@ -101,6 +101,7 @@ class WelcomeViewController: BaseViewController {
 		spring(1.0, delay: 1.0, { () -> () in
 			self.welcomeLabel.alpha = 0.0
 			self.joshBruceImageView.alpha = 1.0
+            self.joshBruceImageView.transform = CGAffineTransformMakeScale(1.0, 1.0)
 		}, completion)
 	}
 	
