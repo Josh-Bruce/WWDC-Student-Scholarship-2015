@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -56,6 +57,12 @@
                                     <action selector="letsBegin:" destination="nvb-Af-6LF" eventType="touchUpInside" id="ERE-8p-z8c"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi! I'm Josh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Een-pL-FGO">
+                                <rect key="frame" x="238" y="388" width="124" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="josh-bruce" translatesAutoresizingMaskIntoConstraints="NO" id="vJB-GB-iOd" customClass="CircleImage" customModule="Josh_Bruce" customModuleProvider="target">
                                 <rect key="frame" x="220" y="220" width="160" height="160"/>
                                 <constraints>
@@ -63,21 +70,36 @@
                                     <constraint firstAttribute="width" constant="160" id="sb2-af-PiR"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I hope you enjoy reviewing my app!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jz-3Q-iRk">
+                                <rect key="frame" x="16" y="281" width="568" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="bzL-zl-biz" secondAttribute="centerX" id="60I-pz-MXP"/>
+                            <constraint firstAttribute="centerX" secondItem="Een-pL-FGO" secondAttribute="centerX" id="DKA-Fj-KCT"/>
+                            <constraint firstItem="Een-pL-FGO" firstAttribute="top" secondItem="vJB-GB-iOd" secondAttribute="bottom" constant="8" id="EMJ-pJ-djc"/>
                             <constraint firstItem="MQc-Ph-s3h" firstAttribute="top" secondItem="bzL-zl-biz" secondAttribute="bottom" constant="20" id="IeH-oy-alH"/>
                             <constraint firstAttribute="centerY" secondItem="vJB-GB-iOd" secondAttribute="centerY" id="KRz-6m-S5F"/>
                             <constraint firstAttribute="centerY" secondItem="Oun-gf-nf6" secondAttribute="centerY" id="Mv9-p2-YZ4"/>
                             <constraint firstAttribute="centerX" secondItem="vJB-GB-iOd" secondAttribute="centerX" id="MwV-Fz-6M1"/>
+                            <constraint firstAttribute="centerY" secondItem="7Jz-3Q-iRk" secondAttribute="centerY" id="SXj-hx-s79"/>
                             <constraint firstAttribute="centerX" secondItem="Oun-gf-nf6" secondAttribute="centerX" id="TjD-bb-4Qc"/>
+                            <constraint firstItem="7Jz-3Q-iRk" firstAttribute="leading" secondItem="Oqh-Oq-BMS" secondAttribute="leadingMargin" id="XUu-tr-EKv"/>
+                            <constraint firstItem="7Jz-3Q-iRk" firstAttribute="trailing" secondItem="Oqh-Oq-BMS" secondAttribute="trailingMargin" id="a1l-sb-PdG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8yi-zN-Xbm"/>
                     <connections>
+                        <outlet property="enjoyReviewingLabel" destination="7Jz-3Q-iRk" id="I4Y-Dv-qd7"/>
+                        <outlet property="enjoyReviewingLabelCenterYConstraint" destination="SXj-hx-s79" id="ZyH-Lu-FYW"/>
                         <outlet property="joshBruceImageView" destination="vJB-GB-iOd" id="dBP-a0-zt2"/>
                         <outlet property="joshBruceImaveViewCenterYConstraint" destination="KRz-6m-S5F" id="N78-2r-IER"/>
+                        <outlet property="joshBruceLabel" destination="Een-pL-FGO" id="9wl-F1-EpP"/>
+                        <outlet property="joshBruceLabelVerticalSpaceConstraint" destination="EMJ-pJ-djc" id="Jys-Zh-HUK"/>
                         <outlet property="letsBegin" destination="bzL-zl-biz" id="oLc-S3-j1Z"/>
                         <outlet property="welcomeLabel" destination="Oun-gf-nf6" id="MRl-Nz-Cem"/>
                         <outlet property="welcomeLabelCenterYConstraint" destination="Mv9-p2-YZ4" id="adU-nK-Iev"/>

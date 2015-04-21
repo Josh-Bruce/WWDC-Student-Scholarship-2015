@@ -17,14 +17,24 @@ class WelcomeViewController: BaseViewController {
 	
 	@IBOutlet weak var joshBruceImageView: UIImageView!
 	@IBOutlet weak var joshBruceImaveViewCenterYConstraint: NSLayoutConstraint!
+    @IBOutlet weak var joshBruceLabel: UILabel!
+    @IBOutlet weak var joshBruceLabelVerticalSpaceConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var enjoyReviewingLabel: UILabel!
+    @IBOutlet weak var enjoyReviewingLabelCenterYConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var letsBegin: UIButton!
+    
+    // MARK: - Properties
+    
+    var letsBeginTimer: NSTimer?
     
     // MARK: - Lifecycle
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 	
+        // Setup the default values before animations occur
 		setupDefaults()
     }
     
@@ -34,28 +44,53 @@ class WelcomeViewController: BaseViewController {
 		// Perform animations
         showWelcome { (finished) -> () in
 			self.showProfilePicture { (finished) -> () in
-				self.moveProfilePicture()
-				self.showLetsBegin()
+                self.moveProfilePicture { (finished) -> () in
+                    self.showName { (finished) -> () in
+                        self.showEnjoyReviewing { (finished) -> () in
+                            self.showLetsBegin { (finished) -> () in
+                                // If not been clicked within 5 seconds should shake view
+                                self.letsBeginTimer = NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: Selector("shouldShakeLetsBegin"), userInfo: nil, repeats: true)
+                            }
+                        }
+                    }
+                }
 			}
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Remove timer
+        letsBeginTimer?.invalidate()
+        letsBeginTimer = nil
     }
     
     // MARK: - Animation Methods
 	
 	func setupDefaults() {
-		welcomeLabel.alpha = 0
+        // Reset defaults for all views
+		welcomeLabel.alpha = 0.0
 		welcomeLabelCenterYConstraint.constant = view.frame.height
-		joshBruceImageView.alpha = 0
-		joshBruceImaveViewCenterYConstraint.constant = 0
+        
+		joshBruceImageView.alpha = 0.0
+		joshBruceImaveViewCenterYConstraint.constant = 0.0
+        joshBruceImageView.transform = CGAffineTransformMakeScale(1.0, 1.0)
+        
+        joshBruceLabel.alpha = 0.0
+        joshBruceLabelVerticalSpaceConstraint.constant = 8.0
+        
+        enjoyReviewingLabel.alpha = 0.0
+        enjoyReviewingLabelCenterYConstraint.constant = enjoyReviewingLabel.frame.height * 2
+        
+        letsBegin.alpha = 0.0
+        
+        // layout for constraint changes
 		view.layoutIfNeeded()
 	}
 	
     func showWelcome(completion: ((finished: Bool) -> ())? = nil) {
-		spring(1.0, delay: 0.0, { () -> () in
+		spring(1.0, delay: 1.0, { () -> () in
             self.welcomeLabelCenterYConstraint.constant = 0
             self.welcomeLabel.alpha = 1
             self.view.layoutIfNeeded()
@@ -71,15 +106,60 @@ class WelcomeViewController: BaseViewController {
 	
 	func moveProfilePicture(completion: ((finished: Bool) -> ())? = nil) {
 		spring(1.0, delay: 0.0, { () -> () in
-			self.joshBruceImaveViewCenterYConstraint.constant = (self.view.frame.height / 2) - (self.joshBruceImageView.frame.height / 2) - 40
+			self.joshBruceImaveViewCenterYConstraint.constant = (self.view.frame.height / 2) - ((self.joshBruceImageView.frame.height / 2) * 0.75) - 40
+            self.joshBruceImageView.transform = CGAffineTransformMakeScale(0.75, 0.75)
 			self.view.layoutIfNeeded()
 		}, completion)
 	}
+    
+    func showName(completion: ((finished: Bool) -> ())? = nil) {
+        spring(0.5, delay: 0.0, { () -> () in
+            self.joshBruceLabelVerticalSpaceConstraint.constant = -16.0
+            self.joshBruceLabel.alpha = 1.0
+            self.view.layoutIfNeeded()
+        }, completion)
+    }
+    
+    func showEnjoyReviewing(completion: ((finished: Bool) -> ())? = nil) {
+        spring(1.0, delay: 0.5, { () -> () in
+            self.enjoyReviewingLabel.alpha = 1.0
+            self.enjoyReviewingLabelCenterYConstraint.constant = 0
+            self.view.layoutIfNeeded()
+        }, completion)
+    }
 	
     func showLetsBegin(completion: ((finished: Bool) -> ())? = nil) {
 		spring(1.0, delay: 0.0, { () -> () in
             self.letsBegin.alpha = 1.0
         }, completion)
+    }
+    
+    func shakeLetsBegin() {
+        // Variables
+        let force = 0.5
+        let duration = 1.0
+        let delay = 0.0
+        
+        // Create a shake animation
+        let animation = CAKeyframeAnimation()
+        animation.keyPath = "position.x"
+        animation.values = [0, 30 * force, -30 * force, 30 * force, 0]
+        animation.keyTimes = [0, 0.2, 0.4, 0.6, 0.8, 1]
+        animation.timingFunction = CAMediaTimingFunction(controlPoints: 0.5, 1.1 + Float(1.0 / 3), 1, 1)
+        animation.duration = CFTimeInterval(duration)
+        animation.additive = true
+        animation.repeatCount = 1.0
+        animation.beginTime = CACurrentMediaTime() + CFTimeInterval(delay)
+        
+        // Add shake to view
+        letsBegin.layer.addAnimation(animation, forKey: "shake")
+    }
+    
+    // MARK: - Methods
+    
+    func shouldShakeLetsBegin() {
+        // Call method to animate view (bounce / pulsate)
+        shakeLetsBegin()
     }
     
     // MARK: - Actions
