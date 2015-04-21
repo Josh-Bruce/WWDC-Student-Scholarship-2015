@@ -136,23 +136,12 @@ class WelcomeViewController: BaseViewController {
     
     func shakeLetsBegin() {
         // Variables
-        let force = 0.5
         let duration = 1.0
         let delay = 0.0
-        
-        // Create a shake animation
-        let animation = CAKeyframeAnimation()
-        animation.keyPath = "position.x"
-        animation.values = [0, 30 * force, -30 * force, 30 * force, 0]
-        animation.keyTimes = [0, 0.2, 0.4, 0.6, 0.8, 1]
-        animation.timingFunction = CAMediaTimingFunction(controlPoints: 0.5, 1.1 + Float(1.0 / 3), 1, 1)
-        animation.duration = CFTimeInterval(duration)
-        animation.additive = true
-        animation.repeatCount = 1.0
-        animation.beginTime = CACurrentMediaTime() + CFTimeInterval(delay)
-        
+        let force = 0.5
+
         // Add shake to view
-        letsBegin.layer.addAnimation(animation, forKey: "shake")
+        letsBegin.layer.addAnimation(shake(duration, delay, force), forKey: "shake")
     }
     
     // MARK: - Methods
