@@ -713,7 +713,7 @@
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-ih-MrC" userLabel="Bar Max">
                                                                             <rect key="frame" x="8" y="8" width="504" height="24"/>
-                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <color key="backgroundColor" red="0.20000000000000001" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtN-zV-jdx" userLabel="Bar Level">
                                                                             <rect key="frame" x="8" y="8" width="0.0" height="24"/>
