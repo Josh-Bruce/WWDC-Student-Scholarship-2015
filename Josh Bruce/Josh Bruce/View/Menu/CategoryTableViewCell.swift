@@ -40,7 +40,7 @@ class CategoryTableViewCell: UITableViewCell {
         super.setHighlighted(highlighted, animated: animated)
         
         if highlighted {
-            backgroundColor = categoryColor.darkerColor(0.1)
+            backgroundColor = categoryColor.darken(0.1)
         } else {
             backgroundColor = categoryColor
         }

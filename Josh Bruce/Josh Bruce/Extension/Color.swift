@@ -17,8 +17,8 @@ extension UIColor {
     
         :returns: A lighter UIColor by the percentage amount
     */
-    func lighterColor(percent: Double) -> UIColor {
-        return colorWithBrightnessFactor(CGFloat(1 + percent));
+    func lighten(percent: Double) -> UIColor {
+        return colorWithBrightness(CGFloat(1 + percent));
     }
     
     /**
@@ -28,8 +28,8 @@ extension UIColor {
     
         :returns: A darker UIColor by the percentage amount
     */
-    func darkerColor(percent: Double) -> UIColor {
-        return colorWithBrightnessFactor(CGFloat(1 - percent));
+    func darken(percent: Double) -> UIColor {
+        return colorWithBrightness(CGFloat(1 - percent));
     }
     
     /**
@@ -39,15 +39,19 @@ extension UIColor {
     
         :returns: The modified UIColor by the factor
     */
-    func colorWithBrightnessFactor(factor: CGFloat) -> UIColor {
-        var hue : CGFloat = 0
-        var saturation : CGFloat = 0
-        var brightness : CGFloat = 0
-        var alpha : CGFloat = 0
+    func colorWithBrightness(factor: CGFloat) -> UIColor {
+        // Starting values
+        var hue: CGFloat = 0
+        var saturation: CGFloat = 0
+        var brightness: CGFloat = 0
+        var alpha: CGFloat = 0
         
+        // Extract the components that make up the color in the HSB color space
         if getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha) {
+            // Return new UIColor
             return UIColor(hue: hue, saturation: saturation, brightness: brightness * factor, alpha: alpha)
         } else {
+            // Couldn't extract so just return original color
             return self;
         }
     }
