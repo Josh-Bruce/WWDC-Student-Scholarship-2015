@@ -14,6 +14,7 @@ Features:
 - LongPress gesture for quick category selection
 - Overall Timeline
 - Individual Categories
+- Custom Data Model loading from a plist file (lightweight)
 
 Misc:
 - Best viewed on iPhone 6 but compatable (Via AutoLayout) with all iPhone sizes.
