@@ -675,7 +675,7 @@
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41v-H1-PjZ">
+                                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41v-H1-PjZ">
                                                                     <rect key="frame" x="484" y="19" width="20" height="22"/>
                                                                     <state key="normal" image="safari-filled-icon">
                                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -708,13 +708,59 @@
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGa-lg-qoF" userLabel="Skill Bar Container">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="520" height="40"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-ih-MrC" userLabel="Bar Max">
+                                                                            <rect key="frame" x="8" y="8" width="504" height="24"/>
+                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </view>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtN-zV-jdx" userLabel="Bar Level">
+                                                                            <rect key="frame" x="8" y="8" width="0.0" height="24"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwH-ca-3Rd">
+                                                                                    <rect key="frame" x="-16" y="4" width="33" height="15"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" red="0.28627450980392155" green="0.73725490196078436" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="centerX" secondItem="xwH-ca-3Rd" secondAttribute="centerX" id="5z1-gc-GYt"/>
+                                                                                <constraint firstAttribute="width" id="Jvz-dQ-Zst"/>
+                                                                                <constraint firstAttribute="centerY" secondItem="xwH-ca-3Rd" secondAttribute="centerY" id="Mtr-3Y-roU"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" secondItem="gtN-zV-jdx" secondAttribute="trailing" constant="8" id="6G3-QV-VKw"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="0W1-ih-MrC" secondAttribute="trailing" constant="8" id="AJn-Uv-bmy"/>
+                                                                        <constraint firstItem="0W1-ih-MrC" firstAttribute="top" secondItem="GGa-lg-qoF" secondAttribute="top" constant="8" id="IgF-wn-drG"/>
+                                                                        <constraint firstItem="0W1-ih-MrC" firstAttribute="leading" secondItem="GGa-lg-qoF" secondAttribute="leading" constant="8" id="QTJ-BT-j1h"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="0W1-ih-MrC" secondAttribute="bottom" constant="8" id="XiT-nf-uZs"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="gtN-zV-jdx" secondAttribute="bottom" constant="8" id="nIS-wf-j5u"/>
+                                                                        <constraint firstItem="gtN-zV-jdx" firstAttribute="leading" secondItem="GGa-lg-qoF" secondAttribute="leading" constant="8" id="t2c-yT-M7v"/>
+                                                                        <constraint firstItem="gtN-zV-jdx" firstAttribute="top" secondItem="GGa-lg-qoF" secondAttribute="top" constant="8" id="z2N-YX-1YK"/>
+                                                                    </constraints>
+                                                                    <variation key="default">
+                                                                        <mask key="constraints">
+                                                                            <exclude reference="6G3-QV-VKw"/>
+                                                                        </mask>
+                                                                    </variation>
+                                                                </view>
                                                             </subviews>
                                                             <color key="backgroundColor" red="0.20000000000000001" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
+                                                                <constraint firstItem="GGa-lg-qoF" firstAttribute="top" secondItem="Ybv-IR-hCv" secondAttribute="top" id="1G6-BT-GAb"/>
+                                                                <constraint firstAttribute="trailing" secondItem="GGa-lg-qoF" secondAttribute="trailing" id="9sx-mO-47u"/>
                                                                 <constraint firstAttribute="bottom" secondItem="XJR-yV-lm8" secondAttribute="bottom" id="Ecb-1T-oSj"/>
                                                                 <constraint firstItem="XJR-yV-lm8" firstAttribute="leading" secondItem="Ybv-IR-hCv" secondAttribute="leading" constant="8" id="O5V-ZE-KwR"/>
                                                                 <constraint firstAttribute="trailing" secondItem="XJR-yV-lm8" secondAttribute="trailing" constant="8" id="Ve5-Um-CwU"/>
                                                                 <constraint firstItem="XJR-yV-lm8" firstAttribute="top" secondItem="Ybv-IR-hCv" secondAttribute="top" id="Z1g-ba-aWE"/>
+                                                                <constraint firstItem="GGa-lg-qoF" firstAttribute="leading" secondItem="Ybv-IR-hCv" secondAttribute="leading" id="bih-eS-gAT"/>
+                                                                <constraint firstAttribute="bottom" secondItem="GGa-lg-qoF" secondAttribute="bottom" id="rHv-xw-VY6"/>
                                                                 <constraint firstAttribute="height" constant="40" id="yPl-RH-ZWU"/>
                                                             </constraints>
                                                         </view>
@@ -803,6 +849,10 @@
                         <outlet property="itemContainerView" destination="0gN-vu-kgl" id="0zg-mk-DHC"/>
                         <outlet property="logoImageView" destination="JFc-5B-xx5" id="ZyX-tO-wA7"/>
                         <outlet property="safariButton" destination="41v-H1-PjZ" id="dWq-ga-KdE"/>
+                        <outlet property="skillPercentageBar" destination="gtN-zV-jdx" id="nuq-jZ-Zi4"/>
+                        <outlet property="skillPercentageBarWidthConstraint" destination="Jvz-dQ-Zst" id="vai-am-voa"/>
+                        <outlet property="skillPercentageContainer" destination="GGa-lg-qoF" id="IwS-Ju-V2U"/>
+                        <outlet property="skillPercentageLabel" destination="xwH-ca-3Rd" id="Y6C-wG-oU0"/>
                         <outlet property="skillsLabel" destination="XJR-yV-lm8" id="HSr-tw-f2a"/>
                         <outlet property="titleLabel" destination="fqC-kM-g6d" id="BrM-6z-OaF"/>
                     </connections>

@@ -25,6 +25,11 @@ class ItemViewController: BaseViewController {
     @IBOutlet weak var bottomContainer: UIView!
     @IBOutlet weak var skillsLabel: UILabel!
     
+    @IBOutlet weak var skillPercentageContainer: UIView!
+    @IBOutlet weak var skillPercentageBar: UIView!
+    @IBOutlet weak var skillPercentageBarWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var skillPercentageLabel: UILabel!
+    
     @IBOutlet weak var descriptionLabelBottomConstraint: NSLayoutConstraint!
     
     // MARK: - Properties
@@ -36,7 +41,18 @@ class ItemViewController: BaseViewController {
     var gravityBehaviour: UIGravityBehavior!
     var snapBehavior: UISnapBehavior!
     
+    var willAnimateBar = false
+    
     // MARK: - Lifecycle
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if willAnimateBar {
+            // Show and animate the skill percentage bar
+            animateSkillPercentageBar()
+        }
+    }
     
     override func viewDidLoad() {
         // Update our UI to reflect the item selected
@@ -65,33 +81,61 @@ class ItemViewController: BaseViewController {
         // Check type
         if let work = item as? Work {
             logoImageView.image = work.logoImage ?? work.image
+            
+            if let url = work.url {
+                safariButton.hidden = false
+            } else {
+                safariButton.hidden = true
+            }
         }
         
         if let project = item as? Project {
+            // Show the skills label
+            skillsLabel.hidden = false
+            skillPercentageContainer.hidden = true
+            
             if let skills = project.languages {
                 skillsLabel.text = ", ".join(skills)
             }
+            
+            if let url = project.url {
+                safariButton.hidden = false
+            } else {
+                safariButton.hidden = true
+            }
+        } else if let technicalSill = item as? TechnicalSkill {
+            // Show the skills bar
+            skillsLabel.hidden = true
+            skillPercentageContainer.hidden = false
+            
+            // animate on view did appear
+            willAnimateBar = true
         } else {
             // Expand view
             bottomContainer.removeConstraints(bottomContainer.constraints())
             descriptionLabelBottomConstraint.constant = 8
         }
-        
-        // Show / hide share icon
-        if let item = item as? Project {
-            if let url = item.url {
-                safariButton.hidden = false
-            } else {
-                safariButton.hidden = true
-            }
-        } else if let item = item as? Work {
-            if let url = item.url {
-                safariButton.hidden = false
-            } else {
-                safariButton.hidden = true
-            }
-        } else {
-            safariButton.hidden = true
+    }
+    
+    func animateSkillPercentageBar() {
+        // Get the percentage 
+        if let technicalSkill = item as? TechnicalSkill {
+            let percentage = technicalSkill.skillPercentage
+            
+            // Calculate width from percentage
+            let width = skillPercentageContainer.bounds.width * CGFloat(percentage / 100.0)
+            
+            // Animate in
+            spring(1.0, delay: 0.0, { () -> () in
+                self.skillPercentageBarWidthConstraint.constant = width
+                self.view.layoutIfNeeded()
+            }, { (finished) -> () in
+                self.skillPercentageLabel.text = "Skill Level \(percentage)%"
+                spring(0.5, delay: 0.0, { () -> () in
+                    self.skillPercentageLabel.alpha = 1.0
+                    self.view.layoutIfNeeded()
+                }, nil)
+            })
         }
     }
     
