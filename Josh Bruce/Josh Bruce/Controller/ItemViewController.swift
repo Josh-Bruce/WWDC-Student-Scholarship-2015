@@ -90,9 +90,8 @@ class ItemViewController: BaseViewController {
             } else {
                 safariButton.hidden = true
             }
-        }
-        else {
-            safariButton.hidden = false
+        } else {
+            safariButton.hidden = true
         }
     }
     
