@@ -19,14 +19,18 @@ Josh has been using this course as a reference ever since he started programming
 		<date>2015-01-01T09:00:00Z</date>
 	</dict>
 	<dict>
+		<key>endDate</key>
+		<date>2015-04-01T16:00:00Z</date>
 		<key>category</key>
 		<integer>2</integer>
 		<key>title</key>
 		<string>Plymouth Swift Course</string>
 		<key>body</key>
-		<string></string>
+		<string>Nick Outram&apos;s course iOS Development with Swift has been carefully created and curated for a fantastic learning experience and has done a great thing for Plymouth University by becoming one of the recommended iTunesU courses by Apple.
+
+Josh has taken this course while studying at Plymouth University and recently been using the latest iteration which is dedicated to Swift and it has proved to be another great resource for learning iOS and Swift.</string>
 		<key>startDate</key>
-		<date>2012-09-01T08:00:00Z</date>
+		<date>2015-01-01T09:00:00Z</date>
 	</dict>
 	<dict>
 		<key>urlString</key>
