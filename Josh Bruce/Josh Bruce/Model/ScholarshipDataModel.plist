@@ -3,14 +3,20 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>endDate</key>
+		<date>2015-04-01T16:00:00Z</date>
 		<key>category</key>
 		<integer>2</integer>
 		<key>title</key>
 		<string>Stanford Swift Course</string>
 		<key>body</key>
-		<string></string>
+		<string>The Stanford University iOS course has always been a fantastic resource for Josh, something he has enrolled in and completed the lectures and assignments as released. This was a great way to learn quickly and keep up-to-date on best practises.
+
+With Swift having been anounced at WWDC 2014, retaking the quarter between January and April 2015 a long with the Stanford University class was a great opportunity to learn new things about Swift that Josh hadn&apos;t touched yet as well as brushing up on existing skills.
+
+Josh has been using this course as a reference ever since he started programming and creating apps for iOS back in 2011.</string>
 		<key>startDate</key>
-		<date>2012-09-01T08:00:00Z</date>
+		<date>2015-01-01T09:00:00Z</date>
 	</dict>
 	<dict>
 		<key>category</key>
