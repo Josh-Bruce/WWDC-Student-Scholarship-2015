@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="aqo-go-Rk8">
             <objects>
-                <navigationController navigationBarHidden="YES" id="x9L-cP-nEp" customClass="NavigationController" customModule="Josh_Bruce" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="x9L-cP-nEp" customClass="BaseNavigationController" customModule="Josh_Bruce" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VYz-Mn-OHx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

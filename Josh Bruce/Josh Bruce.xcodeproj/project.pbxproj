@@ -11,12 +11,12 @@
 		201BA6741AE4FF3800E26236 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BA6731AE4FF3800E26236 /* CategoryTableViewCell.swift */; };
 		201BA6761AE502AD00E26236 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BA6751AE502AD00E26236 /* AboutTableViewCell.swift */; };
 		201BA67A1AE556DC00E26236 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BA6791AE556DC00E26236 /* Animations.swift */; };
-		205C16D31AE2788100DF5F9A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C16D21AE2788100DF5F9A /* NavigationController.swift */; };
 		207CA5E31AE1239F00399C27 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */; };
 		207CA6231AE12FBB00399C27 /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */; };
 		207CA6261AE1351A00399C27 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6251AE1351A00399C27 /* CategoryCollectionViewCell.swift */; };
 		207CA6281AE156D300399C27 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6271AE156D300399C27 /* ItemViewController.swift */; };
 		207CA62A1AE1A56000399C27 /* CategoryHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6291AE1A56000399C27 /* CategoryHeaderCollectionReusableView.swift */; };
+		209CFE321AE64F85006A6993 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209CFE311AE64F85006A6993 /* BaseNavigationController.swift */; };
 		20A64EC31ADFABCB00689C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EC21ADFABCB00689C77 /* AppDelegate.swift */; };
 		20A64EC81ADFABCB00689C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A64EC61ADFABCB00689C77 /* Main.storyboard */; };
 		20A64ECA1ADFABCB00689C77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A64EC91ADFABCB00689C77 /* Images.xcassets */; };
@@ -59,12 +59,12 @@
 		201BA6731AE4FF3800E26236 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		201BA6751AE502AD00E26236 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
 		201BA6791AE556DC00E26236 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
-		205C16D21AE2788100DF5F9A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
 		207CA6251AE1351A00399C27 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		207CA6271AE156D300399C27 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		207CA6291AE1A56000399C27 /* CategoryHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		209CFE311AE64F85006A6993 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		20A64EBD1ADFABCA00689C77 /* Josh Bruce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Josh Bruce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A64EC11ADFABCB00689C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20A64EC21ADFABCB00689C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 		20A64EE41ADFAC4700689C77 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				205C16D21AE2788100DF5F9A /* NavigationController.swift */,
+				209CFE311AE64F85006A6993 /* BaseNavigationController.swift */,
 				20A64EEA1ADFB87400689C77 /* BaseViewController.swift */,
 				207CA5E21AE1239F00399C27 /* WelcomeViewController.swift */,
 				207CA6221AE12FBB00399C27 /* CategoryCollectionViewController.swift */,
@@ -398,7 +398,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20A64F001AE00DCB00689C77 /* WWDCCategory.swift in Sources */,
-				205C16D31AE2788100DF5F9A /* NavigationController.swift in Sources */,
 				20A64F0E1AE02BDE00689C77 /* RoundedImage.swift in Sources */,
 				20A64EF71ADFFA1F00689C77 /* TimelineTableViewCell.swift in Sources */,
 				20A64F061AE026B600689C77 /* Work.swift in Sources */,
@@ -424,6 +423,7 @@
 				207CA62A1AE1A56000399C27 /* CategoryHeaderCollectionReusableView.swift in Sources */,
 				20A64F0A1AE026E200689C77 /* TechnicalSkill.swift in Sources */,
 				201BA67A1AE556DC00E26236 /* Animations.swift in Sources */,
+				209CFE321AE64F85006A6993 /* BaseNavigationController.swift in Sources */,
 				20D988741AE4289E00953DDE /* TransitionManager.swift in Sources */,
 				207CA6261AE1351A00399C27 /* CategoryCollectionViewCell.swift in Sources */,
 				207CA5E31AE1239F00399C27 /* WelcomeViewController.swift in Sources */,
