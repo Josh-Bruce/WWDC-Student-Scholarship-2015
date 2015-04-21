@@ -675,15 +675,26 @@
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41v-H1-PjZ">
+                                                                    <rect key="frame" x="484" y="19" width="20" height="22"/>
+                                                                    <state key="normal" image="safari-filled-icon">
+                                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="openInSafari:" destination="prg-qL-O5q" eventType="touchUpInside" id="ai9-2t-E6u"/>
+                                                                    </connections>
+                                                                </button>
                                                             </subviews>
                                                             <color key="backgroundColor" red="0.20000000000000001" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="41v-H1-PjZ" secondAttribute="trailing" constant="16" id="3pu-Q2-LgX"/>
                                                                 <constraint firstAttribute="height" constant="60" id="Ahl-2i-rGr"/>
                                                                 <constraint firstItem="Dcz-gE-D2K" firstAttribute="leading" secondItem="TIG-vs-47o" secondAttribute="leading" constant="8" id="Ebc-TA-jfN"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Dcz-gE-D2K" secondAttribute="trailing" constant="8" id="IIt-0k-DGb"/>
                                                                 <constraint firstItem="fqC-kM-g6d" firstAttribute="top" secondItem="TIG-vs-47o" secondAttribute="top" constant="8" id="QnC-R1-DdL"/>
                                                                 <constraint firstAttribute="trailing" secondItem="fqC-kM-g6d" secondAttribute="trailing" constant="8" id="geG-3O-Pn4"/>
                                                                 <constraint firstItem="fqC-kM-g6d" firstAttribute="leading" secondItem="TIG-vs-47o" secondAttribute="leading" constant="8" id="nKH-kk-8Qt"/>
+                                                                <constraint firstAttribute="centerY" secondItem="41v-H1-PjZ" secondAttribute="centerY" id="nwj-kn-OTh"/>
                                                                 <constraint firstItem="Dcz-gE-D2K" firstAttribute="top" secondItem="fqC-kM-g6d" secondAttribute="bottom" constant="8" id="whm-CX-wyo"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Dcz-gE-D2K" secondAttribute="bottom" constant="8" id="wxI-n3-YWK"/>
                                                             </constraints>
@@ -791,6 +802,7 @@
                         <outlet property="descriptionLabelBottomConstraint" destination="ecz-ts-vl4" id="HOf-MW-gZt"/>
                         <outlet property="itemContainerView" destination="0gN-vu-kgl" id="0zg-mk-DHC"/>
                         <outlet property="logoImageView" destination="JFc-5B-xx5" id="ZyX-tO-wA7"/>
+                        <outlet property="safariButton" destination="41v-H1-PjZ" id="dWq-ga-KdE"/>
                         <outlet property="skillsLabel" destination="XJR-yV-lm8" id="HSr-tw-f2a"/>
                         <outlet property="titleLabel" destination="fqC-kM-g6d" id="BrM-6z-OaF"/>
                     </connections>
@@ -942,6 +954,7 @@
         <image name="josh-bruce" width="220" height="220"/>
         <image name="josh-bruce-cell-background" width="375" height="120"/>
         <image name="projects-icon" width="29" height="28"/>
+        <image name="safari-filled-icon" width="20" height="20"/>
         <image name="swift-icon" width="34" height="29"/>
         <image name="timeline-icon" width="26" height="26"/>
         <image name="work-icon" width="32" height="32"/>

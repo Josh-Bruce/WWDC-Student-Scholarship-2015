@@ -20,6 +20,8 @@ class ItemViewController: BaseViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    @IBOutlet weak var safariButton: UIButton!
+    
     @IBOutlet weak var bottomContainer: UIView!
     @IBOutlet weak var skillsLabel: UILabel!
     
@@ -74,6 +76,24 @@ class ItemViewController: BaseViewController {
             bottomContainer.removeConstraints(bottomContainer.constraints())
             descriptionLabelBottomConstraint.constant = 8
         }
+        
+        // Show / hide share icon
+        if let item = item as? Project {
+            if let url = item.url {
+                safariButton.hidden = false
+            } else {
+                safariButton.hidden = true
+            }
+        } else if let item = item as? Work {
+            if let url = item.url {
+                safariButton.hidden = false
+            } else {
+                safariButton.hidden = true
+            }
+        }
+        else {
+            safariButton.hidden = false
+        }
     }
     
     // MARK: - Actions
@@ -123,6 +143,34 @@ class ItemViewController: BaseViewController {
                 // Dismiss
                 dismissViewControllerAnimated(true, completion: nil)
             }
+        }
+    }
+    
+    @IBAction func openInSafari(sender: UIButton) {
+        // Variables for activity sheet
+        var itemUrl: NSURL? = nil
+        
+        // This only applies to project / work items as they have URLs
+        if let item = item as? Project {
+            if let url = item.url {
+                itemUrl = item.url
+            }
+        } else if let item = item as? Work {
+            if let url = item.url {
+                itemUrl = item.url
+            }
+        }
+        
+        // Check we have a url
+        if let url = itemUrl, let urlString = url.absoluteString {
+            // Actions
+            let okayAction = UIAlertAction(title: "Okay", style: .Default) { (action) -> Void in
+                UIApplication.sharedApplication().openURL(url)
+            }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+            
+            // Check to open it with alert
+            NotificationController.sharedInstance().displayAlert(self, title: "Open in Safari", message: "Do you want to open this url \(urlString) in Safari?", actions: [okayAction, cancelAction])
         }
     }
     
