@@ -10,9 +10,15 @@ import UIKit
 
 let reuseIdentifier = "categoryCell"
 
+protocol CategoryCollectionViewControllerDelegate {
+    func didSelectTimeline()
+}
+
 class CategoryCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, QuickCategoryChangeViewControllerDelegate {
 
     // MARK: - Properties
+    
+    var delegate: CategoryCollectionViewControllerDelegate?
     
     var collection = [WWDCCategoryProtocol]()
 
@@ -100,6 +106,14 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         collectionView?.performBatchUpdates({ () -> Void in
             self.collectionView?.reloadSections(NSIndexSet(index: 0))
         }, completion: nil)
+    }
+    
+    func didSelectTimeline() {
+        // Pop view controller
+        navigationController?.popViewControllerAnimated(true)
+        
+        // Call delegate for showing timeline
+        delegate?.didSelectTimeline()
     }
     
     // MARK: - Navigation

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuTableViewController: UITableViewController {
+class MenuTableViewController: UITableViewController, CategoryCollectionViewControllerDelegate {
     
     // MARK: - Properties
     
@@ -126,6 +126,13 @@ class MenuTableViewController: UITableViewController {
         return 100.0
     }
     
+    // MARK: - CategoryCollectionViewControllerDelegate
+    
+    func didSelectTimeline() {
+        // Segue to the timeline
+        performSegueWithIdentifier(Constant.Segues.ShowTimeline, sender: self)
+    }
+    
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -141,6 +148,7 @@ class MenuTableViewController: UITableViewController {
         if segue.identifier == Constant.Segues.ShowCategoryType {
             if let dvc = segue.destinationViewController as? CategoryCollectionViewController {
                 dvc.categoryType = selectedType
+                dvc.delegate = self
             }
         }
     }

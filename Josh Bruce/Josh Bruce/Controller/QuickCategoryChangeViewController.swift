@@ -10,6 +10,7 @@ import UIKit
 
 protocol QuickCategoryChangeViewControllerDelegate {
     func didSelectCategory(category: WWDCCategoryType)
+    func didSelectTimeline()
 }
 
 class QuickCategoryChangeViewController: BaseViewController {
@@ -75,7 +76,11 @@ class QuickCategoryChangeViewController: BaseViewController {
     }
     
     @IBAction func showTimeline(sender: CircleButton) {
-        
+        // Dismiss
+        dismissViewControllerAnimated(true) {
+            // Pass back delegate
+            self.delegate?.didSelectTimeline()
+        }
     }
     
 }
