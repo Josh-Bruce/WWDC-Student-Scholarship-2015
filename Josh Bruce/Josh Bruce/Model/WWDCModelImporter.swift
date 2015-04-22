@@ -43,12 +43,9 @@ class WWDCModelImporter {
         // Parse items from file
         if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "plist") {
             // Get an array from the file
-            if let arrayOfItems = NSArray(contentsOfFile: path) as? [AnyObject] {
-                // Keep reference
-                self.arrayOfItems = arrayOfItems
-                
+            if let arrayOfItems = NSArray(contentsOfFile: path) as? [AnyObject] {                
                 // Return
-                return self.arrayOfItems
+                return arrayOfItems
             }
         }
         
