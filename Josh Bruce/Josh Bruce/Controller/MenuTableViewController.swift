@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import QuickLook
 
 class MenuTableViewController: UITableViewController, CategoryCollectionViewControllerDelegate, UIDocumentInteractionControllerDelegate {
     

@@ -223,7 +223,7 @@
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3zi-ul-g1y">
                             <size key="itemSize" width="280" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="50" height="59"/>
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
@@ -274,6 +274,75 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gestureFooterView" id="oAK-tv-cOL">
+                            <rect key="frame" x="0.0" y="120" width="600" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deZ-hD-KlH" userLabel="Tap Gesture">
+                                    <rect key="frame" x="300" y="0.0" width="300" height="59"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="long-press-gesture-icon" translatesAutoresizingMaskIntoConstraints="NO" id="qB7-a7-xh4">
+                                            <rect key="frame" x="140" y="8" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="3W2-xJ-XvB"/>
+                                                <constraint firstAttribute="width" constant="20" id="88l-rv-yaW"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long Press" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pga-CZ-c1x">
+                                            <rect key="frame" x="119" y="36" width="63" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="pga-CZ-c1x" firstAttribute="top" secondItem="qB7-a7-xh4" secondAttribute="bottom" constant="8" id="6u2-1h-yF7"/>
+                                        <constraint firstAttribute="centerX" secondItem="pga-CZ-c1x" secondAttribute="centerX" id="HPO-bi-U5K"/>
+                                        <constraint firstAttribute="bottom" secondItem="pga-CZ-c1x" secondAttribute="bottom" constant="8" id="Io9-kJ-Bgo"/>
+                                        <constraint firstItem="qB7-a7-xh4" firstAttribute="top" secondItem="deZ-hD-KlH" secondAttribute="top" constant="8" id="ObR-on-O36"/>
+                                        <constraint firstAttribute="centerX" secondItem="qB7-a7-xh4" secondAttribute="centerX" id="Rm5-sK-qTt"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NG6-7b-GA9" userLabel="Long Press Gesture">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="59"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap-gesture-icon" translatesAutoresizingMaskIntoConstraints="NO" id="QKM-Ko-Xj6">
+                                            <rect key="frame" x="140" y="8" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="7bL-xY-GhH"/>
+                                                <constraint firstAttribute="width" constant="20" id="yvh-d5-w4p"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wN9-Bo-r9z">
+                                            <rect key="frame" x="140" y="36" width="20" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="QKM-Ko-Xj6" firstAttribute="top" secondItem="NG6-7b-GA9" secondAttribute="top" constant="8" id="4I3-b0-hn1"/>
+                                        <constraint firstItem="wN9-Bo-r9z" firstAttribute="top" secondItem="QKM-Ko-Xj6" secondAttribute="bottom" constant="8" id="4MC-6B-CfA"/>
+                                        <constraint firstAttribute="bottom" secondItem="wN9-Bo-r9z" secondAttribute="bottom" constant="8" id="Hsp-4D-zWZ"/>
+                                        <constraint firstAttribute="centerX" secondItem="QKM-Ko-Xj6" secondAttribute="centerX" id="SiW-5P-pag"/>
+                                        <constraint firstAttribute="centerX" secondItem="wN9-Bo-r9z" secondAttribute="centerX" id="xlf-5T-NZI"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="deZ-hD-KlH" firstAttribute="height" secondItem="NG6-7b-GA9" secondAttribute="height" id="EuM-84-TFj"/>
+                                <constraint firstItem="NG6-7b-GA9" firstAttribute="top" secondItem="oAK-tv-cOL" secondAttribute="top" id="HYk-8E-heS"/>
+                                <constraint firstAttribute="trailing" secondItem="deZ-hD-KlH" secondAttribute="trailing" id="KGj-Lm-1qB"/>
+                                <constraint firstItem="deZ-hD-KlH" firstAttribute="width" secondItem="NG6-7b-GA9" secondAttribute="width" id="MkU-ab-gDy"/>
+                                <constraint firstAttribute="bottom" secondItem="NG6-7b-GA9" secondAttribute="bottom" id="Y8Q-6d-Gdd"/>
+                                <constraint firstItem="NG6-7b-GA9" firstAttribute="leading" secondItem="oAK-tv-cOL" secondAttribute="leading" id="aC0-dH-Qqj"/>
+                                <constraint firstItem="deZ-hD-KlH" firstAttribute="leading" secondItem="NG6-7b-GA9" secondAttribute="trailing" id="awI-gr-mFC"/>
+                                <constraint firstItem="deZ-hD-KlH" firstAttribute="top" secondItem="oAK-tv-cOL" secondAttribute="top" id="jUg-it-UTc"/>
+                                <constraint firstAttribute="bottom" secondItem="deZ-hD-KlH" secondAttribute="bottom" id="jab-uD-Hlx"/>
+                            </constraints>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="mrx-Ze-toG" id="Fvc-ly-ian"/>
                             <outlet property="delegate" destination="mrx-Ze-toG" id="TyS-RJ-aMV"/>
@@ -1029,9 +1098,11 @@
         <image name="interests-icon" width="29" height="29"/>
         <image name="josh-bruce" width="220" height="220"/>
         <image name="josh-bruce-cell-background" width="375" height="120"/>
+        <image name="long-press-gesture-icon" width="100" height="100"/>
         <image name="projects-icon" width="29" height="28"/>
         <image name="safari-filled-icon" width="20" height="20"/>
         <image name="swift-icon" width="34" height="29"/>
+        <image name="tap-gesture-icon" width="100" height="100"/>
         <image name="timeline-icon" width="26" height="26"/>
         <image name="work-icon" width="32" height="32"/>
     </resources>
