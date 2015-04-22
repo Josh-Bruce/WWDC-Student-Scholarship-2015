@@ -691,6 +691,15 @@
                                                                         <action selector="openInSafari:" destination="prg-qL-O5q" eventType="touchUpInside" id="ai9-2t-E6u"/>
                                                                     </connections>
                                                                 </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eee-BS-Sqy">
+                                                                    <rect key="frame" x="16" y="19" width="20" height="22"/>
+                                                                    <state key="normal" image="audio-on-icon">
+                                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="handleSpeaking:" destination="prg-qL-O5q" eventType="touchUpInside" id="eHl-rn-rAJ"/>
+                                                                    </connections>
+                                                                </button>
                                                             </subviews>
                                                             <color key="backgroundColor" red="0.20000000000000001" green="0.24313725489999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
@@ -699,9 +708,11 @@
                                                                 <constraint firstItem="Dcz-gE-D2K" firstAttribute="leading" secondItem="TIG-vs-47o" secondAttribute="leading" constant="8" id="Ebc-TA-jfN"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Dcz-gE-D2K" secondAttribute="trailing" constant="8" id="IIt-0k-DGb"/>
                                                                 <constraint firstItem="fqC-kM-g6d" firstAttribute="top" secondItem="TIG-vs-47o" secondAttribute="top" constant="8" id="QnC-R1-DdL"/>
+                                                                <constraint firstItem="eee-BS-Sqy" firstAttribute="leading" secondItem="TIG-vs-47o" secondAttribute="leading" constant="16" id="at3-dZ-TZT"/>
                                                                 <constraint firstAttribute="trailing" secondItem="fqC-kM-g6d" secondAttribute="trailing" constant="8" id="geG-3O-Pn4"/>
                                                                 <constraint firstItem="fqC-kM-g6d" firstAttribute="leading" secondItem="TIG-vs-47o" secondAttribute="leading" constant="8" id="nKH-kk-8Qt"/>
                                                                 <constraint firstAttribute="centerY" secondItem="41v-H1-PjZ" secondAttribute="centerY" id="nwj-kn-OTh"/>
+                                                                <constraint firstAttribute="centerY" secondItem="eee-BS-Sqy" secondAttribute="centerY" id="tCA-cV-VVy"/>
                                                                 <constraint firstItem="Dcz-gE-D2K" firstAttribute="top" secondItem="fqC-kM-g6d" secondAttribute="bottom" constant="8" id="whm-CX-wyo"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Dcz-gE-D2K" secondAttribute="bottom" constant="8" id="wxI-n3-YWK"/>
                                                             </constraints>
@@ -848,6 +859,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="audioButton" destination="eee-BS-Sqy" id="vkz-9R-czh"/>
                         <outlet property="bottomContainer" destination="Ybv-IR-hCv" id="cvh-k3-Ipx"/>
                         <outlet property="colorView" destination="AID-jX-XAT" id="uwX-S8-NSD"/>
                         <outlet property="dateLabel" destination="Dcz-gE-D2K" id="wWf-Sa-1b3"/>
@@ -1005,6 +1017,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="audio-on-icon" width="20" height="20"/>
         <image name="down-arrow" width="30" height="16"/>
         <image name="education-icon" width="40" height="24"/>
         <image name="interests-icon" width="29" height="29"/>

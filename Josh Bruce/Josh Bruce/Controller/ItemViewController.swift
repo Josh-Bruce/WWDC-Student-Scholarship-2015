@@ -22,6 +22,7 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     @IBOutlet weak var safariButton: UIButton!
+    @IBOutlet weak var audioButton: UIButton!
     
     @IBOutlet weak var bottomContainer: UIView!
     @IBOutlet weak var skillsLabel: UILabel!
@@ -45,6 +46,16 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
     var willAnimateBar = false
 	
 	var speechSynthesizer: AVSpeechSynthesizer!
+    var isSpeaking: Bool = false {
+        didSet {
+            // Switch the icon for UX depending on if we are speaking
+            if isSpeaking {
+                audioButton.setImage(UIImage(named: "audio-off-icon"), forState: .Normal)
+            } else {
+                audioButton.setImage(UIImage(named: "audio-on-icon"), forState: .Normal)
+            }
+        }
+    }
     
     // MARK: - Lifecycle
     
@@ -73,8 +84,8 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
 		super.viewWillDisappear(animated)
 		
 		// Stop speaking if we are at the next word
-		if speechSynthesizer.speaking {
-			speechSynthesizer.stopSpeakingAtBoundary(.Word)
+		if isSpeaking && speechSynthesizer.speaking {
+			stopSpeaking()
 		}
 	}
     
@@ -155,6 +166,28 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
         }
     }
     
+    func startSpeaking() {
+        if let description = descriptionLabel.text {
+            // Setup utterance and speak text
+            speechSynthesizer.speakUtterance(utteranceForString(description))
+            
+            // Update speaking property
+            isSpeaking = true
+        }
+    }
+    
+    func stopSpeaking() {
+        // Stop speak at the next word
+        speechSynthesizer.stopSpeakingAtBoundary(.Word)
+        
+        // Update speaking property
+        isSpeaking = false
+        
+        // Remove attributes from label
+        descriptionLabel.attributedText = nil
+        descriptionLabel.text = item.body
+    }
+    
     // MARK: - Actions
     
     @IBAction func handlePanGesture(sender: UIPanGestureRecognizer) {
@@ -232,6 +265,17 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
             NotificationController.sharedInstance().displayAlert(self, title: "Open in Safari", message: "Do you want to open this url \(urlString) in Safari?", actions: [okayAction, cancelAction])
         }
     }
+    
+    @IBAction func handleSpeaking(sender: UIButton) {
+        // Check if we are already speaking
+        if isSpeaking && speechSynthesizer.speaking {
+            // Stop speaking
+            stopSpeaking()
+        } else {
+            // Start speaking
+            startSpeaking()
+        }
+    }
 	
 	// MARK: - AVSpeechSynthesizer Setup
 	
@@ -256,15 +300,24 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
 	// MARK: - AVSpeechSynthesizerDelegate
 	
 	func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance!) {
-		
+		// Create an attributed string to place colour on the currently spoken word
+        let mutableAttributedString = NSMutableAttributedString(string: utterance.speechString)
+        
+        // Apply colour to the word at the range
+        mutableAttributedString.addAttribute(NSForegroundColorAttributeName, value: Constant.Colors.RedColor, range: characterRange)
+        
+        // Update the label
+        descriptionLabel.attributedText = mutableAttributedString
 	}
 	
 	func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didStartSpeechUtterance utterance: AVSpeechUtterance!) {
-		
-	}
+        // Update speaking
+        isSpeaking = true
+    }
 	
 	func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didFinishSpeechUtterance utterance: AVSpeechUtterance!) {
-		
-	}
+        // Update speaking
+        isSpeaking = false
+    }
     
 }
