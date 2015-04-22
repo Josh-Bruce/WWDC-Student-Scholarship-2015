@@ -10,21 +10,29 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jb" translatesAutoresizingMaskIntoConstraints="NO" id="Lgk-Y8-7TH">
-                    <rect key="frame" x="135" y="126" width="210" height="229"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen-image" translatesAutoresizingMaskIntoConstraints="NO" id="7Lj-hN-WBy">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen-initials" translatesAutoresizingMaskIntoConstraints="NO" id="Lgk-Y8-7TH">
+                    <rect key="frame" x="139" y="131" width="202" height="219"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.36862745099999999" green="0.76078431369999999" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="7Lj-hN-WBy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fwq-41-oed"/>
                 <constraint firstAttribute="centerX" secondItem="Lgk-Y8-7TH" secondAttribute="centerX" id="U7N-Hx-baf"/>
+                <constraint firstAttribute="trailing" secondItem="7Lj-hN-WBy" secondAttribute="trailing" id="X0g-C6-qIE"/>
+                <constraint firstAttribute="bottom" secondItem="7Lj-hN-WBy" secondAttribute="bottom" id="nrW-Io-ZUM"/>
+                <constraint firstItem="7Lj-hN-WBy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nz6-Sn-GQW"/>
                 <constraint firstAttribute="centerY" secondItem="Lgk-Y8-7TH" secondAttribute="centerY" id="sox-Mf-bAq"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="548" y="455"/>
+            <point key="canvasLocation" x="413" y="442"/>
         </view>
     </objects>
     <resources>
-        <image name="jb" width="210" height="229"/>
+        <image name="launch-screen-image" width="480" height="480"/>
+        <image name="launch-screen-initials" width="202" height="219"/>
     </resources>
 </document>
