@@ -156,7 +156,7 @@ class WelcomeViewController: BaseViewController {
     
     @IBAction func letsBegin(sender: UIButton) {
         // Segue to menu
-        performSegueWithIdentifier(Constant.Segues.showMenu, sender: self)
+        performSegueWithIdentifier(Constant.Segues.ShowMenu, sender: self)
     }
    
 }

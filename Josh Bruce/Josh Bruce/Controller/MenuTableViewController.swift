@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import QuickLook
 
-class MenuTableViewController: UITableViewController, CategoryCollectionViewControllerDelegate {
+class MenuTableViewController: UITableViewController, CategoryCollectionViewControllerDelegate, UIDocumentInteractionControllerDelegate {
     
     // MARK: - Properties
     
     var categories = [WWDCCategoryType.Projects, WWDCCategoryType.Education, WWDCCategoryType.Work, WWDCCategoryType.TechnicalSkills, WWDCCategoryType.Interests]
     
     var selectedType: WWDCCategoryType = .None
-
+    
+    var documentController: UIDocumentInteractionController!
+    
     // MARK: - Lifecyle
     
     override func viewWillAppear(animated: Bool) {
@@ -34,6 +37,20 @@ class MenuTableViewController: UITableViewController, CategoryCollectionViewCont
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    // MARK: - Methods
+    
+    func showCVWithQuickLook() {
+        // Get the URL to be shown
+        if let urlString = NSBundle.mainBundle().pathForResource(Constant.File.CV, ofType: "pdf") {
+            if let url = NSURL(fileURLWithPath: urlString) {
+                // Init the document controller
+                documentController = UIDocumentInteractionController(URL: url)
+                documentController.delegate = self
+                documentController.presentPreviewAnimated(true)
+            }
+        }
     }
 
     // MARK: - UITableViewDataSource
@@ -99,6 +116,8 @@ class MenuTableViewController: UITableViewController, CategoryCollectionViewCont
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         // Switch over section & row
         switch (indexPath.section, indexPath.row) {
+        case (0, _):
+            showCVWithQuickLook()
         case (1, 0..<categories.count):
             // Get the object
             let object = categories[indexPath.row]
@@ -124,6 +143,12 @@ class MenuTableViewController: UITableViewController, CategoryCollectionViewCont
         
         // Default cell height
         return 100.0
+    }
+    
+    // MARK: - UIDocumentInteractionControllerDelegate
+    
+    func documentInteractionControllerViewControllerForPreview(controller: UIDocumentInteractionController) -> UIViewController {
+        return self
     }
     
     // MARK: - CategoryCollectionViewControllerDelegate

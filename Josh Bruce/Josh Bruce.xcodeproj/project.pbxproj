@@ -43,6 +43,7 @@
 		20A64F141AE061F700689C77 /* WWDCModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F131AE061F700689C77 /* WWDCModelFactory.swift */; };
 		20D988711AE4217B00953DDE /* QuickCategoryChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */; };
 		20D988741AE4289E00953DDE /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D988731AE4289E00953DDE /* TransitionManager.swift */; };
+		20D9B4FC1AE7EC250012AC12 /* JoshBruce.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 20D9B4FB1AE7EC250012AC12 /* JoshBruce.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		20A64F131AE061F700689C77 /* WWDCModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelFactory.swift; sourceTree = "<group>"; };
 		20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickCategoryChangeViewController.swift; sourceTree = "<group>"; };
 		20D988731AE4289E00953DDE /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		20D9B4FB1AE7EC250012AC12 /* JoshBruce.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JoshBruce.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 		20A64EE31ADFAC3D00689C77 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				20D9B4FA1AE7EC030012AC12 /* Misc */,
 				201BA6721AE4FF0E00E26236 /* Menu */,
 				20A64EEC1ADFBB0400689C77 /* Circle */,
 				207CA6241AE1340B00399C27 /* Collection */,
@@ -298,6 +301,14 @@
 			path = Transitions;
 			sourceTree = "<group>";
 		};
+		20D9B4FA1AE7EC030012AC12 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				20D9B4FB1AE7EC250012AC12 /* JoshBruce.pdf */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,6 +392,7 @@
 			files = (
 				20A64EC81ADFABCB00689C77 /* Main.storyboard in Resources */,
 				20A64ECD1ADFABCB00689C77 /* LaunchScreen.xib in Resources */,
+				20D9B4FC1AE7EC250012AC12 /* JoshBruce.pdf in Resources */,
 				20A64ECA1ADFABCB00689C77 /* Images.xcassets in Resources */,
 				20A64F101AE031E200689C77 /* ScholarshipDataModel.plist in Resources */,
 			);

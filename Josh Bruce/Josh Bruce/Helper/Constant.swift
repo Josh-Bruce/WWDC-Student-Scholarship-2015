@@ -74,7 +74,7 @@ struct Constant {
         /**
             Segue to show the main menu
         */
-        static let showMenu = "showMenu"
+        static let ShowMenu = "showMenu"
         
         /**
             Segue to show the timeline
@@ -95,6 +95,18 @@ struct Constant {
             Segue to show the quick category selection
         */
         static let ShowCategoryQuickSelection = "showQuickCategorySelection"
+        
+    }
+    
+    /**
+        Static filenames that are used through the application
+    */
+    struct File {
+        
+        /**
+            The filename of my CV (Resume)
+        */
+        static let CV = "JoshBruce"
         
     }
     
