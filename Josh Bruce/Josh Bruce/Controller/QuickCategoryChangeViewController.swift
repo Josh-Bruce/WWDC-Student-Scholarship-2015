@@ -24,14 +24,22 @@ class QuickCategoryChangeViewController: BaseViewController {
     @IBOutlet var interestsButton: CircleButton!
     @IBOutlet var timelineButton: CircleButton!
     
+    @IBOutlet var buttons: [CircleButton]!
+    
     // MARK: - Properties
     
     var delegate: QuickCategoryChangeViewControllerDelegate?
     
+    var animator: UIDynamicAnimator!
+    var gravityBehaviour: UIGravityBehavior!
+
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Initiate the Dynamic Animator
+        animator = UIDynamicAnimator(referenceView: view)
     }
     
     // MARK: - Methods
@@ -43,10 +51,21 @@ class QuickCategoryChangeViewController: BaseViewController {
         // Dismiss
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    func addGravityToAllButtons() {
+        // Add gravity to all button
+        var gravity = UIGravityBehavior(items: buttons)
+        gravity.gravityDirection = CGVectorMake(0, 10)
+        // Add behavior
+        animator.addBehavior(gravity)
+    }
    
     // MARK: - Actions
     
     @IBAction func cancel(sender: UIButton) {
+        // Add gravity to all button
+        addGravityToAllButtons()
+        
         // Dismiss without changing
         dismissViewControllerAnimated(true, completion: nil)
     }

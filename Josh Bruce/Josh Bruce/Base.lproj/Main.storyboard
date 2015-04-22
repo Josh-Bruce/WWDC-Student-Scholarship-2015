@@ -616,6 +616,12 @@
                         <outlet property="technicalSkillsButton" destination="Ufv-IY-8Ck" id="uZn-X0-FA5"/>
                         <outlet property="timelineButton" destination="c3A-Gn-tAT" id="lm3-hA-yrb"/>
                         <outlet property="workButton" destination="Br3-o9-uAL" id="aiY-g5-cA6"/>
+                        <outletCollection property="buttons" destination="IcK-Ev-wwH" collectionClass="NSMutableArray" id="PPr-ye-yqK"/>
+                        <outletCollection property="buttons" destination="yCp-tw-jlD" collectionClass="NSMutableArray" id="21F-jC-KkJ"/>
+                        <outletCollection property="buttons" destination="Br3-o9-uAL" collectionClass="NSMutableArray" id="4HD-Ji-CdZ"/>
+                        <outletCollection property="buttons" destination="Ufv-IY-8Ck" collectionClass="NSMutableArray" id="PRO-mp-Pw9"/>
+                        <outletCollection property="buttons" destination="5ly-kt-TaI" collectionClass="NSMutableArray" id="KFd-IC-tmW"/>
+                        <outletCollection property="buttons" destination="c3A-Gn-tAT" collectionClass="NSMutableArray" id="x8A-Jf-8uW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTB-hs-C2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
