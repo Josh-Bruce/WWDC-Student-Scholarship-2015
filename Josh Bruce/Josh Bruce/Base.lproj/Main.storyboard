@@ -137,15 +137,24 @@
                                                 <constraint firstAttribute="height" constant="80" id="We6-vk-vIs"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm 21, a Computer Science undergraduate &amp; an iOS Developer @JustPark" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siY-D2-oaU">
+                                            <rect key="frame" x="104" y="52" width="488" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="DWq-w2-SSA" firstAttribute="leading" secondItem="hr0-6e-Q1a" secondAttribute="leading" id="2pM-Mt-oWy"/>
+                                        <constraint firstAttribute="centerY" secondItem="siY-D2-oaU" secondAttribute="centerY" id="5am-Pr-o7g"/>
                                         <constraint firstAttribute="bottom" secondItem="Xq3-8k-UYc" secondAttribute="bottom" constant="20" id="8IZ-F2-bmC"/>
                                         <constraint firstItem="Xq3-8k-UYc" firstAttribute="leading" secondItem="hr0-6e-Q1a" secondAttribute="leading" constant="16" id="958-Br-JUa"/>
                                         <constraint firstAttribute="trailing" secondItem="DWq-w2-SSA" secondAttribute="trailing" id="9Lb-wv-7Wa"/>
                                         <constraint firstItem="DWq-w2-SSA" firstAttribute="top" secondItem="hr0-6e-Q1a" secondAttribute="top" id="Dmh-J5-cTq"/>
+                                        <constraint firstAttribute="trailing" secondItem="siY-D2-oaU" secondAttribute="trailing" constant="8" id="SsK-GX-xE6"/>
                                         <constraint firstItem="Xq3-8k-UYc" firstAttribute="top" secondItem="hr0-6e-Q1a" secondAttribute="top" constant="20" id="YcE-w9-2fR"/>
                                         <constraint firstAttribute="centerY" secondItem="Xq3-8k-UYc" secondAttribute="centerY" id="g6O-4c-zyL"/>
+                                        <constraint firstItem="siY-D2-oaU" firstAttribute="leading" secondItem="Xq3-8k-UYc" secondAttribute="trailing" constant="8" id="sqU-F3-3aX"/>
                                         <constraint firstAttribute="bottom" secondItem="DWq-w2-SSA" secondAttribute="bottom" id="xDu-bo-pmk"/>
                                     </constraints>
                                     <variation key="default">
@@ -275,7 +284,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gestureFooterView" id="oAK-tv-cOL">
-                            <rect key="frame" x="0.0" y="120" width="600" height="50"/>
+                            <rect key="frame" x="0.0" y="120" width="600" height="59"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deZ-hD-KlH" userLabel="Tap Gesture">
@@ -1098,11 +1107,11 @@
         <image name="interests-icon" width="29" height="29"/>
         <image name="josh-bruce" width="220" height="220"/>
         <image name="josh-bruce-cell-background" width="375" height="120"/>
-        <image name="long-press-gesture-icon" width="100" height="100"/>
+        <image name="long-press-gesture-icon" width="20" height="20"/>
         <image name="projects-icon" width="29" height="28"/>
         <image name="safari-filled-icon" width="20" height="20"/>
         <image name="swift-icon" width="34" height="29"/>
-        <image name="tap-gesture-icon" width="100" height="100"/>
+        <image name="tap-gesture-icon" width="20" height="20"/>
         <image name="timeline-icon" width="26" height="26"/>
         <image name="work-icon" width="32" height="32"/>
     </resources>
