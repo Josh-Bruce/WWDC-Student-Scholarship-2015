@@ -3,6 +3,26 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>body</key>
+		<string></string>
+		<key>category</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Fitness</string>
+		<key>startDate</key>
+		<date>2005-05-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>body</key>
+		<string></string>
+		<key>category</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Walking</string>
+		<key>startDate</key>
+		<date>2005-05-01T08:00:00Z</date>
+	</dict>
+	<dict>
 		<key>skillPercentage</key>
 		<integer>70</integer>
 		<key>category</key>
