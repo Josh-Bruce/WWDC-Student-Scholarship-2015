@@ -254,15 +254,9 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
         }
         
         // Check we have a url
-        if let url = itemUrl, let urlString = url.absoluteString {
-            // Actions
-            let okayAction = UIAlertAction(title: "Okay", style: .Default) { (action) -> Void in
-                UIApplication.sharedApplication().openURL(url)
-            }
-            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
-            
-            // Check to open it with alert
-            NotificationController.sharedInstance().displayAlert(self, title: "Open in Safari", message: "Do you want to open this url \(urlString) in Safari?", actions: [okayAction, cancelAction])
+        if let url = itemUrl {
+            // Open the url with confirmation alert
+            NotificationController.sharedInstance().confirmToOpenInSafari(self, url: url)
         }
     }
     

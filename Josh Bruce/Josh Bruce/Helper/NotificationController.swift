@@ -56,4 +56,25 @@ class NotificationController {
         viewController.presentViewController(alertController, animated: true, completion: nil)
     }
     
+    /**
+        Convenience method for a confirmation alert to open an NSURL, user
+        will be presented with an alert to open or cancel the request
+    
+        :param: viewController  The UIViewController to present the alert from
+        :param: url             The NSURL to open in Safari
+    */
+    func confirmToOpenInSafari(viewController: UIViewController, url: NSURL) {
+        // Check we have a url
+        if let urlString = url.absoluteString {
+            // Actions
+            let okayAction = UIAlertAction(title: "Open", style: .Default) { (action) -> Void in
+                UIApplication.sharedApplication().openURL(url)
+            }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+            
+            // Check to open it with alert
+            displayAlert(viewController, title: "Open in Safari", message: "Do you want to open this url \(urlString) in Safari?", actions: [okayAction, cancelAction])
+        }
+    }
+    
 }

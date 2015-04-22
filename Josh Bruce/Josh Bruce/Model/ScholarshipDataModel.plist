@@ -3,6 +3,24 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>imageName</key>
+		<string>youtube-icon</string>
+		<key>body</key>
+		<string></string>
+		<key>logoImageName</key>
+		<string>youtube-logo</string>
+		<key>endDate</key>
+		<date>2013-06-01T17:00:00Z</date>
+		<key>urlString</key>
+		<string>https://www.youtube.com/user/joshbrucie</string>
+		<key>category</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>YouTube</string>
+		<key>startDate</key>
+		<date>2012-04-12T08:00:00Z</date>
+	</dict>
+	<dict>
 		<key>endDate</key>
 		<date>2015-04-01T16:00:00Z</date>
 		<key>category</key>
@@ -67,6 +85,8 @@ Josh has taken this course while studying at Plymouth University and recently be
 		<date>2011-10-01T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>imageName</key>
+		<string>sequel-pro-icon</string>
 		<key>skillPercentage</key>
 		<integer>75</integer>
 		<key>category</key>
