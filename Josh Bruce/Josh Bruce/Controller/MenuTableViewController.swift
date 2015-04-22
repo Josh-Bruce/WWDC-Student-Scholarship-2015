@@ -71,7 +71,7 @@ class MenuTableViewController: UITableViewController {
                 // Configure the cell...
                 categoryCell.categoryTitleLabel.text = "Timeline"
                 categoryCell.categoryColor = Constant.Colors.DarkBlueColor
-                categoryCell.iconImageView.image = UIImage(named: "timeline-icon")
+                categoryCell.iconImageView.image = UIImage(named: "timeline-icon-large")
             } else {
                 // Get the type
                 let type = categories[indexPath.row]

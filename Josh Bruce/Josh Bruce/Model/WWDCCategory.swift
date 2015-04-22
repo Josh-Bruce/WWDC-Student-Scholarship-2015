@@ -62,22 +62,22 @@ enum WWDCCategoryType : Int {
         }
     }
     
-    /// The icon image to be used for the WWDCCategory
+    /// The icon image to be used for the WWDCCategory categories (Higher Res)
     var icon: UIImage? {
         get {
             switch self {
             case .None:
                 return nil
             case .Projects:
-                return UIImage(named: "projects-icon")
+                return UIImage(named: "projects-icon-large")
             case .Education:
-                return UIImage(named: "education-icon")
+                return UIImage(named: "education-icon-large")
             case .Work:
-                return UIImage(named: "work-icon")
+                return UIImage(named: "work-icon-large")
             case .TechnicalSkills:
-                return UIImage(named: "swift-icon")
+                return UIImage(named: "swift-icon-large")
             case .Interests:
-                return UIImage(named: "interests-icon")
+                return UIImage(named: "interests-icon-large")
             }
         }
     }
