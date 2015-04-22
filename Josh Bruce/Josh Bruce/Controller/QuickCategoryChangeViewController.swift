@@ -42,6 +42,13 @@ class QuickCategoryChangeViewController: BaseViewController {
         animator = UIDynamicAnimator(referenceView: view)
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Add gravity to all button
+        addGravityToAllButtons()
+    }
+    
     // MARK: - Methods
     
     func selectCategoryType(category: WWDCCategoryType) {
@@ -63,9 +70,6 @@ class QuickCategoryChangeViewController: BaseViewController {
     // MARK: - Actions
     
     @IBAction func cancel(sender: UIButton) {
-        // Add gravity to all button
-        addGravityToAllButtons()
-        
         // Dismiss without changing
         dismissViewControllerAnimated(true, completion: nil)
     }
