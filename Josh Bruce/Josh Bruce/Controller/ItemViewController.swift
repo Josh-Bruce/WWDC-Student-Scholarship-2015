@@ -44,7 +44,7 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
     
     var willAnimateBar = false
 	
-	var speechSynthesizer: AVSpeechSynthesizer?
+	var speechSynthesizer: AVSpeechSynthesizer!
     
     // MARK: - Lifecycle
     
@@ -66,15 +66,15 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
 		
 		// Init AVSpeechSynthesizer
 		speechSynthesizer = AVSpeechSynthesizer()
-		speechSynthesizer?.delegate = self
+		speechSynthesizer.delegate = self
     }
 	
 	override func viewWillDisappear(animated: Bool) {
 		super.viewWillDisappear(animated)
 		
 		// Stop speaking if we are at the next word
-		if speechSynthesizer != nil && speechSynthesizer!.speaking {
-			speechSynthesizer!.stopSpeakingAtBoundary(.Word)
+		if speechSynthesizer.speaking {
+			speechSynthesizer.stopSpeakingAtBoundary(.Word)
 		}
 	}
     
@@ -247,7 +247,7 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
 		// Init speech text
 		let utterance = AVSpeechUtterance(string: utteranceString)
 		utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
-		utterance.rate = AVSpeechUtteranceDefaultSpeechRate / 2.0
+		utterance.rate = AVSpeechUtteranceMinimumSpeechRate
 		
 		// Return
 		return utterance

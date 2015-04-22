@@ -18,7 +18,7 @@ class Interest : WWDCCategory {
         // Set any class specific properties
     }
     
-    convenience init(dictionary: NSDictionary) {
+    convenience init(dictionary: [NSObject : AnyObject]) {
         // Parse items from dictionary
         let title = dictionary["title"] as? String ?? "No title specified"
         let body = dictionary["body"] as? String ?? "No body specified"
