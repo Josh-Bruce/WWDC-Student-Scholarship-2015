@@ -3,6 +3,16 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>skillPercentage</key>
+		<integer>70</integer>
+		<key>category</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>Java</string>
+		<key>startDate</key>
+		<date>2013-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
 		<key>imageName</key>
 		<string>youtube-icon</string>
 		<key>body</key>

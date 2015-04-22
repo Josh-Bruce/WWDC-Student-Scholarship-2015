@@ -155,7 +155,6 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
                 dvc.delegate = self
             }
         }
-
     }
     
     // MARK: - Actions
