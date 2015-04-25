@@ -123,6 +123,10 @@ The next stage in this development will be for card processing and customer acco
 		<date>2014-08-01T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>body</key>
+		<string>Josh started learning Objective-C back in October 2011 when he got his first MacBook Pro. It was incredibly exciting to start developing applications for this incredibly device which is in everyones pockets. The possibilities for technology advancements in day to day life were amazing.
+
+Josh started to learn Objective-C via the Stanford University iOS Course which gave an amazing start, from there it was all about making small applications. Objective-C was an exciting and very different language than that Josh had done before but quickly got used to the differences but now has moved over to Swift which has an exciting future ahead of it.</string>
 		<key>imageName</key>
 		<string>xcode-icon</string>
 		<key>skillPercentage</key>
@@ -135,6 +139,10 @@ The next stage in this development will be for card processing and customer acco
 		<date>2011-10-01T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>body</key>
+		<string>MySQL has been a vital part of web development for Josh, most applications require some form of data persistence and MySQL provided an open source free introduction to this while also being very powerful. It was easy to integrate into PHP applications which was Josh’s primary use. Josh still uses MySQL for web app backing storage as well as iOS application backing via an API to communicate and persist data from the client.
+
+SQL in general has been well learnt and is one of Josh’s strongest subjects at University, acing the in class tests and ensuring great database structure has been built to ensure data integrity without having redundancy within the dataset.</string>
 		<key>imageName</key>
 		<string>sequel-pro-icon</string>
 		<key>skillPercentage</key>
