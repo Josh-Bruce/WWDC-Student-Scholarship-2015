@@ -220,9 +220,10 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
             // Add it
             animator.addBehavior(snapBehavior)
             
-            // Check if we have moved 100 points down
+            // Check if we have moved 100 points away from the center
+            let amaountToMove = CGFloat(100.0)
             let translation = sender.translationInView(view)
-            if translation.y > 100 {
+            if translation.y > amaountToMove || translation.y < -amaountToMove || translation.x > amaountToMove || translation.x < -amaountToMove {
                 // Remove all behaviors
                 animator.removeAllBehaviors()
                 
