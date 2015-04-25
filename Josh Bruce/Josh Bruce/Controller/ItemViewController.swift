@@ -188,6 +188,20 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
         descriptionLabel.text = item.body
     }
     
+    func addGravityAndDismiss(items: [AnyObject]) {
+        // Remove all behaviors
+        animator.removeAllBehaviors()
+        
+        // Add gravity to take the view down
+        var gravity = UIGravityBehavior(items: items)
+        gravity.gravityDirection = CGVectorMake(0, 10)
+        // Add behavior
+        animator.addBehavior(gravity)
+        
+        // Dismiss
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     // MARK: - Actions
     
     @IBAction func handlePanGesture(sender: UIPanGestureRecognizer) {
@@ -224,19 +238,15 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
             let amaountToMove = CGFloat(100.0)
             let translation = sender.translationInView(view)
             if translation.y > amaountToMove || translation.y < -amaountToMove || translation.x > amaountToMove || translation.x < -amaountToMove {
-                // Remove all behaviors
-                animator.removeAllBehaviors()
-                
-                // Add gravity to take the view down
-                var gravity = UIGravityBehavior(items: [viewToMove])
-                gravity.gravityDirection = CGVectorMake(0, 10)
-                // Add behavior
-                animator.addBehavior(gravity)
-                
-                // Dismiss
-                dismissViewControllerAnimated(true, completion: nil)
+                // Add gravity and dismiss
+                addGravityAndDismiss([viewToMove])
             }
         }
+    }
+    
+    @IBAction func handleTapGesture(sender: UITapGestureRecognizer) {
+        // Add gravity and dismiss on background touch
+        addGravityAndDismiss([itemContainerView])
     }
     
     @IBAction func openInSafari(sender: UIButton) {

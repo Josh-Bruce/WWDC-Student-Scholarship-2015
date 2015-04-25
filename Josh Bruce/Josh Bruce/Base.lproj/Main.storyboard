@@ -709,6 +709,7 @@
                 <tapGestureRecognizer id="RZm-eZ-gQj">
                     <connections>
                         <action selector="handleBackgroundTapGesture:" destination="Hy7-Ph-n4H" id="lsb-cQ-wtk"/>
+                        <outlet property="delegate" destination="Hy7-Ph-n4H" id="pu2-qd-e0S"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -921,6 +922,9 @@
                                         <constraint firstAttribute="bottom" secondItem="0gN-vu-kgl" secondAttribute="bottom" constant="80" id="Zh9-To-VGT"/>
                                         <constraint firstItem="0gN-vu-kgl" firstAttribute="top" secondItem="QQW-05-hhw" secondAttribute="top" constant="80" id="dPc-D3-aNi"/>
                                     </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="524-3n-1zV" appends="YES" id="vAV-8P-E5a"/>
+                                    </connections>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
@@ -969,6 +973,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xpj-nw-yFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="524-3n-1zV">
+                    <connections>
+                        <action selector="handleTapGesture:" destination="prg-qL-O5q" id="JZ9-XH-2lA"/>
+                        <outlet property="delegate" destination="prg-qL-O5q" id="hzu-xH-NuU"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="1zt-Tb-obk">
                     <connections>
                         <action selector="handlePanGesture:" destination="prg-qL-O5q" id="jbI-WC-iCO"/>
