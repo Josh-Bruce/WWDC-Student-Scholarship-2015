@@ -209,7 +209,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Josh Bruce" id="5L8-jl-a5R">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="d4G-yG-o70"/>
+                        <barButtonItem key="backBarButtonItem" title="Categories" id="d4G-yG-o70"/>
                     </navigationItem>
                     <connections>
                         <segue destination="mrx-Ze-toG" kind="show" identifier="showCategoryType" id="wp4-iB-Vmm"/>
