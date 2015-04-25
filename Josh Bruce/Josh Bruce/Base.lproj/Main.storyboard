@@ -137,7 +137,7 @@
                                                 <constraint firstAttribute="height" constant="80" id="We6-vk-vIs"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm 21, a Computer Science undergraduate &amp; an iOS Developer @JustPark" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siY-D2-oaU">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm 21, a Computer Science undergraduate &amp; iOS Developer @ JustPark" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siY-D2-oaU">
                                             <rect key="frame" x="104" y="52" width="488" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -283,7 +283,7 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gestureFooterView" id="oAK-tv-cOL">
+                        <collectionReusableView key="sectionFooterView" hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gestureFooterView" id="oAK-tv-cOL">
                             <rect key="frame" x="0.0" y="120" width="600" height="59"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
