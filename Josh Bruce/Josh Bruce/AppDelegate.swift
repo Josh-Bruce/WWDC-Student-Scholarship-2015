@@ -13,9 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Parse the plist data into the application
-        WWDCModelFactory.sharedInstance().parseModel(WWDCModelImporter(fileName: "ScholarshipDataModel").arrayOfItems)
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {        
+        // Dispatch onto background thread
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)) {
+            // Parse the plist data into the application
+            WWDCModelFactory.sharedInstance().parseModel(WWDCModelImporter(fileName: "ScholarshipDataModel").arrayOfItems)
+        }
         
         // Return true
         return true
