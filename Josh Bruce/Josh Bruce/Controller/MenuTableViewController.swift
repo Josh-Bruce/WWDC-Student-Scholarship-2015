@@ -48,6 +48,7 @@ class MenuTableViewController: UITableViewController, CategoryCollectionViewCont
                 documentController = UIDocumentInteractionController(URL: url)
                 documentController.delegate = self
                 documentController.presentPreviewAnimated(true)
+                documentController.name = "Josh's CV"
             }
         }
     }
