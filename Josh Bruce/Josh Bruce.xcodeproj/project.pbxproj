@@ -42,7 +42,6 @@
 		20A64F121AE060FF00689C77 /* WWDCModelImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F111AE060FF00689C77 /* WWDCModelImporter.swift */; };
 		20A64F141AE061F700689C77 /* WWDCModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F131AE061F700689C77 /* WWDCModelFactory.swift */; };
 		20D988711AE4217B00953DDE /* QuickCategoryChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */; };
-		20D988741AE4289E00953DDE /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D988731AE4289E00953DDE /* TransitionManager.swift */; };
 		20D9B4FC1AE7EC250012AC12 /* JoshBruce.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 20D9B4FB1AE7EC250012AC12 /* JoshBruce.pdf */; };
 /* End PBXBuildFile section */
 
@@ -96,7 +95,6 @@
 		20A64F111AE060FF00689C77 /* WWDCModelImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelImporter.swift; sourceTree = "<group>"; };
 		20A64F131AE061F700689C77 /* WWDCModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelFactory.swift; sourceTree = "<group>"; };
 		20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickCategoryChangeViewController.swift; sourceTree = "<group>"; };
-		20D988731AE4289E00953DDE /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		20D9B4FB1AE7EC250012AC12 /* JoshBruce.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JoshBruce.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,7 +259,6 @@
 		20A64EE71ADFAC6400689C77 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				20D988721AE4288200953DDE /* Transitions */,
 				201BA6791AE556DC00E26236 /* Animations.swift */,
 			);
 			path = Animation;
@@ -291,14 +288,6 @@
 				20A64F0D1AE02BDE00689C77 /* RoundedImage.swift */,
 			);
 			path = Rect;
-			sourceTree = "<group>";
-		};
-		20D988721AE4288200953DDE /* Transitions */ = {
-			isa = PBXGroup;
-			children = (
-				20D988731AE4289E00953DDE /* TransitionManager.swift */,
-			);
-			path = Transitions;
 			sourceTree = "<group>";
 		};
 		20D9B4FA1AE7EC030012AC12 /* Misc */ = {
@@ -440,7 +429,6 @@
 				20A64F0A1AE026E200689C77 /* TechnicalSkill.swift in Sources */,
 				201BA67A1AE556DC00E26236 /* Animations.swift in Sources */,
 				209CFE321AE64F85006A6993 /* BaseNavigationController.swift in Sources */,
-				20D988741AE4289E00953DDE /* TransitionManager.swift in Sources */,
 				207CA6261AE1351A00399C27 /* CategoryCollectionViewCell.swift in Sources */,
 				207CA5E31AE1239F00399C27 /* WelcomeViewController.swift in Sources */,
 			);
