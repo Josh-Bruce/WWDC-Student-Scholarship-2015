@@ -32,7 +32,9 @@
 		<key>title</key>
 		<string>ACEmobile</string>
 		<key>body</key>
-		<string></string>
+		<string>ACEmobile was great experience for Josh, being thrown into the deep end with a pre-existing application running a lot of legacy code. This was fantastic to see what its like to be apart of a project mid lifecycle and having to maintain code as it’s not always about starting from scratch.
+
+Josh worked on all aspects of ACEmobile from login to recording patient data and syncing it to the ACEmobile servers securely. I was able to get involved with all aspects of the application as an Intern. I would love to see NeuroCoRe turn their research application into ResearchKit applications as I think this would benefit them and their research a lot.</string>
 		<key>imageName</key>
 		<string>acemobile-icon</string>
 		<key>startDate</key>
