@@ -588,10 +588,10 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofl-1B-xqz">
-                                            <rect key="frame" x="275" y="552" width="51" height="32"/>
+                                            <rect key="frame" x="279" y="552" width="42" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" title="Cancel">
+                                            <state key="normal" title="Close">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
@@ -675,6 +675,9 @@
                                             <exclude reference="qBM-mU-mjK"/>
                                         </mask>
                                     </variation>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="RZm-eZ-gQj" appends="YES" id="iA8-4s-VM2"/>
+                                    </connections>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
@@ -703,6 +706,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTB-hs-C2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RZm-eZ-gQj">
+                    <connections>
+                        <action selector="handleBackgroundTapGesture:" destination="Hy7-Ph-n4H" id="lsb-cQ-wtk"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1168" y="1163"/>
         </scene>

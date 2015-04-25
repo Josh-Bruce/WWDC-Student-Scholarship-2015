@@ -69,6 +69,11 @@ class QuickCategoryChangeViewController: BaseViewController {
    
     // MARK: - Actions
     
+    @IBAction func handleBackgroundTapGesture(sender: UITapGestureRecognizer) {
+        // Dismiss without changing
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBAction func cancel(sender: UIButton) {
         // Dismiss without changing
         dismissViewControllerAnimated(true, completion: nil)
