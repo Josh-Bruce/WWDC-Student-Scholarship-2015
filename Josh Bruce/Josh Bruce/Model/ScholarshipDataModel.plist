@@ -3,6 +3,62 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>urlString</key>
+		<string>https://www.justpark.com</string>
+		<key>languages</key>
+		<array>
+			<string>Swift</string>
+		</array>
+		<key>category</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>JustPark</string>
+		<key>body</key>
+		<string></string>
+		<key>imageName</key>
+		<string>justpark-app-icon</string>
+		<key>startDate</key>
+		<date>2014-11-10T09:00:00Z</date>
+	</dict>
+	<dict>
+		<key>urlString</key>
+		<string>http://www.acemobile.org</string>
+		<key>languages</key>
+		<array>
+			<string>Objective-C, PHP</string>
+		</array>
+		<key>category</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>ACEmobile</string>
+		<key>body</key>
+		<string></string>
+		<key>imageName</key>
+		<string>acemobile-icon</string>
+		<key>startDate</key>
+		<date>2014-07-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>urlString</key>
+		<string>https://www.justpark.com</string>
+		<key>languages</key>
+		<array>
+			<string>Swift</string>
+		</array>
+		<key>category</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>JustPark Watch App</string>
+		<key>body</key>
+		<string>Josh started working on the JustPark WatchKit App at the beginning of March 2015 with the goal of having a product ready to release for 24th April. The WatchKit App would be a simple add-on  to the current application allow customers to see the time remaining on their booking and extend their booking by up to one hour.
+
+The JustPark iOS team was invited to the Apple Watch Labs in London on the 22nd &amp; 23rd April to get hands on feedback and advice from the Apple team in London. This was a fantastic opportunity and was incredibly useful to hear from these amazing engineers. They loved the JustPark app and we are awaiting release.</string>
+		<key>imageName</key>
+		<string>justpark-watch-icon</string>
+		<key>startDate</key>
+		<date>2015-03-01T09:00:00Z</date>
+	</dict>
+	<dict>
 		<key>imageName</key>
 		<string>meetup-icon</string>
 		<key>body</key>
