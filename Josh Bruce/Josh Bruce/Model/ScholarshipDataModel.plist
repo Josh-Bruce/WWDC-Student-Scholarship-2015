@@ -3,22 +3,20 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>urlString</key>
-		<string>https://www.justpark.com</string>
-		<key>languages</key>
-		<array>
-			<string>Swift</string>
-		</array>
-		<key>category</key>
-		<integer>1</integer>
-		<key>title</key>
-		<string>JustPark</string>
-		<key>body</key>
-		<string></string>
 		<key>imageName</key>
-		<string>justpark-app-icon</string>
+		<string>design-patterns-icon</string>
+		<key>endDate</key>
+		<date>2013-12-20T17:00:00Z</date>
+		<key>category</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>Design Patterns</string>
+		<key>body</key>
+		<string>Josh’s favourite lecture in his second year at University was OOP with Design Patterns and thoroughly enjoyed reading the book ‘Design Patterns: Elements of Reusable Object-Oriented Software’ this has improved Josh’s programming skills and general understanding a lot. 
+
+Having read this book Josh is able to take more time during the process of architecting code interaction, allowing for a much more solid implementation and natural interaction between classes. Josh finds thing very interesting and wishes to become much better at this over time.</string>
 		<key>startDate</key>
-		<date>2014-11-10T09:00:00Z</date>
+		<date>2013-09-01T08:00:00Z</date>
 	</dict>
 	<dict>
 		<key>urlString</key>
