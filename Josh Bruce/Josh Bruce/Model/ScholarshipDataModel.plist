@@ -3,6 +3,20 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>imageName</key>
+		<string>meetup-icon</string>
+		<key>body</key>
+		<string>Recently after joining JustPark and with the opportunity while living in London, Josh decided to start attending programming meetups with his first one being Swift London which was awesome to see what people within the community had been doing with Swift in the past 6 months. JustPark gave a presentation on the work we had been doing with Swift ourselves due to our application being written in Swift. 
+
+These meetups are a great place to network with other people who share the same interests which is fantastic, Josh has since gone to a few others and notably been to NSLondon which is one of the biggest in London. Have learnt a lot from other members of the community.</string>
+		<key>category</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Meetups</string>
+		<key>startDate</key>
+		<date>2014-12-16T18:00:00Z</date>
+	</dict>
+	<dict>
 		<key>body</key>
 		<string>Josh enjoys doing a lot of walking with his Girlfriend. Visiting remote places along the southern english coast with beautiful scenery. A very relaxing hobby which proves great for thinking about big decisions. Having the quite, open space to enjoy the beautiful world that we live in.</string>
 		<key>category</key>
@@ -13,6 +27,12 @@
 		<date>2005-05-01T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>body</key>
+		<string>Josh started learning Java in his second year at Plymouth University. This was an exciting module where we got to learn a new language as well as focusing on OOP with Design Patterns which was Josh’s favourite module.
+
+The work within this module has made Josh a much better programming, thinking about ways to improve reusability and patterns to abstract code. Java is a good steady language but has got nothing on Swift which is Josh’s favourite language.</string>
+		<key>imageName</key>
+		<string>java-icon</string>
 		<key>skillPercentage</key>
 		<integer>70</integer>
 		<key>category</key>
@@ -26,7 +46,9 @@
 		<key>imageName</key>
 		<string>youtube-icon</string>
 		<key>body</key>
-		<string></string>
+		<string>Josh started creating tutorials on YouTube because he has a passion to teach people and give back to the brilliant community the he started learning from. Screencasts were a fantastic way to learn programming, watching someone else and being to work alongside them is the best way.
+
+This lead to Josh wanting to teach iOS tutorials on YouTube, giving brief insight into getting started and various topics such as table views and animation. Josh has almost reached 1.2k subscribers on his channel and plans to keep expanding it but hasn’t released any updates due to the soon upcoming release of Swiftcasts.</string>
 		<key>logoImageName</key>
 		<string>youtube-logo</string>
 		<key>endDate</key>
@@ -41,6 +63,8 @@
 		<date>2012-04-12T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>imageName</key>
+		<string>stanford-icon</string>
 		<key>endDate</key>
 		<date>2015-04-01T16:00:00Z</date>
 		<key>category</key>
@@ -57,6 +81,8 @@ Josh has been using this course as a reference ever since he started programming
 		<date>2015-01-01T09:00:00Z</date>
 	</dict>
 	<dict>
+		<key>imageName</key>
+		<string>plymouth-course-icon</string>
 		<key>endDate</key>
 		<date>2015-04-01T16:00:00Z</date>
 		<key>category</key>
@@ -97,6 +123,8 @@ The next stage in this development will be for card processing and customer acco
 		<date>2014-08-01T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>imageName</key>
+		<string>xcode-icon</string>
 		<key>skillPercentage</key>
 		<integer>75</integer>
 		<key>category</key>
@@ -124,8 +152,7 @@ The next stage in this development will be for card processing and customer acco
 		<key>body</key>
 		<string>Josh setup a web development company in co-partnership with a friend in 2011 which has helped fund his studies at university. Gaining a lot of knowledge and experience a long the way. Web development has been a vital part of Josh&apos;s&apos; life in becoming an iOS developer.
 
-This gave Josh some incredible experience at a young age of managing time affectively and having a great passion for perfection, delivering content that the client wanted and gaining trust for recommendations of good work.
-</string>
+This gave Josh some incredible experience at a young age of managing time affectively and having a great passion for perfection, delivering content that the client wanted and gaining trust for recommendations of good work.</string>
 		<key>urlString</key>
 		<string>http://www.surftrack.co.uk</string>
 		<key>category</key>
@@ -136,6 +163,10 @@ This gave Josh some incredible experience at a young age of managing time affect
 		<date>2011-03-01T09:00:00Z</date>
 	</dict>
 	<dict>
+		<key>body</key>
+		<string>Josh started learning Laravel PHP framework after watching Jeffrey Way talk about it a lot on NetTuts. This has really revolutionised the PHP industry for the better. Laravel provides an amazing out of the box experience and really easy to learn. The community is very friendly and always willing to give a helping hand.
+
+Josh is building Swiftcasts in Laravel and it has made life much easier due to the nature of the framework. Providing amazing support for database migrations, security, speed as well as many other great features such as the unique IoC container and all the services built to run Laravel.</string>
 		<key>imageName</key>
 		<string>laravel-logo</string>
 		<key>skillPercentage</key>
