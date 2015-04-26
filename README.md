@@ -24,6 +24,7 @@ Technical Features (iOS)
 - Auto UITableViewCell resizing
 - UIKitDynamics
 - Custom Data Model loading from a plist file (lightweight)
+- PDF for images to generate @2x & @3x
 
 Misc:
 - Best viewed on iPhone 6 but compatable (Via AutoLayout) with all iPhone sizes.
