@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageName</key>
+		<string>design-patterns-icon</string>
+		<key>endDate</key>
+		<date>2013-12-20T17:00:00Z</date>
+		<key>category</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>Design Patterns</string>
+		<key>body</key>
+		<string>Josh’s favourite lecture in his second year at University was OOP with Design Patterns and thoroughly enjoyed reading the book ‘Design Patterns: Elements of Reusable Object-Oriented Software’ this has improved Josh’s programming skills and general understanding a lot. 
+
+Having read this book Josh is able to take more time during the process of architecting code interaction, allowing for a much more solid implementation and natural interaction between classes. Josh finds thing very interesting and wishes to become much better at this over time.</string>
+		<key>startDate</key>
+		<date>2013-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>meetup-icon</string>
+		<key>body</key>
+		<string>Recently after joining JustPark and with the opportunity while living in London, Josh decided to start attending programming meetups with his first one being Swift London which was awesome to see what people within the community had been doing with Swift in the past 6 months. JustPark gave a presentation on the work we had been doing with Swift ourselves due to our application being written in Swift. 
+
+These meetups are a great place to network with other people who share the same interests which is fantastic, Josh has since gone to a few others and notably been to NSLondon which is one of the biggest in London. Have learnt a lot from other members of the community.</string>
+		<key>category</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Meetups</string>
+		<key>startDate</key>
+		<date>2014-12-16T18:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>walking-icon</string>
+		<key>body</key>
+		<string>Josh enjoys doing a lot of walking with his Girlfriend. Visiting remote places along the southern english coast with beautiful scenery. A very relaxing hobby which proves great for thinking about big decisions. Having the quiet, open space to enjoy the beautiful world that we live in.</string>
+		<key>category</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Walking</string>
+		<key>startDate</key>
+		<date>2011-12-01T09:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>stanford-icon</string>
+		<key>endDate</key>
+		<date>2015-04-01T16:00:00Z</date>
+		<key>category</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>Stanford Swift Course</string>
+		<key>body</key>
+		<string>The Stanford University iOS course has always been a fantastic resource for Josh, something he has enrolled in and completed the lectures and assignments as released. This was a great way to learn quickly and keep up-to-date on best practises.
+
+With Swift having been announced at WWDC 2014, retaking the quarter between January and April 2015 along with the Stanford University class was a great opportunity to learn new things about Swift that Josh hadn&apos;t touched yet as well as brushing up on existing skills.
+
+Josh has been using this course as a reference ever since he started programming and creating apps for iOS back in 2011.</string>
+		<key>startDate</key>
+		<date>2015-01-01T09:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>plymouth-course-icon</string>
+		<key>endDate</key>
+		<date>2015-04-01T16:00:00Z</date>
+		<key>category</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>Plymouth Swift Course</string>
+		<key>body</key>
+		<string>Nick Outram&apos;s course iOS Development with Swift has been carefully created and curated for a fantastic learning experience and has done a great thing for Plymouth University by becoming one of the recommended iTunesU courses by Apple.
+
+Josh has taken this course while studying at Plymouth University and recently been using the latest iteration which is dedicated to Swift and it has proved to be another great resource for learning iOS and Swift.</string>
+		<key>startDate</key>
+		<date>2015-01-01T09:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>apple-icon</string>
+		<key>body</key>
+		<string>Apple has been a fascination of Josh’s for many years. With the desire to own a Mac, to be a customer of a company that truly loves each and every one of them. The desire for perfection in every product and never settling for something good.
+
+Ever since the launch of the iPhone Josh has wanted to develop applications for the device and has done so since 2011. With a passion for teaching others along the way.
+
+The dream of one day possibly working for Apple is something that drives Josh everyday to attempt to create great products. The ultimate goal. To change the world.</string>
+		<key>category</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Apple</string>
+		<key>startDate</key>
+		<date>2007-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>saxophone-icon</string>
+		<key>body</key>
+		<string>Josh started playing the Saxophone at the age of 7 while at primary school. It&apos;s an incredibly cool instrument and Josh loved playing it. He managed to get to grade 6 while learning through primary school and at the beginning of secondary school and then put the Saxophone down for a while. One of Josh&apos;s proudest moments with the Saxophone was the final day of primary school where a standing ovation was given for the solo.
+
+Now 8 years on Josh has returned to play the Saxophone after recently being given a new one as a gift. Being able to pick up the Saxophone again after 8 years is a great feeling and its still that incredible instrument Josh played all those years ago.</string>
+		<key>category</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Saxophone</string>
+		<key>startDate</key>
+		<date>2001-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>tennis-icon</string>
+		<key>body</key>
+		<string>Josh started playing tennis at the age of 11 and was fascinated by Wimbledon. Watching great tennis players play was inspiration to start playing tennis. Has since played tennis for his college and local club while enjoying every second of it.
+
+There was one particular tennis player who stood out from everyone else and this was truly inspiration to Josh and not just for tennis but as an attitude towards life in general. Roger Federer, a truly inspirational role model and helped shape the life that Josh leads today.</string>
+		<key>category</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Tennis</string>
+		<key>startDate</key>
+		<date>2005-05-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>swift-logo-icon</string>
+		<key>skillPercentage</key>
+		<real>80</real>
+		<key>category</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>Swift</string>
+		<key>body</key>
+		<string>Josh started learning Swift from the minute it was announced on 2nd June 2014. Josh was lucky enough to be at the 2014 WWDC and was able to learn quickly alongside many great developers and ask the engineers lots of questions about the new and exciting programming language Swift.
+
+Swift is a fantastic new language with all the modern features, giving new developers to iOS a great starting point. This is also an incredibly fun language to use. All projects that Josh creates are now in Swift and is very excited to see where the language goes and the new development of Swift at WWDC 2015.</string>
+		<key>startDate</key>
+		<date>2014-06-02T10:00:00Z</date>
+	</dict>
+	<dict>
+		<key>body</key>
+		<string>Josh started learning Laravel PHP framework after watching Jeffrey Way talk about it a lot on NetTuts. This has really revolutionised the PHP industry for the better. Laravel provides an amazing out of the box experience and really easy to learn. The community is very friendly and always willing to give a helping hand.
+
+Josh is building Swiftcasts in Laravel and it has made life much easier due to the nature of the framework. Providing amazing support for database migrations, security, speed as well as many other great features such as the unique IoC container and all the services built to run Laravel.</string>
+		<key>imageName</key>
+		<string>laravel-logo</string>
+		<key>skillPercentage</key>
+		<integer>75</integer>
+		<key>category</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>Laravel</string>
+		<key>startDate</key>
+		<date>2013-03-01T09:00:00Z</date>
+	</dict>
+	<dict>
+		<key>body</key>
+		<string>Josh started learning Objective-C back in October 2011 when he got his first MacBook Pro. It was incredibly exciting to start developing applications for this incredible device which is in everyones pockets. The possibilities for technology advancements in day to day life were amazing.
+
+Josh started to learn Objective-C via the Stanford University iOS Course which gave an amazing start, from there it was all about making small applications. Objective-C was an exciting and very different language than that Josh had done before but quickly got used to the differences, but now has moved over to Swift which has an exciting future ahead of it.</string>
+		<key>imageName</key>
+		<string>xcode-icon</string>
+		<key>skillPercentage</key>
+		<integer>75</integer>
+		<key>category</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>Objective-C</string>
+		<key>startDate</key>
+		<date>2011-10-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>endDate</key>
+		<string>1 May 2014 17:00:00</string>
+		<key>body</key>
+		<string>Josh started learning Java in his second year at Plymouth University. This was an exciting module where we got to learn a new language as well as focusing on OOP with Design Patterns which was Josh’s favourite module.
+
+The work within this module has made Josh a much better programming, thinking about ways to improve reusability and patterns to abstract code. Java is a good steady language but has got nothing on Swift which is Josh’s favourite language.</string>
+		<key>imageName</key>
+		<string>java-icon</string>
+		<key>skillPercentage</key>
+		<integer>70</integer>
+		<key>category</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>Java</string>
+		<key>startDate</key>
+		<date>2013-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>body</key>
+		<string>MySQL has been a vital part of web development for Josh, most applications require some form of data persistence and MySQL provided an open source free introduction to this while also being very powerful. It was easy to integrate into PHP applications which was Josh’s primary use. Josh still uses MySQL for web app backing storage as well as iOS application backing via an API to communicate and persist data from the client.
+
+SQL in general has been well learnt and is one of Josh’s strongest subjects at University, acing the in class tests and ensuring great database structure has been built to ensure data integrity without having redundancy within the dataset.</string>
+		<key>imageName</key>
+		<string>sequel-pro-icon</string>
+		<key>skillPercentage</key>
+		<integer>75</integer>
+		<key>category</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>MySQL</string>
+		<key>startDate</key>
+		<date>2010-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>plymouth-university-logo</string>
+		<key>endDate</key>
+		<date>2016-06-01T08:00:00Z</date>
+		<key>category</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>Plymouth University</string>
+		<key>body</key>
+		<string>Plymouth University has been an amazing adventure for Josh, giving him the best chance to go far in his career and support him every step of the way. Notably sponsoring his successful Scholarship to WWDC 2014.
+
+Josh is studying Computer Science and is due to graduate in 2016 and with a projected grade of a first class honours, the highest grade achievable to date. With many great lecturers teaching fantastic subjects such as Database Design and Object Oriented Programming with Design Patterns, being two of Josh&apos;s&apos; favourites.</string>
+		<key>startDate</key>
+		<date>2012-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>justpark-app-icon</string>
+		<key>body</key>
+		<string>Josh is on a year long industrial placement with JustPark as an iOS Engineer helping build a brand new app written entirely in Swift. This is a complete re-write from their previous app. While Josh is here he has assisted with building this entirely new application in Swift which is available on the App Store and also about to release a WatchKit app to accompany it.
+
+JustPark is the sharing economy of parking, allowing customers to rent out their driveways to people to park in, this has also expanded into hotels and airports. JustPark is an Index Venture and BMWi backed company who has also just recently secured a record breaking crowdfunding round raising £3.7 million from members of the public.
+
+Josh, along with the JustPark iOS Team has been invited to the Apple WatchKit labs in London to get hands on time with Apple Engineers, getting great feedback and ways to improve the WatchKit app which will be ready for launch just after the 24th April 2015.</string>
+		<key>logoImageName</key>
+		<string>justpark-logo</string>
+		<key>endDate</key>
+		<date>2015-08-31T17:00:00Z</date>
+		<key>urlString</key>
+		<string>http://www.justpark.com</string>
+		<key>category</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>JustPark</string>
+		<key>startDate</key>
+		<date>2014-11-10T09:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>acemobile-icon</string>
+		<key>body</key>
+		<string>Josh took a summer internship at NeuroCoRe, a leading app development company within the medical field. Josh was working on ACEmobile while working here over the summer, a tool used to help diagnose patients with Alzheimer’s earlier. ACEmobile is also attempting to replace the ACE-III paper test and become universally known as the tool to use when testing for Alzheimer&apos;s.
+
+Josh also worked on a number of other minor tools which were in development, one of which was for Parkinson&apos;s. This was a tapping test to see if the patient could tap to a rhythm with an audio cue as well as how fast they could tap. 
+
+If I were to do another internship with NeuroCoRe I would help / like to encourage them to use ResearchKit to get their applications out to the masses to get great feedback and revolutionise the medical industry with technology.</string>
+		<key>endDate</key>
+		<date>2014-10-31T17:00:00Z</date>
+		<key>urlString</key>
+		<string>http://www.neurocore.org.uk</string>
+		<key>category</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>NeuroCoRe</string>
+		<key>startDate</key>
+		<date>2014-07-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>salesx-icon</string>
+		<key>body</key>
+		<string>Josh started working as a contractor for SalesX after their CEO (Joe Khoei) found Josh on YouTube teaching about Twitter Bootstrap. This lead to Joe giving Josh some basic web development work.
+
+Josh proved to Joe he was a great asset and as a result of the first piece of work he become one of SalesX’s main contractors for web development work. Notably creating their new website salesx.com as well as many of their clients websites.
+
+In the summer of 2014 Joe helped Josh achieve his dream of coming to San Francisco by sponsoring money for Josh to stay while attending WWDC 2014 this was an incredibly gesture and Joe has become a great friend. I would love to meet up with him again this summer.</string>
+		<key>endDate</key>
+		<date>2014-09-01T16:00:00Z</date>
+		<key>urlString</key>
+		<string>https://salesx.com</string>
+		<key>category</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>SalesX</string>
+		<key>startDate</key>
+		<date>2012-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>surftrack-icon</string>
+		<key>logoImageName</key>
+		<string>surftrack-logo</string>
+		<key>body</key>
+		<string>Josh setup a web development company in co-partnership with a friend in 2011 which has helped fund his studies at university. Gaining a lot of knowledge and experience a long the way. Web development has been a vital part of Josh&apos;s life in becoming an iOS developer.
+
+This gave Josh some incredible experience at a young age of managing time affectively and having a great passion for perfection, delivering content that the client wanted and gaining trust for recommendations of good work. It has also been great fun along the way to operate as self employed at a young age.</string>
+		<key>urlString</key>
+		<string>http://www.surftrack.co.uk</string>
+		<key>category</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>SurfTrack</string>
+		<key>startDate</key>
+		<date>2011-03-01T09:00:00Z</date>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>youtube-icon</string>
+		<key>body</key>
+		<string>Josh started creating tutorials on YouTube because he has a passion to teach people and give back to the brilliant community that he started learning from. Screencasts were a fantastic way to learn programming, watching someone else and being able to work alongside them is the best way.
+
+This lead to Josh wanting to teach iOS tutorials on YouTube, giving brief insight into getting started and various topics such as table views and animation. Josh has almost reached 1.2k subscribers on his channel and plans to keep expanding it but hasn’t released any updates recently due to the soon upcoming release of Swiftcasts.</string>
+		<key>logoImageName</key>
+		<string>youtube-logo</string>
+		<key>endDate</key>
+		<date>2013-06-01T17:00:00Z</date>
+		<key>urlString</key>
+		<string>https://www.youtube.com/user/joshbrucie</string>
+		<key>category</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>YouTube</string>
+		<key>startDate</key>
+		<date>2012-04-12T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>urlString</key>
+		<string>https://swiftcasts.com</string>
+		<key>languages</key>
+		<array>
+			<string>Laravel PHP</string>
+			<string>MySQL</string>
+			<string>Bootstrap</string>
+			<string>JavaScript</string>
+			<string>CSS</string>
+			<string>HTML</string>
+		</array>
+		<key>category</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>Swiftcasts</string>
+		<key>body</key>
+		<string>Swiftcasts is currently being built and will hopefully become an incredibly useful resource for Swift and iOS developers. Providing up-to-date screencasts on the latest technologies and releases from Apple. Aggregating a wealth of knowledge in one place, building a fantastic community.
+
+Swiftcasts will be aimed at all skill levels, ranging from new Swift / iOS developers to the veterans who have been developing on iOS for a long time. Josh’s plan for Swiftcasts is to have courses / series on larger topics and other short lessons on helpful tips and tricks to developing a great applications.</string>
+		<key>imageName</key>
+		<string>swiftcasts-logo</string>
+		<key>startDate</key>
+		<date>2014-09-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>urlString</key>
+		<string>https://www.justpark.com</string>
+		<key>languages</key>
+		<array>
+			<string>Swift</string>
+		</array>
+		<key>category</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>JustPark Watch App</string>
+		<key>body</key>
+		<string>Josh started working on the JustPark WatchKit App at the beginning of March 2015 with the goal of having a product ready to release for 24th April. The WatchKit App would be a simple add-on  to the current application allowing customers to see the amount of time remaining on their booking and have the ability to extend their booking by up to one hour.
+
+The JustPark iOS team was invited to the Apple Watch Labs in London on the 22nd &amp; 23rd April to get hands on feedback and advice from the Apple team in London. This was a fantastic opportunity and was incredibly useful to hear from these amazing engineers. They loved the JustPark app and we are awaiting release.</string>
+		<key>imageName</key>
+		<string>justpark-watch-icon</string>
+		<key>startDate</key>
+		<date>2015-03-01T09:00:00Z</date>
+	</dict>
+	<dict>
+		<key>endDate</key>
+		<date>2015-04-26T16:00:00Z</date>
+		<key>languages</key>
+		<array>
+			<string>Swift</string>
+			<string>Parse</string>
+			<string>JavaScript</string>
+		</array>
+		<key>category</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>Tossr</string>
+		<key>body</key>
+		<string>Tossr is a small MVP for betting on a game of luck, 50-50 chance or winning with heads or tails. Josh worked on this application as freelance with a friend and it took approximately one month to complete.
+
+Tossr required realtime communication between the players using Pusher as well as data persistence using Parse, this allowed for a very quick MVP to be created without having to build all the infrastructure from scratch. 
+
+This was a great application to build and learn from as it required some really interesting features such as realtime communication and of course another application built entirely in Swift.</string>
+		<key>imageName</key>
+		<string>tossr-icon</string>
+		<key>startDate</key>
+		<date>2015-03-16T09:00:00Z</date>
+	</dict>
+	<dict>
+		<key>endDate</key>
+		<date>2014-10-31T17:00:00Z</date>
+		<key>urlString</key>
+		<string>http://www.acemobile.org</string>
+		<key>languages</key>
+		<array>
+			<string>Objective-C, PHP</string>
+		</array>
+		<key>category</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>ACEmobile</string>
+		<key>body</key>
+		<string>ACEmobile was great experience for Josh, being thrown into the deep end with a pre-existing application running a lot of legacy code. This was fantastic to see what its like to be apart of a project mid lifecycle and having to maintain code as it’s not always about starting from scratch.
+
+Josh worked on all aspects of ACEmobile from login to recording patient data and syncing it to the ACEmobile servers securely. I was able to get involved with all aspects of the application as an Intern. I would love to see NeuroCoRe turn their research applications into ResearchKit applications as I think this would benefit them and their research a lot.</string>
+		<key>imageName</key>
+		<string>acemobile-icon</string>
+		<key>startDate</key>
+		<date>2014-07-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>urlString</key>
+		<string>http://247fitness.co</string>
+		<key>endDate</key>
+		<date>2014-10-01T16:00:00Z</date>
+		<key>category</key>
+		<integer>1</integer>
+		<key>languages</key>
+		<array>
+			<string>Laravel PHP</string>
+			<string>Bootstrap</string>
+			<string>JavaScript</string>
+			<string>CSS</string>
+			<string>HTML</string>
+		</array>
+		<key>title</key>
+		<string>24/7 Fitness</string>
+		<key>body</key>
+		<string>24/7 Fitness is a fully custom bespoke built website. The project went from design to implementation and launched in October 2014. The client was incredibly happy with the work Josh had done on the website and is since planning for some additional work to give the customers a complete package.
+
+The next stage in this development will be for card processing and customer accounts to live on their own website with the expansion into an iPhone application which will show gym timetables, how often they go, personalised routines and allow them to access any of the groups gyms.</string>
+		<key>imageName</key>
+		<string>247fitness-icon</string>
+		<key>startDate</key>
+		<date>2014-08-01T08:00:00Z</date>
+	</dict>
+	<dict>
+		<key>endDate</key>
+		<date>2014-04-14T19:00:00Z</date>
+		<key>languages</key>
+		<array>
+			<string>Objective-C</string>
+		</array>
+		<key>category</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>WWDC 2014</string>
+		<key>body</key>
+		<string>Josh took part in the Student Scholarship for WWDC last year (2014) and was fortunate enough to have been awarded a ticket. This was an incredible moment in his life and was the most amazing feeling after putting in hours of effort in his application.
+
+Josh learnt a great deal while at WWDC, getting hands on experience with the best engineers in the world, meeting some of the worlds greatest developers behind some of the App Stores greatest hits and having a fantastic time.
+
+This was one of Josh&apos;s dreams to visit San Francisco and Apple, this came true in June 2014 and I would love to attend the conference again. It was a fantastic learning experience.</string>
+		<key>imageName</key>
+		<string>wwdc-scholarship-2014-icon</string>
+		<key>startDate</key>
+		<date>2014-04-04T08:00:00Z</date>
+	</dict>
+</array>
+</plist>
