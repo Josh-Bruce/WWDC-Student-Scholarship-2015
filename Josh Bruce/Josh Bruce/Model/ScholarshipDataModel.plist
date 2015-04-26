@@ -73,6 +73,8 @@ These meetups are a great place to network with other people who share the same 
 		<date>2014-12-16T18:00:00Z</date>
 	</dict>
 	<dict>
+		<key>imageName</key>
+		<string>walking-icon</string>
 		<key>body</key>
 		<string>Josh enjoys doing a lot of walking with his Girlfriend. Visiting remote places along the southern english coast with beautiful scenery. A very relaxing hobby which proves great for thinking about big decisions. Having the quite, open space to enjoy the beautiful world that we live in.</string>
 		<key>category</key>
@@ -211,6 +213,8 @@ SQL in general has been well learnt and is one of Josh’s strongest subjects at
 		<date>2010-09-01T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>imageName</key>
+		<string>surftrack-icon</string>
 		<key>logoImageName</key>
 		<string>surftrack-logo</string>
 		<key>body</key>
@@ -273,6 +277,8 @@ Now 8 years on Josh has returned to play the Saxophone after recently being give
 		<date>2001-09-01T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>imageName</key>
+		<string>tennis-icon</string>
 		<key>body</key>
 		<string>Josh started playing tennis at the age of 11 and was fascinated by Wimbledon. Watching great tennis players play was inspiration to start playing tennis. Has since played tennis for his college and local club while enjoying every second of it.
 
