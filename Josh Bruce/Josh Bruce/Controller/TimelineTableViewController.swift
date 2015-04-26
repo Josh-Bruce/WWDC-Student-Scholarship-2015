@@ -36,10 +36,6 @@ class TimelineTableViewController: UITableViewController {
         timeline.sort { $0.startDate.compare($1.startDate) == NSComparisonResult.OrderedDescending }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
     // MARK: - UITableViewDataSource
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

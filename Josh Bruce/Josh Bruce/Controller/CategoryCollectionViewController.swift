@@ -39,14 +39,6 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
 
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 
     // MARK: - UICollectionViewDataSource
 

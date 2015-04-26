@@ -26,16 +26,7 @@ class MenuTableViewController: UITableViewController, CategoryCollectionViewCont
         // Show the navigation bar
         navigationController?.setNavigationBarHidden(false, animated: true)
         // Hide the back button
-        navigationItem.setHidesBackButton(false, animated: false)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        navigationItem.setHidesBackButton(true, animated: false)
     }
     
     // MARK: - Methods

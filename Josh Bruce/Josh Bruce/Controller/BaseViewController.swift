@@ -19,14 +19,6 @@ class BaseViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     // MARK: - Status Bar
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
