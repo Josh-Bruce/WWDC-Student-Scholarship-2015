@@ -16,6 +16,7 @@
 		207CA6261AE1351A00399C27 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6251AE1351A00399C27 /* CategoryCollectionViewCell.swift */; };
 		207CA6281AE156D300399C27 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6271AE156D300399C27 /* ItemViewController.swift */; };
 		207CA62A1AE1A56000399C27 /* CategoryHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CA6291AE1A56000399C27 /* CategoryHeaderCollectionReusableView.swift */; };
+		209849F31AED424500C602A1 /* JoshBruce.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 209849F21AED424500C602A1 /* JoshBruce.pdf */; };
 		209CFE321AE64F85006A6993 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209CFE311AE64F85006A6993 /* BaseNavigationController.swift */; };
 		209CFE341AE66689006A6993 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209CFE331AE66689006A6993 /* NotificationController.swift */; };
 		20A64EC31ADFABCB00689C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64EC21ADFABCB00689C77 /* AppDelegate.swift */; };
@@ -42,7 +43,6 @@
 		20A64F121AE060FF00689C77 /* WWDCModelImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F111AE060FF00689C77 /* WWDCModelImporter.swift */; };
 		20A64F141AE061F700689C77 /* WWDCModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64F131AE061F700689C77 /* WWDCModelFactory.swift */; };
 		20D988711AE4217B00953DDE /* QuickCategoryChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */; };
-		20D9B4FC1AE7EC250012AC12 /* JoshBruce.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 20D9B4FB1AE7EC250012AC12 /* JoshBruce.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +65,7 @@
 		207CA6251AE1351A00399C27 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		207CA6271AE156D300399C27 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		207CA6291AE1A56000399C27 /* CategoryHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		209849F21AED424500C602A1 /* JoshBruce.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JoshBruce.pdf; sourceTree = "<group>"; };
 		209CFE311AE64F85006A6993 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		209CFE331AE66689006A6993 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		20A64EBD1ADFABCA00689C77 /* Josh Bruce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Josh Bruce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +96,6 @@
 		20A64F111AE060FF00689C77 /* WWDCModelImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelImporter.swift; sourceTree = "<group>"; };
 		20A64F131AE061F700689C77 /* WWDCModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCModelFactory.swift; sourceTree = "<group>"; };
 		20D988701AE4217B00953DDE /* QuickCategoryChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickCategoryChangeViewController.swift; sourceTree = "<group>"; };
-		20D9B4FB1AE7EC250012AC12 /* JoshBruce.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JoshBruce.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,7 +293,7 @@
 		20D9B4FA1AE7EC030012AC12 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				20D9B4FB1AE7EC250012AC12 /* JoshBruce.pdf */,
+				209849F21AED424500C602A1 /* JoshBruce.pdf */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -381,7 +381,7 @@
 			files = (
 				20A64EC81ADFABCB00689C77 /* Main.storyboard in Resources */,
 				20A64ECD1ADFABCB00689C77 /* LaunchScreen.xib in Resources */,
-				20D9B4FC1AE7EC250012AC12 /* JoshBruce.pdf in Resources */,
+				209849F31AED424500C602A1 /* JoshBruce.pdf in Resources */,
 				20A64ECA1ADFABCB00689C77 /* Images.xcassets in Resources */,
 				20A64F101AE031E200689C77 /* ScholarshipDataModel.plist in Resources */,
 			);
