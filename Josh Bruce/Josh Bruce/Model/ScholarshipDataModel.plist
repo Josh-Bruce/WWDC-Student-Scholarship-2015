@@ -36,13 +36,13 @@ These meetups are a great place to network with other people who share the same 
 		<key>imageName</key>
 		<string>walking-icon</string>
 		<key>body</key>
-		<string>Josh enjoys doing a lot of walking with his Girlfriend. Visiting remote places along the southern english coast with beautiful scenery. A very relaxing hobby which proves great for thinking about big decisions. Having the quite, open space to enjoy the beautiful world that we live in.</string>
+		<string>Josh enjoys doing a lot of walking with his Girlfriend. Visiting remote places along the southern english coast with beautiful scenery. A very relaxing hobby which proves great for thinking about big decisions. Having the quiet, open space to enjoy the beautiful world that we live in.</string>
 		<key>category</key>
 		<integer>5</integer>
 		<key>title</key>
 		<string>Walking</string>
 		<key>startDate</key>
-		<date>2005-05-01T08:00:00Z</date>
+		<date>2011-12-01T09:00:00Z</date>
 	</dict>
 	<dict>
 		<key>imageName</key>
@@ -98,7 +98,7 @@ The dream of one day possibly working for Apple is something that drives Josh ev
 		<key>imageName</key>
 		<string>saxophone-icon</string>
 		<key>body</key>
-		<string>Josh started playing the Saxophone at the age of 7 while at primary school. It&apos;s an incredibly cool instrument and Josh loved playing it. He managed to get to grade 6 while learning through primary school and at the beginning of secondary school and then put the Saxophone down for a while. One of Josh&apos;s&apos; proudest moments with the Saxophone was the final day of primary school where a standing ovation was given for the solo.
+		<string>Josh started playing the Saxophone at the age of 7 while at primary school. It&apos;s an incredibly cool instrument and Josh loved playing it. He managed to get to grade 6 while learning through primary school and at the beginning of secondary school and then put the Saxophone down for a while. One of Josh&apos;s proudest moments with the Saxophone was the final day of primary school where a standing ovation was given for the solo.
 
 Now 8 years on Josh has returned to play the Saxophone after recently being given a new one as a gift. Being able to pick up the Saxophone again after 8 years is a great feeling and its still that incredible instrument Josh played all those years ago.</string>
 		<key>category</key>
@@ -114,7 +114,7 @@ Now 8 years on Josh has returned to play the Saxophone after recently being give
 		<key>body</key>
 		<string>Josh started playing tennis at the age of 11 and was fascinated by Wimbledon. Watching great tennis players play was inspiration to start playing tennis. Has since played tennis for his college and local club while enjoying every second of it.
 
-There was one particular tennis player who stood out from everyone else and this was truly inspiration to Josh and not just for tennis but as an attitude towards life in general. Roger Federer, a truly inspiration role model and helped shape the life that Josh leads today.</string>
+There was one particular tennis player who stood out from everyone else and this was truly inspiration to Josh and not just for tennis but as an attitude towards life in general. Roger Federer, a truly inspirational role model and helped shape the life that Josh leads today.</string>
 		<key>category</key>
 		<integer>5</integer>
 		<key>title</key>
@@ -134,7 +134,7 @@ There was one particular tennis player who stood out from everyone else and this
 		<key>body</key>
 		<string>Josh started learning Swift from the minute it was announced on 2nd June 2014. Josh was lucky enough to be at the 2014 WWDC and was able to learn quickly alongside many great developers and ask the engineers lots of questions about the new and exciting programming language Swift.
 
-Swift is a fantastic new language with all the modern features, giving new developers to iOS a great starting point. This is also an incredibly fun language to use. All projects that Josh creates are now in Swift and is vert excited to see where the language goes and the new development of Swift at WWDC 2015.</string>
+Swift is a fantastic new language with all the modern features, giving new developers to iOS a great starting point. This is also an incredibly fun language to use. All projects that Josh creates are now in Swift and is very excited to see where the language goes and the new development of Swift at WWDC 2015.</string>
 		<key>startDate</key>
 		<date>2014-06-02T10:00:00Z</date>
 	</dict>
@@ -156,9 +156,9 @@ Josh is building Swiftcasts in Laravel and it has made life much easier due to t
 	</dict>
 	<dict>
 		<key>body</key>
-		<string>Josh started learning Objective-C back in October 2011 when he got his first MacBook Pro. It was incredibly exciting to start developing applications for this incredibly device which is in everyones pockets. The possibilities for technology advancements in day to day life were amazing.
+		<string>Josh started learning Objective-C back in October 2011 when he got his first MacBook Pro. It was incredibly exciting to start developing applications for this incredible device which is in everyones pockets. The possibilities for technology advancements in day to day life were amazing.
 
-Josh started to learn Objective-C via the Stanford University iOS Course which gave an amazing start, from there it was all about making small applications. Objective-C was an exciting and very different language than that Josh had done before but quickly got used to the differences but now has moved over to Swift which has an exciting future ahead of it.</string>
+Josh started to learn Objective-C via the Stanford University iOS Course which gave an amazing start, from there it was all about making small applications. Objective-C was an exciting and very different language than that Josh had done before but quickly got used to the differences, but now has moved over to Swift which has an exciting future ahead of it.</string>
 		<key>imageName</key>
 		<string>xcode-icon</string>
 		<key>skillPercentage</key>
@@ -171,6 +171,8 @@ Josh started to learn Objective-C via the Stanford University iOS Course which g
 		<date>2011-10-01T08:00:00Z</date>
 	</dict>
 	<dict>
+		<key>endDate</key>
+		<string>1 May 2014 17:00:00</string>
 		<key>body</key>
 		<string>Josh started learning Java in his second year at Plymouth University. This was an exciting module where we got to learn a new language as well as focusing on OOP with Design Patterns which was Josh’s favourite module.
 
@@ -226,7 +228,7 @@ Josh is studying Computer Science and is due to graduate in 2016 and with a proj
 
 JustPark is the sharing economy of parking, allowing customers to rent out their driveways to people to park in, this has also expanded into hotels and airports. JustPark is an Index Venture and BMWi backed company who has also just recently secured a record breaking crowdfunding round raising £3.7 million from members of the public.
 
-Josh a long with JustPark has been invited to the Apple WatchKit labs in London to get hands on time with Apple Engineers, getting great feedback and ways to improve the WatchKit app which will be ready for launch on the 24th April 2015.</string>
+Josh, along with the JustPark iOS Team has been invited to the Apple WatchKit labs in London to get hands on time with Apple Engineers, getting great feedback and ways to improve the WatchKit app which will be ready for launch just after the 24th April 2015.</string>
 		<key>logoImageName</key>
 		<string>justpark-logo</string>
 		<key>endDate</key>
@@ -266,9 +268,9 @@ If I were to do another internship with NeuroCoRe I would help / like to encoura
 		<key>body</key>
 		<string>Josh started working as a contractor for SalesX after their CEO (Joe Khoei) found Josh on YouTube teaching about Twitter Bootstrap. This lead to Joe giving Josh some basic web development work.
 
-Josh proved to Joe he was a great asset and as a result of the first piece of work I become one of SalesX’s main contractors for web development work. Notably creating their new website salesx.com as well as many of their clients websites.
+Josh proved to Joe he was a great asset and as a result of the first piece of work he become one of SalesX’s main contractors for web development work. Notably creating their new website salesx.com as well as many of their clients websites.
 
-In the summer of 2014 Joe helped Josh achieve his dream of coming to San Francisco by sponsoring money for Josh to stay while attending WWDC 2014 this was an incredibly gesture and Joe has become a great friend.</string>
+In the summer of 2014 Joe helped Josh achieve his dream of coming to San Francisco by sponsoring money for Josh to stay while attending WWDC 2014 this was an incredibly gesture and Joe has become a great friend. I would love to meet up with him again this summer.</string>
 		<key>endDate</key>
 		<date>2014-09-01T16:00:00Z</date>
 		<key>urlString</key>
@@ -286,9 +288,9 @@ In the summer of 2014 Joe helped Josh achieve his dream of coming to San Francis
 		<key>logoImageName</key>
 		<string>surftrack-logo</string>
 		<key>body</key>
-		<string>Josh setup a web development company in co-partnership with a friend in 2011 which has helped fund his studies at university. Gaining a lot of knowledge and experience a long the way. Web development has been a vital part of Josh&apos;s&apos; life in becoming an iOS developer.
+		<string>Josh setup a web development company in co-partnership with a friend in 2011 which has helped fund his studies at university. Gaining a lot of knowledge and experience a long the way. Web development has been a vital part of Josh&apos;s life in becoming an iOS developer.
 
-This gave Josh some incredible experience at a young age of managing time affectively and having a great passion for perfection, delivering content that the client wanted and gaining trust for recommendations of good work.</string>
+This gave Josh some incredible experience at a young age of managing time affectively and having a great passion for perfection, delivering content that the client wanted and gaining trust for recommendations of good work. It has also been great fun along the way to operate as self employed at a young age.</string>
 		<key>urlString</key>
 		<string>http://www.surftrack.co.uk</string>
 		<key>category</key>
@@ -302,9 +304,9 @@ This gave Josh some incredible experience at a young age of managing time affect
 		<key>imageName</key>
 		<string>youtube-icon</string>
 		<key>body</key>
-		<string>Josh started creating tutorials on YouTube because he has a passion to teach people and give back to the brilliant community the he started learning from. Screencasts were a fantastic way to learn programming, watching someone else and being to work alongside them is the best way.
+		<string>Josh started creating tutorials on YouTube because he has a passion to teach people and give back to the brilliant community that he started learning from. Screencasts were a fantastic way to learn programming, watching someone else and being able to work alongside them is the best way.
 
-This lead to Josh wanting to teach iOS tutorials on YouTube, giving brief insight into getting started and various topics such as table views and animation. Josh has almost reached 1.2k subscribers on his channel and plans to keep expanding it but hasn’t released any updates due to the soon upcoming release of Swiftcasts.</string>
+This lead to Josh wanting to teach iOS tutorials on YouTube, giving brief insight into getting started and various topics such as table views and animation. Josh has almost reached 1.2k subscribers on his channel and plans to keep expanding it but hasn’t released any updates recently due to the soon upcoming release of Swiftcasts.</string>
 		<key>logoImageName</key>
 		<string>youtube-logo</string>
 		<key>endDate</key>
@@ -335,9 +337,9 @@ This lead to Josh wanting to teach iOS tutorials on YouTube, giving brief insigh
 		<key>title</key>
 		<string>Swiftcasts</string>
 		<key>body</key>
-		<string>Swiftcasts is currently being built and will hopefully become an incredibly useful resource for Swift and iOS developers. Providing up-to-date screencasts on the latest technologies and updates. Aggregating a wealth of knowledge in one place, building a fantastic community.
+		<string>Swiftcasts is currently being built and will hopefully become an incredibly useful resource for Swift and iOS developers. Providing up-to-date screencasts on the latest technologies and releases from Apple. Aggregating a wealth of knowledge in one place, building a fantastic community.
 
-Swiftcasts will be aimed at all skill levels, ranging from new Swift/iOS developers to the veterans who have been developing on iOS for a long time. Josh’s plan for Swiftcasts is to have courses / series on larger topics and other short lessons of helpful tips and tricks to developing a great application.</string>
+Swiftcasts will be aimed at all skill levels, ranging from new Swift / iOS developers to the veterans who have been developing on iOS for a long time. Josh’s plan for Swiftcasts is to have courses / series on larger topics and other short lessons on helpful tips and tricks to developing a great applications.</string>
 		<key>imageName</key>
 		<string>swiftcasts-logo</string>
 		<key>startDate</key>
@@ -355,7 +357,7 @@ Swiftcasts will be aimed at all skill levels, ranging from new Swift/iOS develop
 		<key>title</key>
 		<string>JustPark Watch App</string>
 		<key>body</key>
-		<string>Josh started working on the JustPark WatchKit App at the beginning of March 2015 with the goal of having a product ready to release for 24th April. The WatchKit App would be a simple add-on  to the current application allow customers to see the time remaining on their booking and extend their booking by up to one hour.
+		<string>Josh started working on the JustPark WatchKit App at the beginning of March 2015 with the goal of having a product ready to release for 24th April. The WatchKit App would be a simple add-on  to the current application allowing customers to see the amount of time remaining on their booking and have the ability to extend their booking by up to one hour.
 
 The JustPark iOS team was invited to the Apple Watch Labs in London on the 22nd &amp; 23rd April to get hands on feedback and advice from the Apple team in London. This was a fantastic opportunity and was incredibly useful to hear from these amazing engineers. They loved the JustPark app and we are awaiting release.</string>
 		<key>imageName</key>
@@ -379,7 +381,7 @@ The JustPark iOS team was invited to the Apple Watch Labs in London on the 22nd 
 		<key>body</key>
 		<string>Tossr is a small MVP for betting on a game of luck, 50-50 chance or winning with heads or tails. Josh worked on this application as freelance with a friend and it took approximately one month to complete.
 
-Tossr required realtime communication between the players using Pusher as well as data persistence using Parse this allowed for a very quick MVP to be created without having to build all the infrastructure from scratch. 
+Tossr required realtime communication between the players using Pusher as well as data persistence using Parse, this allowed for a very quick MVP to be created without having to build all the infrastructure from scratch. 
 
 This was a great application to build and learn from as it required some really interesting features such as realtime communication and of course another application built entirely in Swift.</string>
 		<key>imageName</key>
@@ -388,6 +390,8 @@ This was a great application to build and learn from as it required some really 
 		<date>2015-03-16T09:00:00Z</date>
 	</dict>
 	<dict>
+		<key>endDate</key>
+		<date>2014-10-31T17:00:00Z</date>
 		<key>urlString</key>
 		<string>http://www.acemobile.org</string>
 		<key>languages</key>
@@ -401,7 +405,7 @@ This was a great application to build and learn from as it required some really 
 		<key>body</key>
 		<string>ACEmobile was great experience for Josh, being thrown into the deep end with a pre-existing application running a lot of legacy code. This was fantastic to see what its like to be apart of a project mid lifecycle and having to maintain code as it’s not always about starting from scratch.
 
-Josh worked on all aspects of ACEmobile from login to recording patient data and syncing it to the ACEmobile servers securely. I was able to get involved with all aspects of the application as an Intern. I would love to see NeuroCoRe turn their research application into ResearchKit applications as I think this would benefit them and their research a lot.</string>
+Josh worked on all aspects of ACEmobile from login to recording patient data and syncing it to the ACEmobile servers securely. I was able to get involved with all aspects of the application as an Intern. I would love to see NeuroCoRe turn their research applications into ResearchKit applications as I think this would benefit them and their research a lot.</string>
 		<key>imageName</key>
 		<string>acemobile-icon</string>
 		<key>startDate</key>
@@ -425,7 +429,7 @@ Josh worked on all aspects of ACEmobile from login to recording patient data and
 		<key>title</key>
 		<string>24/7 Fitness</string>
 		<key>body</key>
-		<string>24/7 Fitness is a fully custom bespoke built website. The project went from design to implementation and launched in October 2014. The client was incredibly happy with the work Josh had done on the website and since is planning for some additional work to give the customers a complete package.
+		<string>24/7 Fitness is a fully custom bespoke built website. The project went from design to implementation and launched in October 2014. The client was incredibly happy with the work Josh had done on the website and is since planning for some additional work to give the customers a complete package.
 
 The next stage in this development will be for card processing and customer accounts to live on their own website with the expansion into an iPhone application which will show gym timetables, how often they go, personalised routines and allow them to access any of the groups gyms.</string>
 		<key>imageName</key>
@@ -449,7 +453,7 @@ The next stage in this development will be for card processing and customer acco
 
 Josh learnt a great deal while at WWDC, getting hands on experience with the best engineers in the world, meeting some of the worlds greatest developers behind some of the App Stores greatest hits and having a fantastic time.
 
-This was one of Josh&apos;s&apos; dream to visit San Francisco and Apple, this came true in June 2014 and I would love to attend the conference again. It was a fantastic learning experience.</string>
+This was one of Josh&apos;s dreams to visit San Francisco and Apple, this came true in June 2014 and I would love to attend the conference again. It was a fantastic learning experience.</string>
 		<key>imageName</key>
 		<string>wwdc-scholarship-2014-icon</string>
 		<key>startDate</key>
