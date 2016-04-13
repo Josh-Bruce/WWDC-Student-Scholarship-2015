@@ -33,7 +33,7 @@ class TimelineTableViewController: UITableViewController {
         // Get data
         timeline = WWDCModelFactory.sharedInstance().wwdcCategories
         // Sort by date order (latest ending at the top)
-        timeline.sort { $0.startDate.compare($1.startDate) == NSComparisonResult.OrderedDescending }
+        timeline.sortInPlace { $0.startDate.compare($1.startDate) == NSComparisonResult.OrderedDescending }
     }
 
     // MARK: - UITableViewDataSource

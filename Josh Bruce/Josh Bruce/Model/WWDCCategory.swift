@@ -110,14 +110,14 @@ protocol WWDCCategoryProtocol {
     /**
         Will produce a formatted string of the start date
     
-        :returns: The formatted start date as a string
+        - returns: The formatted start date as a string
     */
     func formattedStartDate(format: String) -> String
     
     /**
         Will produce a formatted string of the end date
     
-        :returns: The formatted end date as a string if it exists or 
+        - returns: The formatted end date as a string if it exists or 
         it will return the string 'current'
     */
     func formattedEndDate(format: String) -> String

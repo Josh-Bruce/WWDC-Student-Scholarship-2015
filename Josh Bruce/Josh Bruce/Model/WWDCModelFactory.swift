@@ -48,7 +48,7 @@ class WWDCModelFactory {
         Parse the model data from the [AnyObject] of items
         from the plist file
     
-        :param: arrayOfItems The [AnyObject] from the the plist
+        - parameter arrayOfItems: The [AnyObject] from the the plist
     */
     func parseModel(arrayOfItems: [AnyObject]) {
         // Store properties
@@ -75,9 +75,9 @@ class WWDCModelFactory {
         Get the items within a specific category type and return an array of them 
         that confirms to the WWDCCategoryProtocol to make this generic
     
-        :param: type    The WWDCCategoryType you can the array to contain
+        - parameter type:    The WWDCCategoryType you can the array to contain
     
-        :returns: An array of of WWDCCategoryProtocol items for the type given
+        - returns: An array of of WWDCCategoryProtocol items for the type given
     */
     func itemsForCategory(type: WWDCCategoryType) -> [WWDCCategoryProtocol] {
         // Local array holder
@@ -131,8 +131,8 @@ class WWDCModelFactory {
     /**
         Private method for creating the model classes from the [NSObject : AnyObject] of data
     
-        :param: type    The WWDCCategoryType to create
-        :param: model   The [NSObject : AnyObject] of model data to create the model
+        - parameter type:    The WWDCCategoryType to create
+        - parameter model:   The [NSObject : AnyObject] of model data to create the model
     */
     private func createModelForType(type: WWDCCategoryType, model: [NSObject : AnyObject]) -> WWDCCategoryProtocol {
         // Model Item

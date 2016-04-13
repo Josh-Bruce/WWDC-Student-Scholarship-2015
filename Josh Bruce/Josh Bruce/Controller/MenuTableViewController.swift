@@ -34,13 +34,12 @@ class MenuTableViewController: UITableViewController, CategoryCollectionViewCont
     func showCVWithQuickLook() {
         // Get the URL to be shown
         if let urlString = NSBundle.mainBundle().pathForResource(Constant.File.CV, ofType: "pdf") {
-            if let url = NSURL(fileURLWithPath: urlString) {
-                // Init the document controller
-                documentController = UIDocumentInteractionController(URL: url)
-                documentController.delegate = self
-                documentController.presentPreviewAnimated(true)
-                documentController.name = "Josh's CV"
-            }
+            let url = NSURL(fileURLWithPath: urlString)
+			// Init the document controller
+			documentController = UIDocumentInteractionController(URL: url)
+			documentController.delegate = self
+			documentController.presentPreviewAnimated(true)
+			documentController.name = "Josh's CV"
         }
     }
 
@@ -66,13 +65,13 @@ class MenuTableViewController: UITableViewController, CategoryCollectionViewCont
 
         if indexPath.section == 0 {
             // Deque cell
-            var categoryCell = tableView.dequeueReusableCellWithIdentifier("aboutCell", forIndexPath: indexPath) as! AboutTableViewCell
+            let categoryCell = tableView.dequeueReusableCellWithIdentifier("aboutCell", forIndexPath: indexPath) as! AboutTableViewCell
 
             // Asign back the cell
             cell = categoryCell
         } else {
             // Deque cell
-            var categoryCell = tableView.dequeueReusableCellWithIdentifier("categoryCell", forIndexPath: indexPath) as! CategoryTableViewCell
+            let categoryCell = tableView.dequeueReusableCellWithIdentifier("categoryCell", forIndexPath: indexPath) as! CategoryTableViewCell
             
             // Extra cell thats not a category but same style
             if indexPath.row == categories.count {
@@ -156,7 +155,7 @@ class MenuTableViewController: UITableViewController, CategoryCollectionViewCont
         var indexPath: NSIndexPath!
         
         // Get the indexPath
-        if let cellIndexPath = tableView.indexPathForSelectedRow() {
+        if let cellIndexPath = tableView.indexPathForSelectedRow {
             indexPath = cellIndexPath
         }
         

@@ -11,9 +11,9 @@ import UIKit
 /**
     Convenience method for spring animations with duration and completion blocks
 
-    :param: duration        The duration that the animation should last
-    :param: animations      The animation block to be run
-    :param: completion      The completion handler to be called once finished
+    - parameter duration:        The duration that the animation should last
+    - parameter animations:      The animation block to be run
+    - parameter completion:      The completion handler to be called once finished
 */
 public func spring(duration: NSTimeInterval, delay: NSTimeInterval = 0.0, animations: (() -> ())!, completion: ((finished: Bool) -> ())?) {
     UIView.animateWithDuration(
@@ -21,7 +21,7 @@ public func spring(duration: NSTimeInterval, delay: NSTimeInterval = 0.0, animat
 		delay: delay,
 		usingSpringWithDamping: 0.7,
 		initialSpringVelocity: 0.7,
-		options: nil,
+		options: [],
 		animations: animations,
 		completion: completion
 	)
@@ -30,11 +30,11 @@ public func spring(duration: NSTimeInterval, delay: NSTimeInterval = 0.0, animat
 /**
     Convenience method for create a shake animation with CAKeyframeAnimation
 
-    :param: duration    The duration that the animation should last
-    :param: delay       The delay before the animation should start
-    :param: force       The amount of force that should be applied to the animation
+    - parameter duration:    The duration that the animation should last
+    - parameter delay:       The delay before the animation should start
+    - parameter force:       The amount of force that should be applied to the animation
 
-    :returns: The CAKeyframeAnimation to be placed on the views layer
+    - returns: The CAKeyframeAnimation to be placed on the views layer
 */
 public func shake(duration: NSTimeInterval, delay: NSTimeInterval, force: Double) -> CAKeyframeAnimation {
     // Create a shake animation

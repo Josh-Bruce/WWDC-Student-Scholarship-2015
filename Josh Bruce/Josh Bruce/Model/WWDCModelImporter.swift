@@ -37,7 +37,7 @@ class WWDCModelImporter {
     /**
         Parse the model data from the plist file
     
-        :returns: An [AnyObject] of the items in the plist file
+        - returns: An [AnyObject] of the items in the plist file
     */
     private func parseModel() -> [AnyObject] {
         // Parse items from file

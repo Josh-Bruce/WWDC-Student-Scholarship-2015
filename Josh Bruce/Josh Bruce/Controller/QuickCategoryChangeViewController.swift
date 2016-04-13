@@ -61,7 +61,7 @@ class QuickCategoryChangeViewController: BaseViewController {
     
     func addGravityToAllButtons() {
         // Add gravity to all button
-        var gravity = UIGravityBehavior(items: buttons)
+        let gravity = UIGravityBehavior(items: buttons)
         gravity.gravityDirection = CGVectorMake(0, 10)
         // Add behavior
         animator.addBehavior(gravity)

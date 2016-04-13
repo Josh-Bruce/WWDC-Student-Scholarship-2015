@@ -74,7 +74,7 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         // Check for footer section
         if kind  == UICollectionElementKindSectionFooter {
             // Deque a header
-            let footerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "gestureFooterView", forIndexPath: indexPath) as! UICollectionReusableView
+            let footerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "gestureFooterView", forIndexPath: indexPath) as UICollectionReusableView
             
             // Set back on view
             reusableView = footerView
@@ -132,7 +132,7 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         var object: WWDCCategoryProtocol!
         
         // Get the indexPath
-        if let indexPath = collectionView?.indexPathsForSelectedItems().first as? NSIndexPath {
+        if let indexPath = collectionView?.indexPathsForSelectedItems()?.first {
             // Get the object
             object = collection[indexPath.row]
         }

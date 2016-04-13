@@ -139,7 +139,7 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
             willAnimateBar = true
         } else {
             // Expand view
-            bottomContainer.removeConstraints(bottomContainer.constraints())
+            bottomContainer.removeConstraints(bottomContainer.constraints)
             descriptionLabelBottomConstraint.constant = 8
         }
     }
@@ -153,15 +153,15 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
             let width = skillPercentageContainer.bounds.width * CGFloat(percentage / 100.0)
             
             // Animate in
-            spring(1.0, delay: 0.0, { () -> () in
+            spring(1.0, delay: 0.0, animations: { () -> () in
                 self.skillPercentageBarWidthConstraint.constant = width
                 self.view.layoutIfNeeded()
-            }, { (finished) -> () in
+            }, completion: { (finished) -> () in
                 self.skillPercentageLabel.text = "Skill Level \(percentage)%"
-                spring(0.5, delay: 0.0, { () -> () in
+                spring(0.5, delay: 0.0, animations: { () -> () in
                     self.skillPercentageLabel.alpha = 1.0
                     self.view.layoutIfNeeded()
-                }, nil)
+                }, completion: nil)
             })
         }
     }
@@ -188,12 +188,12 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
         descriptionLabel.text = item.body
     }
     
-    func addGravityAndDismiss(items: [AnyObject]) {
+    func addGravityAndDismiss(items: [UIDynamicItem]) {
         // Remove all behaviors
         animator.removeAllBehaviors()
         
         // Add gravity to take the view down
-        var gravity = UIGravityBehavior(items: items)
+        let gravity = UIGravityBehavior(items: items)
         gravity.gravityDirection = CGVectorMake(0, 10)
         // Add behavior
         animator.addBehavior(gravity)
@@ -288,9 +288,9 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
 		Convenience method to create an AVSpeechUtterance from
 		a uttereance string that needs to be spoken
 	
-		:param: utteranceString	The utterance string to be spoken by the AVSpeechSynthesizer
+		- parameter utteranceString:	The utterance string to be spoken by the AVSpeechSynthesizer
 	
-		:returns: AVSpeechUtterance which can be spoken by the AVSpeechSynthesizer
+		- returns: AVSpeechUtterance which can be spoken by the AVSpeechSynthesizer
 	*/
 	func utteranceForString(utteranceString: String) -> AVSpeechUtterance {
 		// Init speech text
@@ -304,7 +304,7 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
 	
 	// MARK: - AVSpeechSynthesizerDelegate
 	
-	func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance!) {
+	func speechSynthesizer(synthesizer: AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance) {
 		// Create an attributed string to place colour on the currently spoken word
         let mutableAttributedString = NSMutableAttributedString(string: utterance.speechString)
         
@@ -315,12 +315,12 @@ class ItemViewController: BaseViewController, AVSpeechSynthesizerDelegate {
         descriptionLabel.attributedText = mutableAttributedString
 	}
 	
-	func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didStartSpeechUtterance utterance: AVSpeechUtterance!) {
+	func speechSynthesizer(synthesizer: AVSpeechSynthesizer, didStartSpeechUtterance utterance: AVSpeechUtterance) {
         // Update speaking
         isSpeaking = true
     }
 	
-	func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didFinishSpeechUtterance utterance: AVSpeechUtterance!) {
+	func speechSynthesizer(synthesizer: AVSpeechSynthesizer, didFinishSpeechUtterance utterance: AVSpeechUtterance) {
         // Update speaking
         isSpeaking = false
     }

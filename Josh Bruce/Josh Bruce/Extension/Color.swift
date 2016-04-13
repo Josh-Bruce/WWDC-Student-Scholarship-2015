@@ -13,9 +13,9 @@ extension UIColor {
     /**
         Returns a lighter color by the provided percentage
         
-        :param: percent     Percentage to lighten the color by
+        - parameter percent:     Percentage to lighten the color by
     
-        :returns: A lighter UIColor by the percentage amount
+        - returns: A lighter UIColor by the percentage amount
     */
     func lighten(percent: Double) -> UIColor {
         return colorWithBrightness(CGFloat(1 + percent));
@@ -24,9 +24,9 @@ extension UIColor {
     /**
         Returns a darker color by the provided percentage
         
-        :param: percent     Percentage to darken the color by
+        - parameter percent:     Percentage to darken the color by
     
-        :returns: A darker UIColor by the percentage amount
+        - returns: A darker UIColor by the percentage amount
     */
     func darken(percent: Double) -> UIColor {
         return colorWithBrightness(CGFloat(1 - percent));
@@ -35,9 +35,9 @@ extension UIColor {
     /**
         Return a modified color using the brightness factor provided
         
-        :param: factor      The factor to adjust the brightness by
+        - parameter factor:      The factor to adjust the brightness by
     
-        :returns: The modified UIColor by the factor
+        - returns: The modified UIColor by the factor
     */
     func colorWithBrightness(factor: CGFloat) -> UIColor {
         // Starting values

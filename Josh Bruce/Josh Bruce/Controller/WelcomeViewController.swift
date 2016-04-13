@@ -90,49 +90,49 @@ class WelcomeViewController: BaseViewController {
 	}
 	
     func showWelcome(completion: ((finished: Bool) -> ())? = nil) {
-		spring(1.0, delay: 1.0, { () -> () in
+		spring(1.0, delay: 1.0, animations: { () -> () in
             self.welcomeLabelCenterYConstraint.constant = 0
             self.welcomeLabel.alpha = 1
             self.view.layoutIfNeeded()
-        }, completion)
+        }, completion: completion)
     }
 	
 	func showProfilePicture(completion: ((finished: Bool) -> ())? = nil) {
-		spring(1.0, delay: 1.0, { () -> () in
+		spring(1.0, delay: 1.0, animations: { () -> () in
 			self.welcomeLabel.alpha = 0.0
 			self.joshBruceImageView.alpha = 1.0
             self.joshBruceImageView.transform = CGAffineTransformMakeScale(1.0, 1.0)
-		}, completion)
+		}, completion: completion)
 	}
 	
 	func moveProfilePicture(completion: ((finished: Bool) -> ())? = nil) {
-		spring(1.0, delay: 0.0, { () -> () in
+		spring(1.0, delay: 0.0, animations: { () -> () in
 			self.joshBruceImaveViewCenterYConstraint.constant = (self.view.frame.height / 2) - ((self.joshBruceImageView.frame.height / 2) * 0.75) - 40
             self.joshBruceImageView.transform = CGAffineTransformMakeScale(0.75, 0.75)
 			self.view.layoutIfNeeded()
-		}, completion)
+		}, completion: completion)
 	}
     
     func showName(completion: ((finished: Bool) -> ())? = nil) {
-        spring(0.5, delay: 0.0, { () -> () in
+        spring(0.5, delay: 0.0, animations: { () -> () in
             self.joshBruceLabelVerticalSpaceConstraint.constant = -16.0
             self.joshBruceLabel.alpha = 1.0
             self.view.layoutIfNeeded()
-        }, completion)
+        }, completion: completion)
     }
     
     func showEnjoyReviewing(completion: ((finished: Bool) -> ())? = nil) {
-        spring(1.0, delay: 0.5, { () -> () in
+        spring(1.0, delay: 0.5, animations: { () -> () in
             self.enjoyReviewingLabel.alpha = 1.0
             self.enjoyReviewingLabelCenterYConstraint.constant = 0
             self.view.layoutIfNeeded()
-        }, completion)
+        }, completion: completion)
     }
 	
     func showLetsBegin(completion: ((finished: Bool) -> ())? = nil) {
-		spring(1.0, delay: 0.0, { () -> () in
+		spring(1.0, delay: 0.0, animations: { () -> () in
             self.letsBegin.alpha = 1.0
-        }, completion)
+        }, completion: completion)
     }
     
     func shakeLetsBegin() {
@@ -142,7 +142,7 @@ class WelcomeViewController: BaseViewController {
         let force = 0.5
 
         // Add shake to view
-        letsBegin.layer.addAnimation(shake(duration, delay, force), forKey: "shake")
+        letsBegin.layer.addAnimation(shake(duration, delay: delay, force: force), forKey: "shake")
     }
     
     // MARK: - Methods
