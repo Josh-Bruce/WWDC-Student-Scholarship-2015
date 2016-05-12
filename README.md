@@ -1,4 +1,4 @@
-# WWDC Student Scholarship 2015
+# WWDC Student Scholarship 2015 - ACCEPTED
 
 This application for the Application WWDC Student Scholarship 2015 is written in 100% Swift for iOS 8 using Xcode 6.3. There are no 3rd party libraries or files used. Enjoy :)
 
